@@ -1,0 +1,100 @@
+% This is lnbip.tex the demonstration file of the LaTeX macro package for
+% Lecture Notes in Business Information Processing from Springer-Verlag.
+% It serves as a template for authors as well.
+% version 1.0 for LaTeX2e
+%
+\documentclass[lnbip]{svmultln}
+%
+\usepackage{makeidx}  % allows for indexgeneration
+% \makeindex          % be prepared for an author index
+%
+
+\begin{document}
+%
+\mainmatter              % start of the contribution
+%
+\title{Identification of Argumentation Acts in Conversations}
+\subtitle{Project Journal}
+%
+\titlerunning{Argumentation Acts}  % abbreviated title (for running head)
+%                                     also used for the TOC unless
+%                                     \toctitle is used
+%
+\author{Alexandru Sorici \and Alin Danciu \and
+Tudor Berariu}
+%
+\authorrunning{A. Sorici, A. Danciu, T. Berariu}   % abbreviated author list (for running head)
+%
+%%%% list of authors for the TOC (use if author list has to be modified)
+\tocauthor{Alexandru Sorici, Alin Danciu, Tudor Berariu}
+%
+\institute{Faculty of Automatic Control and Computer Science, \\ University "Politehnica" of Bucharest, Romania}
+
+\maketitle              % typeset the title of the contribution
+
+\begin{abstract}        % give a summary of your paper
+Argumentation mining, the subject of this paper, is a new research area that moves between natural language processing, argumentation theory and information retrieval. The aim of argumentation mining is to automatically detect the argumentation of a document and its structure.
+%                         please supply keywords within your abstract
+\keywords {natural language processing, machine learning, argumentation, statistical learning}
+\end{abstract}
+%
+\section{Introduction}
+
+\subsection{History of Argumentation Theory}
+\par
+Argumentation has its roots in Ancient Greece, where the art of rhetoric developed first. Aristotle defines the rhetorician as someone who is always able to see what is persuasive. Correspondingly, rhetoric is defined as the ability to see what is possibly persuasive in every given case.  Argumentation theorists have searched for the requirements that make an argument correct, by some appropriate standard of proof, by examining the errors of reasoning we make when we try to use arguments. These errors have been called fallacies. Until the 1950s, the approach of argumentation was based on rhetoric and logic.
+\par
+In 1895, George Pierce Baker writes “The Principles of Argumentation” giving the following definition: ``Argumentation is the art of producing in the mind of someone else a belief in the ideas which the speaker or writer wishes the hearer or reader to accept'' 
+In the United States debating and argumentation became an important subject on universities and colleges. In the 1960s and 1970s Perelman and Toulmin were the two of the most influential writers on argumentation. Perelman tried to find a description of techniques of argumentation used by people to obtain the approval of others for their opinions. Perelman called this `new rhetoric'. Toulmin developed his theory (starting in 1950’s) in order to explain how argumentation occurs in the natural process of an everyday argument. He called his theory `the uses of argument'. 
+\par
+Hamblin took, as well, a radical approach to argumentation. Considering the fact that deductive logic did not seem to be enough, Hamblin proposed a new concept for describing arguments: he considered it not just as an arbitrarily designated set of propositions, but as a move one party makes in a dialog to offer premises that may be acceptable to another party who doubts the conclusion of the argument.
+Hamblin and Perelman’s work announced a new field of study: informal logic. Nowadays,  research in informal logic increasingly incorporates the approaches to argumentation found in cognate disciplines and fields like Speech Communication, Rhetoric, Linguistics, Artificial Intelligence, Cognitive Psychology and Computational Modeling. Looked at from this perspective, informal logic as a discipline is an integral part of a much broader multi-disciplinary attempt to develop an ``argumentation theory'' that can account for informal reasoning.
+
+\subsection{Argumentation in Computer Science}
+\par
+With regards to computer science, the study of argumentation is crucial in many artificial intelligence and natural language research problems.
+\par
+For example, in the field of Multi Agent Systems (MAS) reasoning agents need to communicate with each other and apply argumentation-based reasoning mechanisms to resolve the conflicts arising from their different views of goals, beliefs, and actions.
+Another example are question answering systems, which deal with finding the correct response to questions like ``Why was this decision taken?'' and therefore integrate the analysis of argumentation as a crucial part of identifying the answer to the questions as well as the pros and cons that make up the answer.
+\par
+The field of computer-supported collaborative learning (CSCL) has, in particular, been interested in argumentation and how students can benefit from it (Stegmann et al. 2007 - Facilitating argumentative knowledge construction with computer-supported collaboration scripts;). So-called ``collaborative argumentation'' is viewed as a key way in which students can learn critical thinking, elaboration, and reasoning.
+Therefore, it is a crucial point to understand the characteristics and models of argumentation.
+\par
+Argumentation mining, the subject we are trying to approach, is a new research area that moves between natural language processing, argumentation theory and information retrieval. The aim of argumentation mining is to automatically detect the argumentation of a document and its structure.
+\par
+Some relevant work in this area has been done by R.M. Palau and M-F Moens in Argumentation mining: the detection, classification and structure of arguments in text. In the paper they analyze the main research questions when dealing with argumentation mining and the different methods they have studied and developed in order to successfully confront the challenges of argumentation mining in legal texts.
+A more structured approach is taken by Safia ABBAS , Hajime SAWAMURA in ALES: An Innovative Argument Learning Environment. The environment uses different mining techniques to manage a highly structured arguments repository.
+ \par
+Overall, the task of argument extraction from free text is a new and difficult research area, one that will hopefully see a lot of activity in the near future, because the results that can be obtained will be of great use in many related fields of natural language processing.
+
+%
+%%
+%% ---- Bibliography ----
+%%
+%\begin{thebibliography}{5}
+%
+%\bibitem{smit:wat} Smith, T.F., Waterman, M.S.: Identification of Common Molecular
+%Subsequences. J. Mol. Biol. 147, 195--197 (1981)
+%
+%\bibitem{mes} May, P., Ehrlich, H.C., Steinke, T.: ZIB Structure Prediction Pipeline:
+%Composing a Complex Biological Workflow through Web Services. In: Nagel,
+%W.E., Walter, W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128,
+%pp. 1148--1158. Springer, Heidelberg (2006)
+%
+%\bibitem{fos:kes} Foster, I., Kesselman, C.: The Grid: Blueprint for a New Computing
+%Infrastructure. Morgan Kaufmann, San Francisco (1999)
+%
+%\bibitem{cff} Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C.: Grid
+%Information Services for Distributed Resource Sharing. In: 10th IEEE
+%International Symposium on High Performance Distributed Computing, pp.
+%181--184. IEEE Press, New York (2001)
+%
+%\bibitem{fos:kes:2} Foster, I., Kesselman, C., Nick, J., Tuecke, S.: The Physiology of the
+%Grid: an Open Grid Services Architecture for Distributed Systems
+%Integration. Technical report, Global Grid Forum (2002)
+%
+%\bibitem{url} National Center for Biotechnology Information, http://www.ncbi.nlm.nih.gov
+%
+%\end{thebibliography}
+%
+\end{document}

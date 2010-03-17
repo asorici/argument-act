@@ -1,0 +1,85 @@
+\documentclass[12pt]{article} 
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{a4paper}
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\include{subtitle}
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Identification of Argumentation \\ Acts in Conversations}
+\subtitle{Project Journal}
+\author{Berariu Tudor \\ Danciu Alin \\ Sorici Alexandru}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\subsection{History of Argumentation Theory}
+\par
+Argumentation has its roots in Ancient Greece, where the art of rhetoric developed first. Aristotle defines the rhetorician as someone who is always able to see what is persuasive. Correspondingly, rhetoric is defined as the ability to see what is possibly persuasive in every given case.  Argumentation theorists have searched for the requirements that make an argument correct, by some appropriate standard of proof, by examining the errors of reasoning we make when we try to use arguments. These errors have been called fallacies. Until the 1950s, the approach of argumentation was based on rhetoric and logic.
+\par
+In 1895, George Pierce Baker writes “The Principles of Argumentation” giving the following definition: ``Argumentation is the art of producing in the mind of someone else a belief in the ideas which the speaker or writer wishes the hearer or reader to accept'' 
+In the United States debating and argumentation became an important subject on universities and colleges. In the 1960s and 1970s Perelman and Toulmin were the two of the most influential writers on argumentation. Perelman tried to find a description of techniques of argumentation used by people to obtain the approval of others for their opinions. Perelman called this `new rhetoric'. Toulmin developed his theory (starting in 1950’s) in order to explain how argumentation occurs in the natural process of an everyday argument. He called his theory `the uses of argument'. 
+\par
+Hamblin took, as well, a radical approach to argumentation. Considering the fact that deductive logic did not seem to be enough, Hamblin proposed a new concept for describing arguments: he considered it not just as an arbitrarily designated set of propositions, but as a move one party makes in a dialog to offer premises that may be acceptable to another party who doubts the conclusion of the argument.
+Hamblin and Perelman’s work announced a new field of study: informal logic. Nowadays,  research in informal logic increasingly incorporates the approaches to argumentation found in cognate disciplines and fields like Speech Communication, Rhetoric, Linguistics, Artificial Intelligence, Cognitive Psychology and Computational Modeling. Looked at from this perspective, informal logic as a discipline is an integral part of a much broader multi-disciplinary attempt to develop an ``argumentation theory'' that can account for informal reasoning.
+
+\subsection{Argumentation in Computer Science}
+\par
+With regards to computer science, the study of argumentation is crucial in many artificial intelligence and natural language research problems.
+\par
+For example, in the field of Multi Agent Systems (MAS) reasoning agents need to communicate with each other and apply argumentation-based reasoning mechanisms to resolve the conflicts arising from their different views of goals, beliefs, and actions.
+Another example are question answering systems, which deal with finding the correct response to questions like ``Why was this decision taken?'' and therefore integrate the analysis of argumentation as a crucial part of identifying the answer to the questions as well as the pros and cons that make up the answer.
+\par
+The field of computer-supported collaborative learning (CSCL) has, in particular, been interested in argumentation and how students can benefit from it (Stegmann et al. 2007 - Facilitating argumentative knowledge construction with computer-supported collaboration scripts;). So-called ``collaborative argumentation'' is viewed as a key way in which students can learn critical thinking, elaboration, and reasoning.
+Therefore, it is a crucial point to understand the characteristics and models of argumentation.
+\par
+Argumentation mining, the subject we are trying to approach, is a new research area that moves between natural language processing, argumentation theory and information retrieval. The aim of argumentation mining is to automatically detect the argumentation of a document and its structure.
+\par
+Some relevant work in this area has been done by R.M. Palau and M-F Moens in Argumentation mining: the detection, classification and structure of arguments in text. In the paper they analyze the main research questions when dealing with argumentation mining and the different methods they have studied and developed in order to successfully confront the challenges of argumentation mining in legal texts.
+A more structured approach is taken by Safia ABBAS , Hajime SAWAMURA in ALES: An Innovative Argument Learning Environment. The environment uses different mining techniques to manage a highly structured arguments repository.
+ \par
+Overall, the task of argument extraction from free text is a new and difficult research area, one that will hopefully see a lot of activity in the near future, because the results that can be obtained will be of great use in many related fields of natural language processing.
+
+
+\end{document}
