@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>The Prime Minister's senior drug policy adviser, Major Brian Watters, has proposed new laws that would see drug addicts locked up against their will - a sort of forced cold turkey.  As someone who has watched several close friends struggle with heroin addiction, I have to ask: what is Watters thinking? His suggestion is disturbing, unworkable and potentially dangerous.  Drug workers talk about a "circuit-breaker", the event that triggers a person's decision to quit - a long-suffering partner walking out, a valued job being lost. The addict realises what they stand to lose if they don't stop using.  This realisation is an internal one: the decision to quit drugs cannot be enforced from the outside. Addiction means the person has lost control over their drug use. The addiction cannot be "cured" by reducing still further that person's control over their own lives and circumstances, as Watters is suggesting.    Locking up addicts against their will would not only violate their rights; it would be likely to prove counter-productive. Sure, you might be able to physically clear drugs from a person's system with the aid of a solid door and a deadlock, but what are the emotional consequences of forcing them to endure an involuntary and painful drug withdrawal, without being psychologically prepared, or even willing, to do so?    Has Watters considered what would happen once they were released? People use drugs to block out painful underlying problems, and those problems won't dissolve after a mandatory drying-out period. The newly "clean" addict may also feel violated, traumatised and betrayed by their detention: an excellent emotional recipe for getting straight back on the gear again.  Families of drug addicts know that addiction chips away at healthy relationships. When drugs take over as a priority, the user becomes increasingly isolated from those around them - partners, siblings, parents, employers. Even supportive friends can find themselves shut out. Drug buddies are always there, but it becomes very difficult to maintain relationships outside the drug culture. The resulting social isolation often triggers more drug use.  But forcibly locking up addicts could do further serious harm to these relationships. However much they want to help, if your loved ones have conspired to have you thrown in the slammer against your will - and many addicts will see it that way - you're hardly going to pop round to their place for a cuppa and a chat when you get out. Broken trust is not an easy thing to mend.    </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="304">His suggestion is disturbing, unworkable and potentially dangerous.  </PROPTEXT>
+      <INSCHEME scheme="Argument from Implication" schid="0" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="C" missing="yes">
+          <PROPTEXT offset="-1">Addiction cannot be cured by implementing his suggestions</PROPTEXT>
+          <INSCHEME scheme="Argument from Implication" schid="0" />
+          <INSCHEME scheme="Argument from Causal Law" schid="1" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="B" missing="no">
+              <PROPTEXT offset="373">Drug workers talk about a "circuit-breaker", the event that triggers a person's decision to quit - a long-suffering partner walking out, a valued job being lost. The addict realises what they stand to lose if they don't stop using.  This realisation is an internal one: the decision to quit drugs cannot be enforced from the outside. Addiction means the person has lost control over their drug use. The addiction cannot be "cured" by reducing still further that person's control over their own lives and circumstances, as Watters is suggesting.   </PROPTEXT>
+              <INSCHEME scheme="Argument from Causal Law" schid="1" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="K" missing="yes">
+              <PROPTEXT offset="-1">Locking up drug addicts against their will will decrease their control over their lives and circumstances</PROPTEXT>
+              <INSCHEME scheme="Argument from Causal Law" schid="1" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="D" missing="no">
+          <PROPTEXT offset="921">Locking up addicts against their will would not only violate their rights; it would be likely to prove counter-productive.</PROPTEXT>
+          <INSCHEME scheme="Argument from Implication" schid="0" />
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="2" />
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="J" missing="yes">
+              <PROPTEXT offset="-1">This may be a recipe for getting the addict straight back on the gear again</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="2" />
+              <INSCHEME scheme="Argument from the Constitution of Possibilities" schid="4" />
+            </PROP>
+            <LA>
+              <AU>
+                <PROP identifier="I" missing="no">
+                  <PROPTEXT offset="1632">an excellent emotional recipe for getting straight back on the gear again</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Possibilities" schid="4" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="F" missing="no">
+                  <PROPTEXT offset="1538">The newly "clean" addict may also feel violated, traumatised and betrayed by their detention</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Possibilities" schid="4" />
+                  <INSCHEME scheme="Argument from Causal Law" schid="5" />
+                </PROP>
+                <LA>
+                  <AU>
+                    <PROP identifier="H" missing="no">
+                      <PROPTEXT offset="2245">However much they want to help, if your loved ones have conspired to have you thrown in the slammer against your will - and many addicts will see it that way - you're hardly going to pop round to their place for a cuppa and a chat when you get out. Broken trust is not an easy thing to mend.    </PROPTEXT>
+                      <INSCHEME scheme="Argument from Causal Law" schid="5" />
+                    </PROP>
+                  </AU>
+                  <AU>
+                    <PROP identifier="G" missing="yes">
+                      <PROPTEXT offset="-1">A newly clean addict will sometimes have been put in jail by his loved ones</PROPTEXT>
+                      <INSCHEME scheme="Argument from Causal Law" schid="5" />
+                    </PROP>
+                  </AU>
+                </LA>
+              </AU>
+              <AU>
+                <PROP identifier="L" missing="yes">
+                  <PROPTEXT offset="-1">If the addict may feel betrayed by his family and if feeling betrayed may cause one to get back on the gear again, it may be a recipe for the addict's getting straight back on the gear again.</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Possibilities" schid="4" />
+                </PROP>
+              </AU>
+            </LA>
+          </AU>
+          <AU>
+            <PROP identifier="M" missing="yes">
+              <PROPTEXT offset="-1">If something may be a recipe for getting the addict on the gear again, it is likely that some addicts will get on the gear again</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="2" />
+            </PROP>
+          </AU>
+        </LA>
+        <LA>
+          <AU>
+            <PROP identifier="E" missing="no">
+              <PROPTEXT offset="1049"> you might be able to physically clear drugs from a person's system with the aid of a solid door and a deadlock, but what are the emotional consequences of forcing them to endure an involuntary and painful drug withdrawal, without being psychologically prepared, or even willing, to do so?    Has Watters considered what would happen once they were released? People use drugs to block out painful underlying problems, and those problems won't dissolve after a mandatory drying-out period.</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="N" missing="yes">
+              <PROPTEXT offset="-1">If drugs are used to block out problems and these problems remain after the drying out period, the addict is likely to use drugs again</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="O" missing="yes">
+          <PROPTEXT offset="-1">If implementing Walter's suggestions cannot cure addicts and will be counterproductive, the suggestions are disturbing, unworkable and potentially dangerous</PROPTEXT>
+          <INSCHEME scheme="Argument from Implication" schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>Mark</AUTHOR>
+    <DATE>2003-09-12</DATE>
+    <SOURCE>The Age (Australia), Opinion, 'Why forced cold turkey is just plain dangerous?' by Meg Mandell, 6th of March 2003.</SOURCE>
+    <COMMENTS />
+  </EDATA>
+</ARG>

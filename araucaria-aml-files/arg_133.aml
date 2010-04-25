@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cýs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>For another thing,as JUSTICE STEVENS and I have previously pointed out,the combination of uncertainty of execution and long   delay is arguably "cruel". This Court has recognized that such a combination can inflict "horrible feelings " and "an   immense mental anxiety amounting to a great increase of the offender's punishment". In re Medley ,134 U.S.160,172 (1890);  see also Furman v. Georgia ,408 U.S 238,288-289 (1972)(per curiam) (BRENNAN,J.,concurring)("[T ]he prospect of pending   execution exacts a frightful toll "). Courts of other nations have found that delays of 15 years or less can render capital   punishment degrading,shocking,or cruel. E.g., Pratt v. Attorney General for Jamaica ,[1994 ] 2 A..C.1,29, 33,4 All   E.R.769,783,786 (P.C.1993)(en banc)(U.K. Privy Council);Soering v .United Kingdom ,11 Eur.Ct. H.R.(ser.A), pp.439,478,111   (1989)(European Court of Human Rights). See Knight ,supra ,at 995-996. Consistent with these determinations, the Supreme   Court of Canada recently held that the potential for lengthy incarceration before execution is "a relevant consideration"   when determining whether extradition to the United States violates principles of "fundamental justice". United States v.   Burns ,[2001]1 S.C.R.283,353,123.   </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="71">the combination of uncertainty of execution and long delay is arguably "cruel.</PROPTEXT>
+      <INSCHEME scheme="Argument to Singular Cause" schid="0" />
+      <INSCHEME scheme="Argument to Singular Cause" schid="1" />
+      <INSCHEME scheme="Argument to Singular Cause" schid="2" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="H" missing="yes">
+          <PROPTEXT offset="-1">This court wouldn't have recognized that the combination of execution and long delay can be cruel unless it was arguable that it is.</PROPTEXT>
+          <INSCHEME scheme="Argument to Singular Cause" schid="0" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="B" missing="no">
+          <PROPTEXT offset="150">This Court has recognized that such a combination can inflict "horri- ble feelings " and "an immense mental anxiety amounting to a great increase of the offender 's punishment.</PROPTEXT>
+          <INSCHEME scheme="Argument to Singular Cause" schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="I" missing="yes">
+          <PROPTEXT offset="-1">Courts of other nations wouldn't have accepted that delays of 15 years or less can render capital punushment degrading, shocking, or cruel unless it was arguable that such delays are cruel.</PROPTEXT>
+          <INSCHEME scheme="Argument to Singular Cause" schid="1" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="C" missing="no">
+          <PROPTEXT offset="521">Courts of other nations have found that delays of 15 years or less can render capital punishment degrading,shocking,or cruel.</PROPTEXT>
+          <INSCHEME scheme="Argument to Singular Cause" schid="1" />
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="D" missing="no">
+          <PROPTEXT offset="951">the Supreme Court of Canada recently held that the potential for lengthy incar- ceration before execution is "a relevant consideration " when determining whether extradition to the United States violates principles of "fundamental justice."</PROPTEXT>
+          <INSCHEME scheme="Argument to Singular Cause" schid="2" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="J" missing="yes">
+          <PROPTEXT offset="-1">The Supreme Court of Canada wouldn't have held that the potential for lengthy incarceration before execution is a relevant consideration when determining whether extradition to the US violates principles of fundamental justice unless it was arguable that such incarceration was cruel. </PROPTEXT>
+          <INSCHEME scheme="Argument to Singular Cause" schid="2" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>lmciver</AUTHOR>
+    <DATE>2004-07-19</DATE>
+    <SOURCE />
+    <COMMENTS />
+  </EDATA>
+</ARG>

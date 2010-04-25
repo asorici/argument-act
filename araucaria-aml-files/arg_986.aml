@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+<?Araucaria UTF-8?>
+<SCHEMESET/>
+<TEXT>Social workers do good things in society.&#13;
+People who do good things must have received the right kind of education.&#13;
+The right kind of education helps people learn do good things.&#13;
+&#13;
+(People who do good things in society cannot have received the wrong kind of education.)&#13;
+Social workers do good things in society.&#13;
+(Social workers cannot have received the wrong kind of education.)&#13;
+(Criticisms of social work education as having negative effects are not credible.)&#13;
+</TEXT>
+<AU>
+<PROP identifier="B" missing="yes">
+<PROPTEXT offset="-1">Criticisms of social work education as having negative effects are not credible.</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="A" missing="yes">
+<PROPTEXT offset="-1">Social workers cannot have received the wrong kind of education.</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<LA>
+<AU>
+<PROP identifier="C" missing="no">
+<PROPTEXT offset="0">Social workers do good things in society.&#13;</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+<AU>
+<PROP identifier="D" missing="yes">
+<PROPTEXT offset="-1">People who do good things in society cannot have received the wrong kind of education.</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="warrant"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</LA>
+</AU>
+</CA>
+</AU>
+<EDATA>
+<AUTHOR>celdjt</AUTHOR>
+<DATE>2008-12-29</DATE>
+<SOURCE></SOURCE>
+<COMMENTS></COMMENTS>
+</EDATA>
+</ARG>

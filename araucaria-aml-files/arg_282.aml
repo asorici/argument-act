@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME> Argument from Position to Know </NAME>
+      <FORM>
+        <PREMISE> Source M is in a position to know whether P is true (false) </PREMISE>
+        <PREMISE> Source M asserts that P is true (false) </PREMISE>
+        <CONCLUSION> P is true (false) </CONCLUSION>
+      </FORM>
+      <CQ> Is M in a position to know whether P is true (false)? </CQ>
+      <CQ> Is M an honest (trustworthy, reliable) source? </CQ>
+      <CQ> Did M assert that P is true (false)? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Expert Opinion </NAME>
+      <FORM>
+        <PREMISE> Source E is an expert in domain D containing proposition P </PREMISE>
+        <PREMISE> E asserts that proposition P is true (false) </PREMISE>
+        <CONCLUSION> P may (plausibly) be taken to be true (false) </CONCLUSION>
+      </FORM>
+      <CQ> How credible is E as an expert source? </CQ>
+      <CQ> Is E an expert in the field that P is in? </CQ>
+      <CQ> What did E assert that implies P? </CQ>
+      <CQ> Is E personally reliable as a source? </CQ>
+      <CQ> Is P consistent with what other experts assert? </CQ>
+      <CQ> Is E's assertion based on evidence? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Appeal to Witness Testimony </NAME>
+      <FORM>
+        <PREMISE> Witness W is in position to know whether P is true or not </PREMISE>
+        <PREMISE> Witness W is telling the truth (as W knows it) </PREMISE>
+        <PREMISE> Witness W states that P is true (false) </PREMISE>
+        <CONCLUSION> P may be plausibly taken to be true (false) </CONCLUSION>
+      </FORM>
+      <CQ> Is what the witness said internally consistent? </CQ>
+      <CQ> Is what the witness said consistent with the known facts of the case (based on evidence apart from what the witness testified to? </CQ>
+      <CQ> Is what the witness said consistent with what other witnesses have (independently) testified to? </CQ>
+      <CQ> Is there some kind of bias that can be attributed to the account given by the witness? </CQ>
+      <CQ> How plausible is the statement P asserted by the witness? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument form Popularity </NAME>
+      <FORM>
+        <PREMISE> Everybody in a particular reference group accepts (rejects)P </PREMISE>
+        <CONCLUSION> Therefore, you should accept (reject) P </CONCLUSION>
+      </FORM>
+      <CQ> Does a large majority of the cited reference group accept P as true? </CQ>
+      <CQ> Is there other relevant evidence available that would support the assumption that P is not true? </CQ>
+      <CQ> What reason is there for thinking that the view of this large majority is likely to be right? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Example </NAME>
+      <FORM>
+        <PREMISE> In this case, the individual k has property F and also property G </PREMISE>
+        <PREMISE> k is typical of things that have F and may or may not have G </PREMISE>
+        <CONCLUSION> Generally, if x has property F then (usually, probably, typically) x also has property G </CONCLUSION>
+      </FORM>
+      <CQ> Is it actually the case that k has F and G </CQ>
+      <CQ> Does the example of k actually support the general claim: is it really an instance of the generalisation? </CQ>
+      <CQ> Is k actually typical of the kinds of cases that the generalisation ranges over? </CQ>
+      <CQ> How strong, how widely applicable is the generalisation? </CQ>
+      <CQ> Are there special circumstances pertaining to k that impair its generalisability? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Analogy </NAME>
+      <FORM>
+        <PREMISE> Generally, case C1 is similar to case C2 </PREMISE>
+        <PREMISE> Proposition P is true (false) in case C1 </PREMISE>
+        <CONCLUSION> Proposition P is true (false) in case C2 </CONCLUSION>
+      </FORM>
+      <CQ> Are C1 and C2 similar in the respect cited? </CQ>
+      <CQ> Is P true (false) in C1 </CQ>
+      <CQ> Are there differences between C1 and C2 that would tend to undermine the force of the similarity cited? </CQ>
+      <CQ> Is there some other case C3 that is also similar to C1, but in which P is false (true)? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Practical Reasoning from Analogy </NAME>
+      <FORM>
+        <PREMISE> The right (wrong) thing to do in S1 was to carry out P </PREMISE>
+        <PREMISE> S2 is similar to S1</PREMISE>
+        <CONCLUSION> Therefore, the right (wrong) thing to do in S2 is carry out P</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Composition </NAME>
+      <FORM>
+        <PREMISE>All the parts of X have property Y </PREMISE>
+        <CONCLUSION>Therefore, X has property Y</CONCLUSION>
+      </FORM>
+      <CQ>Is property Y compositionally hereditary with regard to aggregate X (when X (the whole) has property Y, then every part that compose X has property Y)?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Division </NAME>
+      <FORM>
+        <PREMISE>X has property Y </PREMISE>
+        <CONCLUSION>Therefore, all the parts of X have property Y</CONCLUSION>
+      </FORM>
+      <CQ>Is property Y divisionally hereditary with regard to aggregate X (when every part that compose X has property Y, then X (the whole) has property Y)? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Verbal Classification </NAME>
+      <FORM>
+        <PREMISE> k has a particular property F </PREMISE>
+        <PREMISE> For all x, if x has property F, then x can be classified as having property G </PREMISE>
+        <CONCLUSION> k has property G </CONCLUSION>
+      </FORM>
+      <CQ> Does k definitely have F, or is there room for doubt? </CQ>
+      <CQ> Can the verbal classification be said to hold strongly, or is it a weak classification that is subject to doubt? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Verbal Classification Slippery Slope Argument </NAME>
+      <FORM>
+        <PREMISE> Individual a1 has property F </PREMISE>
+        <PREMISE> For all x and y, if x has F then, if y is indistinguishable for x with respect to F, then y also has F  </PREMISE>
+        <PREMISE> For any given pair {ai, aj} of adjacent individuals in the sequence a1, a2, ..., an, individual aj is indistinguishable from ai with respect to F </PREMISE>
+        <PREMISE> But an does not have property F </PREMISE>
+        <CONCLUSION> It is not the case that a1 has F </CONCLUSION>
+      </FORM>
+      <CQ> Does a1 have F? </CQ>
+      <CQ> Is F really vague, in the sense that for all x and y, if x has F, then y must also be conceded to have F? </CQ>
+      <CQ> Are the pairs {ai, aj} in the continuum really indistinguishable from each other? </CQ>
+      <CQ> Is the conclusion that an does not have F truly the case (or at least is the conclusion that an does have F truly unacceptable to the audience) ? </CQ>
+      <CQ> Can some precise definition of F be given that will remove the vagueness, sufficiently to stop the slope? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Vagueness of a Verbal Classification </NAME>
+      <FORM>
+        <PREMISE> If an argument A occurs in a context of dialogue that requires a certain level of precision, but some property F that occurs in A is defined in a way that is too vague to meet the requriements of that level of precision, then A ought to be rejected as deficient.  </PREMISE>
+        <PREMISE> Argument A occurs in a context of dialogue that requires a certain level of precision appropriate </PREMISE>
+        <PREMISE> Some property F that occurs in argument A is defined in a way that is too vague to meet the requirement of the level of precision appropriate for the context of dialogue in which A occurs  </PREMISE>
+        <CONCLUSION> Argument A ought to be rejected as deficient </CONCLUSION>
+      </FORM>
+      <CQ> Does the context of dialogue in which argument A occurs demand some particular level of precision in the key terms used? </CQ>
+      <CQ> Is some property F that occurs in A too vague to meet the proper level or standard of precision? </CQ>
+      <CQ> Why is this degree of vagueness a problem in relation to the dialogue in which A was advanced? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Arbitrariness of a Verbal Classification </NAME>
+      <FORM>
+        <PREMISE> If an argument A occurs in a context of dialogue that requires a nonarbitrary definition for a key property F that occurs in A, and F is defined in an arbitrary way in A, then A ought to be rejected as deficient.  </PREMISE>
+        <PREMISE> Argument A occurs in a context of dialogue that requires a nonarbitrary definition for a key property F that occurs in A </PREMISE>
+        <PREMISE> Some property F that occurs in argument A is defined in a way that is arbitrary </PREMISE>
+        <CONCLUSION> Argument A ought to be rejected as deficient </CONCLUSION>
+      </FORM>
+      <CQ> Does the context of dialogue in which argument A occurs require a nonarbitrary definition of F? </CQ>
+      <CQ> Is some property F that occurs in A defined in an arbitrary way? </CQ>
+      <CQ> Why is arbitrariness of definition a problem in relation to the dialogue in which A was advanced? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument From Sign </NAME>
+      <FORM>
+        <PREMISE> X is true in this situation </PREMISE>
+        <PREMISE> Event B is generally indicated as true when its sign, X, is true in this kind of situation </PREMISE>
+        <CONCLUSION> B is true in this situation </CONCLUSION>
+      </FORM>
+      <CQ> What is the strength of the correlation between X and B? </CQ>
+      <CQ> Are there any events other than B that would more reliably account for X? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Practical Reasoning </NAME>
+      <FORM>
+        <PREMISE>Bringing about Sn is my goal</PREMISE>
+        <PREMISE>To bring about Sn I need to bring about S1 </PREMISE>
+        <CONCLUSION>Therefore, I need to bring about S1</CONCLUSION>
+      </FORM>
+      <CQ>Are there an alternative possible of action to bringing about S1 that could also lead to the goal?</CQ>
+      <CQ>Is S1 the best (or most favorable) of the alternatives? </CQ>
+      <CQ> Do I have goals other than S1 that may be better to achieve and that should have priority? </CQ>
+      <CQ> Is it possible to bring about S1 in the given circumstances?</CQ>
+      <CQ> Would bringing about S1 have known bad consequences that ought to be taken into account?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Two-Person Practical Reasoning</NAME>
+      <FORM>
+        <PREMISE>M (the agent) intends to realize G (the goal), and tells E (the expert) this</PREMISE>
+        <PREMISE>As E sees the situation, B is a necessary (sufficient) condition for carrying out G, and E tells M this</PREMISE>
+        <CONCLUSION>Therefore, M should carry out B, unless he has better reasons not to</CONCLUSION>
+      </FORM>
+      <CQ>Does M have other goals (of higher priority) that might conflict with the goal of realizing G?</CQ>
+      <CQ>Are there alternative means available to M (other than B) for carrying out G?</CQ>
+      <CQ>Would carrying out B have known side effects that might conflict with M's other goals?</CQ>
+      <CQ>Is it possible for M to bring about B?</CQ>
+      <CQ>Are other actions, as well as B, required for M to bring about G?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Popular Practice </NAME>
+      <FORM>
+        <PREMISE> If a large majority (everyone, nearly everyone, etc.) does AC, or acts as though AC is the right (or an acceptable) thing to do, then AC is a prudent course of action </PREMISE>
+        <PREMISE> A large majority acts as though X is the right thing to do </PREMISE>
+        <CONCLUSION> AC is a prudent course of action </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Sunk Costs </NAME>
+      <FORM>
+        <PREMISE>There is a choice at t2 (time of proponent's confrontation with the decision of whether carry out the pre-commitment or not) between AC and not-AC</PREMISE>
+        <PREMISE>At t2 I am precommitted to A because of what I did or committed myself to at t1 (time of the proponent's commitment to a certain action (pre-commitment))</PREMISE>
+        <CONCLUSION>Therefore I should choose AC</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Ignorance</NAME>
+      <FORM>
+        <PREMISE>If P were true, then P would be known to be true</PREMISE>
+        <PREMISE>It is not the case that P is known to be true</PREMISE>
+        <CONCLUSION>Therefore P is not true</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Epistemic Argument from Ignorance</NAME>
+      <FORM>
+        <PREMISE>It has not been established that all the true propositions in D are contained in K</PREMISE>
+        <PREMISE>P is a special type of proposition such that if P were true, P would normally or usually be expected to be in K</PREMISE>
+        <PREMISE>P is in D</PREMISE>
+        <PREMISE>P is not in K</PREMISE>
+        <PREMISE>For all P in D, P is either true or false</PREMISE>
+        <CONCLUSION>Therefore, it is plausible to presume that P is false (subject to further investigations in D)</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Cause to Effect </NAME>
+      <FORM>
+        <PREMISE> Generally, if A occurs, then B will (or might) occur </PREMISE>
+        <PREMISE> In this case, A occurs (or might occur) </PREMISE>
+        <CONCLUSION> In this case, A will (or might) occur </CONCLUSION>
+      </FORM>
+      <CQ> How strong is the causal generalization (if it is true at all)? </CQ>
+      <CQ> Is the evidence cited (if there is any) strong enough to warrant the generalization as stated? </CQ>
+      <CQ> Are there other factors that would or will interfere with or counteract the production of the effect in this case? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Abductive Argumentation Scheme </NAME>
+      <FORM>
+        <PREMISE>F is a finding or given set of facts</PREMISE>
+        <PREMISE>EX is a satisfactory explanation of F</PREMISE>
+        <PREMISE>No alternative explanation EX' given so far is as satisfactory as EX</PREMISE>
+        <CONCLUSION>Therefore, EX is plausible, as a hypothesis.</CONCLUSION>
+      </FORM>
+      <CQ>How satisfactory is EX itself as an explanation of F, apart from the alternative explanations available so far in the dialogue?</CQ>
+      <CQ>How much better an explanation is EX than the alternative explanation so far in the dialogue? </CQ>
+      <CQ>How far has the dialogue progressed? If the dialogue is an inquiry, how thorough has the search been in the investigation of the case? </CQ>
+      <CQ>Would it be better to continue the dialogue further, instead of drawing a conclusion at this point? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Abductive Argument from Effect to Cause</NAME>
+      <FORM>
+        <PREMISE>F is a finding or given set of facts in the form of some event that has occurred</PREMISE>
+        <PREMISE>EX is a satisfactory causal explanation of F </PREMISE>
+        <CONCLUSION>Therefore, EX is plausible, as a hypothesis for the cause of F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Correlation to Cause </NAME>
+      <FORM>
+        <PREMISE> There is a positive correlation between A and B </PREMISE>
+        <CONCLUSION> A causes B </CONCLUSION>
+      </FORM>
+      <CQ> Is there a positive correlation between A and B? </CQ>
+      <CQ> Are there a significant number of instances of the positive correlation between A and B? </CQ>
+      <CQ> Is there good evidence that the causal relationship goes from A to B, and not just from B to A? </CQ>
+      <CQ> Can it be ruled out that the correlation between A and B is accounted for by some third factor (a common cause) that causes both A and B? </CQ>
+      <CQ> If there are intervening variables, can it be shown that the causal relationship between A and B is indirect (mediated through other causes)? </CQ>
+      <CQ> If the correlation fails to hold outside a certain range of causes, then can the limits of this range be clearly indicated? </CQ>
+      <CQ> Can it be shown that the increase or change in B is not solely due to the way B is defined, the way entities are classified as belonging to the class of Bs, or changing standards, over time, of the way Bs are defined or classified? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Evidence to a Hypothesis </NAME>
+      <FORM>
+        <PREMISE> If hypothesis H is true, then a proposition B, reporting an event, will be observed to be true. </PREMISE>
+        <PREMISE> B has been observed to be true in a given instance </PREMISE>
+        <CONCLUSION> H is true </CONCLUSION>
+      </FORM>
+      <CQ> Is it the case that if H is true, then B is true? </CQ>
+      <CQ> Has B been observed to be true (false)? </CQ>
+      <CQ> Could there be some other reason why B is true, other than its being because of H being true? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Falsification of a Hypothesis </NAME>
+      <FORM>
+        <PREMISE> If hypothesis H is true, then a proposition B, reporting an event, will be observed to be true. </PREMISE>
+        <PREMISE> B has been observed to be false in a given instance </PREMISE>
+        <CONCLUSION> H is false </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Consequences </NAME>
+      <FORM>
+        <PREMISE> If AC is brought about, then good (bad) consequences will (may plausibly) occur </PREMISE>
+        <CONCLUSION> AC should (not) be brought about </CONCLUSION>
+      </FORM>
+      <CQ> How strong is the likelihood that these cited consequences wil (may, must, etc.) occur? </CQ>
+      <CQ> If AC is brought about, will (or might) these conequences occur, and what evidence supports this claim? </CQ>
+      <CQ> Are there consequences of the opposite value that should be taken into account? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Threat </NAME>
+      <FORM>
+        <PREMISE>If you bring about AC, some cited bad consequences, B, will follow</PREMISE>
+        <PREMISE>I am in position to bring about B</PREMISE>
+        <PREMISE>I hereby assert that in fact I will see to it that B occurs if you bring about AC</PREMISE>
+        <CONCLUSION>Therefore you had better not bring about AC</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Fear Appeal</NAME>
+      <FORM>
+        <PREMISE>If you do not bring about AC, then B will occur</PREMISE>
+        <PREMISE>B is very bad for you</PREMISE>
+        <PREMISE>Therefore, you ought to stop B if possible</PREMISE>
+        <PREMISE>But the only way for you to stop B is bring about AC</PREMISE>
+        <CONCLUSION>Therefore, you ought to bring about AC</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Danger Appeal </NAME>
+      <FORM>
+        <PREMISE>If you (the respondent) bring about AC then B will occur</PREMISE>
+        <PREMISE>B is a danger to you</PREMISE>
+        <CONCLUSION>Therefore (on balance) you should not bring about AC</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Opposites </NAME>
+      <FORM>
+        <PREMISE>The opposite of subject S has the property F (not-F)</PREMISE>
+        <CONCLUSION>Therefore S has the property not-F (F), the opposite of property F (not-F) </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Alternatives </NAME>
+      <FORM>
+        <PREMISE>Either you (the respondent) must bring about AC or B will occur</PREMISE>
+        <PREMISE>B is bad or undesirable, from your point of view</PREMISE>
+        <CONCLUSION>Therefore you should (ought to, practically speaking) bring about AC</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Need for Help </NAME>
+      <FORM>
+        <PREMISE>For all x and y, ought to help x, if x is in a situation where x needs help, and y can help, and y's giving help would not be too costly for y</PREMISE>
+        <PREMISE>x is in a situation where some action AC by y would help x</PREMISE>
+        <PREMISE>y can carry out AC</PREMISE>
+        <PREMISE>y's carrying out AC would not be too costly for y -that is, the negative side effects would not be too great, as y sees it</PREMISE>
+        <CONCLUSION>Therefore, y ought to carry out AC</CONCLUSION>
+      </FORM>
+      <CQ>Would the proposed action AC really help x?</CQ>
+      <CQ>Is it possible for x carry put AC?</CQ>
+      <CQ>Would there be negative side effects of carrying out AC that would be too great? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Distress </NAME>
+      <FORM>
+        <PREMISE>Individual x is in distress (is suffering)</PREMISE>
+        <PREMISE>If y brings about AC, it will relieve or help to relieve this distress</PREMISE>
+        <CONCLUSION>Therefore, y ought to bring about AC</CONCLUSION>
+      </FORM>
+      <CQ>Is x really in distress?</CQ>
+      <CQ>Will bringing about AC by y really help or relieve this distress?</CQ>
+      <CQ>Is it possible for y to bring about AC?</CQ>
+      <CQ>Would negative side effects of y's bringing about AC be too great?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Plea for Excuse</NAME>
+      <FORM>
+        <PREMISE>Normally rule R requires or forbids a type of action or inaction T, which carries with it a sanction (penalty) S</PREMISE>
+        <PREMISE>I (the pleader) have committed T</PREMISE>
+        <PREMISE>But I can cite special circumstances that constitute an excuse, Ex</PREMISE>
+        <CONCLUSION>Therefore, in this instance, I ought to be exempted from S</CONCLUSION>
+      </FORM>
+      <CQ>Does Ex fall under one of the recognized categories of excuses for this type of case, and, if so, can this inclusion be justified in this case? </CQ>
+      <CQ>If Ex does not fall under a recognized category, then what about this case is special that justifies the claim to exemption?</CQ>
+      <CQ>If Ex does not fall under a recognized category, would it set a precedent, and if so, would this pose a problem in future cases?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Commitment </NAME>
+      <FORM>
+        <PREMISE>If arguer M has committed herself to proposition P, at some point in a dialogue, then it may be inferred that he is also committed to proposition B, should the question of whether B is true become an issue later in the dialogue</PREMISE>
+        <PREMISE>Arguer M has committed himself to proposition A at some point in a dialogue</PREMISE>
+        <CONCLUSION>At some later point in the dialogue, where the issue of B arises, arguer M may be said to be committed to proposition B</CONCLUSION>
+      </FORM>
+      <CQ>Is M really committed to P, and if so, what evidence supports the claim that she is so committed?</CQ>
+      <CQ>If the evidence for commitment is indirect or weak, could there also be contrary evidence, or at least room  for the rebuttal that this case is an exception? </CQ>
+      <CQ>Is the proposition P, as cited in the premise, identical to the proposition P as cited in the conclusion? If not, what exactly is the nature of the relationship between the two propositions?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Inconsistent Commitment </NAME>
+      <FORM>
+        <PREMISE>M is committed to proposition P (generally, or in virtue of what she said in the past)</PREMISE>
+        <PREMISE>M is committed to proposition non-P, which is the conclusion of the argument A that a presently advocates</PREMISE>
+        <CONCLUSION>Therefore M's argument A should not be accepted</CONCLUSION>
+      </FORM>
+      <CQ>What are the propositions alleged to be practically inconsistent, and are they practically inconsistent?</CQ>
+      <CQ>If the identified propositions are not practically (pragmatically) inconsistent, as things stand, are there at least some grounds for a claim of practical inconsistency that can be evaluated from the textual evidence of the discourse?</CQ>
+      <CQ>Even if there is not an explicit practical inconsistency, what is the connection between the pair of propositions alleged to be inconsistent?</CQ>
+      <CQ>If there is a practical inconsistency that can be identified as the focus of the attack, how serious a flaw is it?  Could the apparent conflict be resolved or explained without destroying the consistency of the commitment in the dialogue?</CQ>
+      <CQ>Does it follow from M's inconsistent commitment that his argument should not be accepted?</CQ>
+      <CQ>Is the conclusion the weaker claim that M's credibility is open to question or the stronger claim that the conclusion of A is false?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Pragmatic Inconsistency </NAME>
+      <FORM>
+        <PREMISE>M advocates argument A, which has proposition P as its conclusion</PREMISE>
+        <PREMISE>M has carried out an action, or set of actions, that imply that a is personally committed to non P (the opposite, or negation of P)</PREMISE>
+        <CONCLUSION>Therefore M's argument A should not be accepted</CONCLUSION>
+      </FORM>
+      <CQ>Did M advocate A in a strong way indicating her personal commitment to P?</CQ>
+      <CQ>In what words was the action described, and does that description imply that M is personally committed to the opposite of P?</CQ>
+      <CQ>Why is the pragmatic inconsistency indicated by satisfactory answers to CQ1 and CQ2 a relevant reason for not accepting argument A?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Double Standard </NAME>
+      <FORM>
+        <PREMISE>The respondent has one policy with respect to X</PREMISE>
+        <PREMISE>The respondent has another (different) policy with respect to Y</PREMISE>
+        <PREMISE>X is similar to Y (or comparable to Y in some relevant respect)</PREMISE>
+        <CONCLUSION>Therefore, the respondent is using a double standard</CONCLUSION>
+      </FORM>
+      <CQ>What is the respondent's policy with respect to X?</CQ>
+      <CQ>What is the respondent's policy with respect to Y?</CQ>
+      <CQ>How is the one policy different from the other?</CQ>
+      <CQ>How is X similar (or comparable) to Y?</CQ>
+      <CQ>Can the differences in policies be explained, or is it significant as evidence that the respondent's policies are not consistent in some important way?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Ethotic Argument </NAME>
+      <FORM>
+        <PREMISE> If x is a person of good (bad) moral character, then if x contends A, A should be accepted as more (less) plausible </PREMISE>
+        <PREMISE> M is a person of good (bad) moral character </PREMISE>
+        <CONCLUSION> If M contends A, A should be accepted as more (less) plausible </CONCLUSION>
+      </FORM>
+      <CQ> Is M a person of good moral character? </CQ>
+      <CQ> Is the question of M's character relevant, in the context of dialogue in the given case? </CQ>
+      <CQ> How strong a weight of presumption in favour of A is claimed, and is that strength warranted by the case? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Negative Ethotic Ad Hominem Argument (Generic Ad Hominem) </NAME>
+      <FORM>
+        <PREMISE>M is a person of bad character </PREMISE>
+        <CONCLUSION>Therefore M's argument A should not be accepted </CONCLUSION>
+      </FORM>
+      <CQ>Is the premise true (or well supported) that M is a person of bad character?</CQ>
+      <CQ>Is the issue of character relevant in the dialogue in which the argument was used? </CQ>
+      <CQ>Is the conclusion of the argument that A should be (absolutely) rejected even if other evidence to support A has been presented, or is the conclusion  merely (the relative claim) that A should be assigned a reduced weight of credibility, relative to the total body of evidence available?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Logical Inconsistency Ad Hominem Argument </NAME>
+      <FORM>
+        <PREMISE>M advocates argument A, which has proposition P as its conclusion</PREMISE>
+        <PREMISE>M is committed to proposition P (generally, or in virtue of what she said in the past)</PREMISE>
+        <PREMISE>M is committed to proposition non-P, which is the conclusion of the argument A that M presently advocates</PREMISE>
+        <PREMISE>Therefore M is a morally bad person</PREMISE>
+        <CONCLUSION>Therefore M's argument A should not be accepted</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Pragmatic Circumstantial Ad Hominem Argument </NAME>
+      <FORM>
+        <PREMISE>M advocates argument A, which has proposition P as its conclusion</PREMISE>
+        <PREMISE>M has carried out an action, or set of actions, that imply that M is personally committed to non-P (the opposite, or negation of P)</PREMISE>
+        <PREMISE>Therefore M is a morally bad person </PREMISE>
+        <CONCLUSION>Therefore M's argument A should not be accepted</CONCLUSION>
+      </FORM>
+      <CQ>What are the propositions alleged to be practically inconsistent, and are they practically inconsistent?</CQ>
+      <CQ>If the identified propositions are not practically (pragmatically) inconsistent, as things stand, are there at least some grounds for a claim of practical inconsistency that can be evaluated from the textual evidence of the discourse?</CQ>
+      <CQ>Even if there is not an explicit practical inconsistency, what is the connection between the pair of propositions alleged to be incon­sistent? </CQ>
+      <CQ>If there is a practical inconsistency that can be identified as the focus of the attack, how serious a flaw is it?  Could the apparent conflict be resolved or explained without destroying the consistency of the commitment in the dialogue?</CQ>
+      <CQ>Does it follow from a's inconsistent commitment that a is a morally bad person?</CQ>
+      <CQ>Is the conclusion the weaker claim that M's credibility is open to question or the stronger claim that the conclusion of A is false?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Guilt by Association </NAME>
+      <FORM>
+        <PREMISE>M is a member of, or is associated with group G who should be morally condemned</PREMISE>
+        <PREMISE>Therefore M is a morally bad person</PREMISE>
+        <CONCLUSION>Therefore M's argument A should not be accepted</CONCLUSION>
+      </FORM>
+      <CQ>What evidence is there that M is a member of G?  </CQ>
+      <CQ>If M was not a member of G, but was associated with G, how close was this association? </CQ>
+      <CQ>Is G a group that should be morally condemned?</CQ>
+      <CQ>Is it possible that even though M is a member of G, a group that ought to be condemned, M is not a bad person?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>The Situationally Disqualifying Ad Hominem Argument </NAME>
+      <FORM>
+        <PREMISE>In dialogue D, M advocates argument A, which has proposition P as its conclusion</PREMISE>
+        <PREMISE>M has certain features in his personal situation that make it inappropriate for him to make a dialectical contribution to D</PREMISE>
+        <PREMISE>Therefore, M is a morally bad person</PREMISE>
+        <CONCLUSION>Therefore, M's argument A should not be accepted</CONCLUSION>
+      </FORM>
+      <CQ>What features of M's personal situation make it inappropriate fro him to contribute to D?  </CQ>
+      <CQ>Do the features of M's situation cited give any good reason to make one conclude that it is inappropriate to contribute to D? </CQ>
+      <CQ>Could M's argument be worth considering on its merits, even though there is reason to think them inappropriate for D?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Bias </NAME>
+      <FORM>
+        <PREMISE> If an arguer M is biased, then it is less likely that M has taken the evidence on both sides of an issue into account in arriving at conclusion P </PREMISE>
+        <PREMISE> Arguer M is biased </PREMISE>
+        <CONCLUSION> It is less likely that M has taken the evidence on both sides of the issue into account </CONCLUSION>
+      </FORM>
+      <CQ> What is the context of dialogue, and in particular, is it a type of dialogue that requires a participant to take evidence on both sides of an issue into account? </CQ>
+      <CQ> What is the evidence for the charge that M is biased? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Bias Ad Hominem </NAME>
+      <FORM>
+        <PREMISE>Person M, the proponent of argument A, is biased</PREMISE>
+        <PREMISE>Person M's bias is a failure to honestly take part in a type of dialogue D, that A is part of</PREMISE>
+        <PREMISE>Therefore M is a morally bad person</PREMISE>
+        <CONCLUSION>Therefore A should not be given as much credibility as it would have without the bias</CONCLUSION>
+      </FORM>
+      <CQ>What is the evidence that M is biased?</CQ>
+      <CQ>If M is biased, is it a bad bias that is detrimental to M's honestly taking part in D, or a normal bias that is appropriate for the type of dialogue in which a was put forward? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Poisoning the Well Ad Hominem Argument </NAME>
+      <FORM>
+        <PREMISE>For every argument A in dialogue D, person M is biased</PREMISE>
+        <PREMISE>Person M's bias is a failure to honestly take part in a type of dialogue D, that A is part of</PREMISE>
+        <PREMISE>Therefore M is a morally bad person</PREMISE>
+        <CONCLUSION>Therefore A should not be given as much credibility as it would have without the bias</CONCLUSION>
+      </FORM>
+      <CQ>What is the evidence that M has been biased with respect to every argument in the dialogue?  </CQ>
+      <CQ>Is the bias a normal partisan viewpoint that M has shown, or can it be shown to indicate that M is not honestly participating in the dialogue?</CQ>
+      <CQ>In what respect is M a bad person, judging from the evidence of his participation in the dialogue that gives a reason for doubting his credibility?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Poisoning the Well by alleging Group Bias </NAME>
+      <FORM>
+        <PREMISE>Person M has argued for a thesis A </PREMISE>
+        <PREMISE>But M belongs to or is affiliated with group G</PREMISE>
+        <PREMISE>It is known that group G is a special-interest partisan group that takes up a biased (dogmatic, prejudiced, fanatical) quarrelling attitude in pushing exclusively for its own point of view</PREMISE>
+        <CONCLUSION>Therefore, one cannot engage in open-minded critical discussion of an issue with any members of G, and hence the arguments of M for A are not worth listening to or paying attention to in a critical discussion </CONCLUSION>
+      </FORM>
+      <CQ>Has M given any good reasons to support A?  </CQ>
+      <CQ>What kind of bias has M exhibited, and how strong is it?</CQ>
+      <CQ>Is it the kind of bias that M has exhibited a good reason for concluding that he is not honestly and collaboratively taking part in the dialogue?</CQ>
+      <CQ>Is there evidence of a dialectical shift in the case, for example, from a persuasion dialogue to a negotiation?</CQ>
+      <CQ>Is the bias indicated in CQ2 of the very strong type that warrants the conclusion that M is not open to any argumentation that goes against his position (or seems to him to go against his position)?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Two Wrongs Ad Hominem</NAME>
+      <FORM>
+        <PREMISE>Respondent, you have committed some morally blameworthy action (and the specific action is then cited)</PREMISE>
+        <CONCLUSION>Proponent, you are just as bad, for you also committed a morally blameworthy action (then cited, generally a different type of action from the one cited by the proponent but comparable in respect of being blameworthy). Therefore, you are a bad person, and your argument against me should not be accepted as having any worth</CONCLUSION>
+      </FORM>
+      <CQ>Is there evidence to support the proponent's allegation that the respondent committed to a blameworthy act?</CQ>
+      <CQ>If the answer to CQ1 is yes, then should the respondent's counteraccusation be rated as very credible?</CQ>
+      <CQ>Is the respondent's counteraccusation relevant in the dialogue to the proponent's original allegation?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Tu Quoque</NAME>
+      <FORM>
+        <PREMISE>Respondent, you are a morally bad person (because you have bad character, are circumstantially inconsistent, biased, etc.), therefore your argument should not be accepted</PREMISE>
+        <CONCLUSION>Proponent, you are just as bad, therefore your ad hominem argument against me should not be accepted as having any worth</CONCLUSION>
+      </FORM>
+      <CQ>Is the proponent's ad hominem argument a strong one (according to the criteria for whatever type it is)?</CQ>
+      <CQ>Is the respondent's ad hominem a strong one (according to the criteria for whatever type it is)?</CQ>
+      <CQ>If the proponent's ad hominem argument is strong, how much credibility should be given to the respondent, as an honest arguer who can be trusted to make such an allegation?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Gradualism </NAME>
+      <FORM>
+        <PREMISE> Proposition A is true (acceptable to the respondent) </PREMISE>
+        <PREMISE> There is an intervening sequence of propositions, B1, B2, ..., Bn-1, Bn, C, such that the following conditionals are true: If A then B1; If B1 then B2; ...; If Bn-1 then Bn; If Bn then C </PREMISE>
+        <PREMISE> The conditional 'If A then C' is not, by itself, acceptable to the respondent (nor are any sequences from A to C shorter than the one specified in the second premise) </PREMISE>
+        <CONCLUSION> Proposition C is true (acceptable to the respondent) </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Slippery Slope Argument</NAME>
+      <FORM>
+        <PREMISE>S0 is up for consideration as a proposal that seems initially like something which should be brought about</PREMISE>
+        <PREMISE>Bringing about S0 would plausibly cause (in the given circumstances, as far as we know) S1, which would in turn plausibly cause S2, and so forth, through the sequence S2, S3... Sn (for some finite n)</PREMISE>
+        <PREMISE>Sn is not something which should be brought about (because it is horrible, undesirable, etc.)</PREMISE>
+        <CONCLUSION>S0 should not be brought about</CONCLUSION>
+      </FORM>
+      <CQ>Does the proponent's description of the initial action rightly express the proposal being advocated by the respondent?</CQ>
+      <CQ>Do any of the causal links in the chain lack sufficient evidence to back it up as a plausible claim? </CQ>
+      <CQ>Does this outcome plausibly follow from the sequence, and is it as bas as the proponent suggest?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Causal Slippery Slope Argument </NAME>
+      <FORM>
+        <PREMISE> A0 is up for consideration as a proposal that seems initially like something that should be brough about </PREMISE>
+        <PREMISE> Bringing about A0 would plausibly cause (in the given circumstance, as far as we know) A1, which would in turn plausibly cause A2, and so forth, through the sequence A2, ..., An </PREMISE>
+        <PREMISE> An is a horrible (disastrous, bad) outcome </PREMISE>
+        <CONCLUSION> A0 should not be brough about </CONCLUSION>
+      </FORM>
+      <CQ> Does the proponent's description of the initial action A0 rightly express the proposal being advocated by the respondent? </CQ>
+      <CQ> Do any of the causal links in the sequence lack solid evidence to back it up as a clausal claim? </CQ>
+      <CQ> Does this outcome plausibly follow from the sequence, and is it as bad as the proponent suggests? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Sorites Slippery Slope Argument </NAME>
+      <FORM>
+        <PREMISE>It is clearly beyond contention that a(k) has F</PREMISE>
+        <PREMISE>If a(k) has F, then a(k-1) has F</PREMISE>
+        <PREMISE>A sequence of modus ponens sub-arguments premise-set linking premises and conclusions from the clear area through the grey area</PREMISE>
+        <CONCLUSION>a(i) may have F, for all we know (or can prove)</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Full Slippery Slope Argument </NAME>
+      <FORM>
+        <PREMISE> Case C0 is tentatively acceptable as an initial presumption </PREMISE>
+        <PREMISE> There exists a series of cases, C0, C1, ..., C(n-1), where each case leads to the next by a combination of causal precedent, and/or analogy steps. </PREMISE>
+        <PREMISE> There is a climate of social opinion that once people come to accept each step as plausible (or as accepted practice), they will then be led to accept the next step. </PREMISE>
+        <PREMISE> The penultimate step C(n-1) leads to a horrible outcome, Cn, which is not acceptable. </PREMISE>
+        <CONCLUSION> C0 is not acceptable </CONCLUSION>
+      </FORM>
+      <CQ> What are the various subarguments or links that make up the intervening steps from C0 to Cn? </CQ>
+      <CQ> How strongly is the conclusion phrased, that is, what is the burden of proof in the dialogue? </CQ>
+      <CQ> Is evidence given to back up each of the subarguments, and is it strong enough to meet the requirements of burden of proof? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from an Established Rule </NAME>
+      <FORM>
+        <PREMISE> For all x, if doing AC is the established rule for x, then (subject to exceptional cases), x must do AC (subject to penalty) </PREMISE>
+        <PREMISE> Doing AC is the established rule for M </PREMISE>
+        <CONCLUSION> M must do AC (subject to penalty) </CONCLUSION>
+      </FORM>
+      <CQ> Is doing AC in fact what the rule states? </CQ>
+      <CQ> Does the rule doing AC apply in this case? </CQ>
+      <CQ> Is the rule "For all x, x must do AC" the right rule, or should some other rule be the right one? Could there be more than one rule involved, with some doubt on which is the more appropriate one? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from an Exceptional Case </NAME>
+      <FORM>
+        <PREMISE> For all x, if doing AC is the established rule for x, then if the case of x is an exception, the rule does not apply to the case of x </PREMISE>
+        <PREMISE> Doing AC is the established rule for M </PREMISE>
+        <PREMISE> The case of M is an exception </PREMISE>
+        <CONCLUSION> M need not do AC </CONCLUSION>
+      </FORM>
+      <CQ> Is the case of a a recognized type of exception? </CQ>
+      <CQ> If it is not a recognized case, can evidence why the establised rule does not apply to it be given? </CQ>
+      <CQ> If it is a borderline case, can comparable cases be cited? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argument from Precedent </NAME>
+      <FORM>
+        <PREMISE> The existing rule says that for all x, if x has property F then x has property G </PREMISE>
+        <PREMISE> But in this case C, a has property F, but does not have property G </PREMISE>
+        <CONCLUSION> The existing rule must be changed, qualified, given up, or a new rule must be introduced to cover case C </CONCLUSION>
+      </FORM>
+      <CQ> Does the existing rule really say that for all x, if x has F then x has G? </CQ>
+      <CQ> Is case C legitimate, or can it be explained awy as not really in violation of the existing rule? </CQ>
+      <CQ> Is case C an already recognized type of exception that does not require any change in the exsisting rule? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Precedent Slippery Slope Argument </NAME>
+      <FORM>
+        <PREMISE> Case C0 would set a precedent with respect to an existing rule R </PREMISE>
+        <PREMISE> Case C0 is similar to case C1, that is, if C0 is held to be an exception to R, then C1 must be held to be an exception too (in order to be consistent in treating equal cases alike). A sequence of similar pairs {Ci, Cj} binds us by case-to-case consistency to the series, C0, C1, ..., Cn </PREMISE>
+        <PREMISE> Having to accept case Cn as a precedent, or as a recgnized exception to R would be intolerable (horrid, bad) </PREMISE>
+        <CONCLUSION> Admitting case C0, or bringing it forward in the first place, is not a good thing to do </CONCLUSION>
+      </FORM>
+      <CQ> Would case C0 set a precedent? </CQ>
+      <CQ> What is the exact sequence of intervening steps in virtue of which case C0 would lead to Cn? </CQ>
+      <CQ> What is the evidence showing why each of these intervening steps would occur? </CQ>
+      <CQ> Is Cn intolerable, and if so why? </CQ>
+      <CQ> Which are the weakest of the intervening steps, and is the evidence backing them sufficient to warrant the strength of the claim made in the conclusion? </CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from contraries</NAME>
+      <FORM>
+        <PREMISE>A is the only alternative to B</PREMISE>
+        <PREMISE>Either A or B</PREMISE>
+        <PREMISE>Not A</PREMISE>
+        <CONCLUSION>Therefore B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>From Consequences Categorial</NAME>
+      <FORM>
+        <PREMISE>A has positive (negative) consequences relatively to the relevant point of view</PREMISE>
+        <PREMISE>What has positive (negative) consequences is good (bad)</PREMISE>
+        <CONCLUSION>A is good (bad)</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>The outlook was black for Assyria. Sin-shar-ishkum in desperation sought help from both  Scythians and Egyptians, but it was a vain hope. The Scythians double-crossed him.  (Mould 1966, 303-304)</TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="0">The outlook was black for Assyria.</PROPTEXT>
+      <INSCHEME scheme=" Argument from Cause to Effect " schid="0" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="E" missing="yes">
+          <PROPTEXT offset="-1">Assyria won't be helped</PROPTEXT>
+          <INSCHEME scheme=" Argument from Cause to Effect " schid="0" />
+          <INSCHEME scheme=" Argument from Example " schid="1" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="B" missing="no">
+              <PROPTEXT offset="35">Sin-shar-ishkum in desperation sought help from both  Scythians and Egyptians, but it was a vain hope. </PROPTEXT>
+              <INSCHEME scheme=" Argument from Example " schid="1" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="F" missing="yes">
+              <PROPTEXT offset="-1">Scythians were the more likely to provide Assyria with help </PROPTEXT>
+              <INSCHEME scheme=" Argument from Example " schid="1" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="C" missing="no">
+              <PROPTEXT offset="138">The Scythians double-crossed him. </PROPTEXT>
+              <INSCHEME scheme=" Argument from Example " schid="1" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="D" missing="yes">
+          <PROPTEXT offset="-1">The only means for Assyria to resist the invader is to receive help from some other country</PROPTEXT>
+          <INSCHEME scheme=" Argument from Cause to Effect " schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>Fabri</AUTHOR>
+    <DATE>2004-09-21</DATE>
+    <SOURCE />
+    <COMMENTS />
+  </EDATA>
+</ARG>

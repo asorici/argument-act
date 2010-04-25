@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>Mr Obama has shifted Washington's stance because it is the sensible thing to do and because he has the domestic political space to do it. The end of the cold war has relegated Cuba from a global flashpoint to a Caribbean curiosity. US opinion is no longer spooked by Cuba - a poll this month showed that 71% of Americans back the restoration of diplomatic relations. Even Cuban-Americans, whose concentration in the battleground state of Florida gave them so much leverage over US policy for so long, seem to be softening their views too; last year, for the first time in memory, pollsters found a majority in favour of scrapping the once totemic US embargo. Now a bipartisan report this week by the Brookings Institution calls for a new policy of "critical and constructive engagement", to be phased in unilaterally.&#13;
+</TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="91"> he has the domestic political space to do it.</PROPTEXT>
+      <INSCHEME scheme="Argument from Causal Law" schid="0"/>
+      <INSCHEME scheme="Argument from Causal Law" schid="1"/>
+      <INSCHEME scheme="Argument from Causal Law" schid="5"/>
+      <ROLE class="wigmoreFact" element="none"/>
+      <ROLE class="addedNegation" element="no"/>
+      <ROLE class="toulmin" element="data"/>
+      <ROLE class="wigmore" element="evidenceTestAffirm"/>
+      <TUTOR end="0" start="0"/>
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="B" missing="no">
+          <PROPTEXT offset="138">The end of the cold war has relegated Cuba from a global flashpoint to a Caribbean curiosity. </PROPTEXT>
+          <INSCHEME scheme="Argument from Causal Law" schid="0"/>
+          <ROLE class="wigmoreFact" element="none"/>
+          <ROLE class="addedNegation" element="no"/>
+          <ROLE class="toulmin" element="data"/>
+          <ROLE class="wigmore" element="evidenceTestAffirm"/>
+          <TUTOR end="0" start="0"/>
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="H" missing="yes">
+          <PROPTEXT offset="-1">Politicians have much freedom in devising policy regarding local curiosities.</PROPTEXT>
+          <INSCHEME scheme="Argument from Causal Law" schid="0"/>
+          <ROLE class="wigmoreFact" element="none"/>
+          <ROLE class="addedNegation" element="no"/>
+          <ROLE class="toulmin" element="warrant"/>
+          <ROLE class="wigmore" element="evidenceTestAffirm"/>
+          <TUTOR end="0" start="0"/>
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="C" missing="no">
+          <PROPTEXT offset="232">US opinion is no longer spooked by Cuba</PROPTEXT>
+          <INSCHEME scheme="Argument from Causal Law" schid="1"/>
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="2"/>
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3"/>
+          <ROLE class="wigmoreFact" element="none"/>
+          <ROLE class="addedNegation" element="no"/>
+          <ROLE class="toulmin" element="data"/>
+          <ROLE class="wigmore" element="evidenceTestAffirm"/>
+          <TUTOR end="0" start="0"/>
+        </PROP>
+        <CA>
+          <AU>
+            <PROP identifier="D" missing="no">
+              <PROPTEXT offset="274">a poll this month showed that 71% of Americans back the restoration of diplomatic relations. </PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="2"/>
+              <ROLE class="wigmoreFact" element="none"/>
+              <ROLE class="addedNegation" element="no"/>
+              <ROLE class="toulmin" element="data"/>
+              <ROLE class="wigmore" element="evidenceTestAffirm"/>
+              <TUTOR end="0" start="0"/>
+            </PROP>
+          </AU>
+        </CA>
+        <LA>
+          <AU>
+            <PROP identifier="J" missing="yes">
+              <PROPTEXT offset="-1">If Cuban-Americans do not hold strong views on US policy on Cuba, US citizens in general probably do not have strong opinions on Cuba.</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3"/>
+              <ROLE class="wigmoreFact" element="none"/>
+              <ROLE class="addedNegation" element="no"/>
+              <ROLE class="toulmin" element="data"/>
+              <ROLE class="wigmore" element="evidenceTestAffirm"/>
+              <TUTOR end="0" start="0"/>
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="E" missing="no">
+              <PROPTEXT offset="367">Even Cuban-Americans, whose concentration in the battleground state of Florida gave them so much leverage over US policy for so long, seem to be softening their views too</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3"/>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="4"/>
+              <ROLE class="wigmoreFact" element="none"/>
+              <ROLE class="addedNegation" element="no"/>
+              <ROLE class="toulmin" element="warrant"/>
+              <ROLE class="wigmore" element="evidenceTestAffirm"/>
+              <TUTOR end="0" start="0"/>
+            </PROP>
+            <CA>
+              <AU>
+                <PROP identifier="F" missing="no">
+                  <PROPTEXT offset="539">last year, for the first time in memory, pollsters found a majority in favour of scrapping the once totemic US embargo.</PROPTEXT>
+                  <INSCHEME scheme="Probabilifying Conveyance Argument" schid="4"/>
+                  <ROLE class="wigmoreFact" element="none"/>
+                  <ROLE class="addedNegation" element="no"/>
+                  <ROLE class="toulmin" element="data"/>
+                  <ROLE class="wigmore" element="evidenceTestAffirm"/>
+                  <TUTOR end="0" start="0"/>
+                </PROP>
+              </AU>
+            </CA>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="I" missing="yes">
+          <PROPTEXT offset="-1">Politicians have much freedom in devising policy regarding issues which do not spook their electorate.</PROPTEXT>
+          <INSCHEME scheme="Argument from Causal Law" schid="1"/>
+          <ROLE class="wigmoreFact" element="none"/>
+          <ROLE class="addedNegation" element="no"/>
+          <ROLE class="toulmin" element="warrant"/>
+          <ROLE class="wigmore" element="evidenceTestAffirm"/>
+          <TUTOR end="0" start="0"/>
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="G" missing="no">
+          <PROPTEXT offset="659">Now a bipartisan report this week by the Brookings Institution calls for a new policy of "critical and constructive engagement", to be phased in unilaterally.&#13;</PROPTEXT>
+          <INSCHEME scheme="Argument from Causal Law" schid="5"/>
+          <ROLE class="wigmoreFact" element="none"/>
+          <ROLE class="addedNegation" element="no"/>
+          <ROLE class="toulmin" element="data"/>
+          <ROLE class="wigmore" element="evidenceTestAffirm"/>
+          <TUTOR end="0" start="0"/>
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="K" missing="yes">
+          <PROPTEXT offset="-1">The support of a bipartisan, prestigious, expert organization shields a politician from controversy.</PROPTEXT>
+          <INSCHEME scheme="Argument from Causal Law" schid="5"/>
+          <ROLE class="wigmoreFact" element="none"/>
+          <ROLE class="addedNegation" element="no"/>
+          <ROLE class="toulmin" element="warrant"/>
+          <ROLE class="wigmore" element="evidenceTestAffirm"/>
+          <TUTOR end="0" start="0"/>
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>jos</AUTHOR>
+    <DATE>2009-04-15</DATE>
+    <SOURCE>'The Guardian' newspaper, UK -
+Part of an Editorial, Wednesday 15 April 2009. </SOURCE>
+    <COMMENTS/>
+  </EDATA>
+</ARG>

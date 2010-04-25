@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>But the public has never been allowed in jury rooms, and with good reason. Jurors are not government officials, and do not perform a representational function. Being a juror is more akin to voting, a civic duty that occurs in private. Like voters in an exit poll, jurors ought to be free to speak afterward about their deliberations, but they are not obligated to.  Televising jury deliberations will skew the composition of juries by removing people who do not want to reach a verdict - and in this case, possibly impose the death penalty - on a public stage. So far at least 14 out of 110 prospective jurors in Mr. Harrison's case have been excused for reasons related to the presence of cameras. These jurors may be precisely the ones best suited to serve.  Allowing cameras in the jury room would also harm the deliberative process. Jurors, especially less educated and articulate ones, may be wary of speaking out if they know they are being judged by an audience at home. They may be more reluctant to question the credibility of a witness, or to take an unpopular stand, like holding out for an acquittal, or against the death penalty. It is no answer that, at least in this case, the defendant's lawyers have agreed to the process. A defendant's lawyers cannot waive his right to a trial that conforms with the Constitution. And in any case, society as a whole has an interest in the justice system operating fairly.    </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="4">the public has never been allowed in jury rooms, and with good reason</PROPTEXT>
+      <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+      <INSCHEME scheme="Argument from the Constitution of Properties" schid="1" />
+      <INSCHEME scheme="Argument from the Constitution of Properties" schid="2" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="F" missing="no">
+          <PROPTEXT offset="761">Allowing cameras in the jury room would also harm the deliberative process.</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="1" />
+          <INSCHEME scheme="Argument from the Constitution of Causal Laws" schid="3" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="G" missing="no">
+              <PROPTEXT offset="837">Jurors, especially less educated and articulate ones, may be wary of speaking out if they know they are being judged by an audience at home. They may be more reluctant to question the credibility of a witness, or to take an unpopular stand, like holding out for an acquittal, or against the death penalty. </PROPTEXT>
+              <INSCHEME scheme="Argument from the Constitution of Causal Laws" schid="3" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="I" missing="yes">
+              <PROPTEXT offset="-1">If Jurors may be more reluctant to speak out in front of cameras, then if cameras are allowed into the jury room, the deliberative process will be harmed</PROPTEXT>
+              <INSCHEME scheme="Argument from the Constitution of Causal Laws" schid="3" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="M" missing="yes">
+          <PROPTEXT offset="-1">If a Judge's action would harm the deliberative process of the jury, that is a reason not to carry out the action.</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="1" />
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="C" missing="no">
+          <PROPTEXT offset="366">Televising jury deliberations will skew the composition of juries by removing people who do not want to reach a verdict - and in this case, possibly impose the death penalty - on a public stage</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="4" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="J" missing="yes">
+              <PROPTEXT offset="-1">Telivising Mr. Harrison's case has skewed the jury by removing people who do not want to reach a verdict on a public stage.</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="4" />
+              <INSCHEME scheme="Argument from the Constitution of Properties" schid="5" />
+            </PROP>
+            <LA>
+              <AU>
+                <PROP identifier="K" missing="yes">
+                  <PROPTEXT offset="-1">If one removes all those who do not want to reach a verdict on a public stage from a jury and these people may be precisely the ones best suited to serve, its composition will thus be skewed.</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Properties" schid="5" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="E" missing="no">
+                  <PROPTEXT offset="561">So far at least 14 out of 110 prospective jurors in Mr. Harrison's case have been excused for reasons related to the presence of cameras.</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Properties" schid="5" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="D" missing="no">
+                  <PROPTEXT offset="699">These jurors may be precisely the ones best suited to serve</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Properties" schid="5" />
+                </PROP>
+              </AU>
+            </LA>
+          </AU>
+          <AU>
+            <PROP identifier="O" missing="yes">
+              <PROPTEXT offset="-1">If televising Mr. Harrison's case has skewed the jury by removing people who do not want to reach a verdict on a public stage, it is likely that televising jury deliberations in the future will have the same effect</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="4" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="N" missing="yes">
+          <PROPTEXT offset="-1">If a Judge's action would skew the composition of the jury, that is a reason not to carry out the action.</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="Q" missing="yes">
+          <PROPTEXT offset="-1">Those who fulfill the role of jurors are entitled to privacy in doing so</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="2" />
+          <INSCHEME scheme="Argument from the Constitution of Positive Normative Facts" schid="6" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="B" missing="no">
+              <PROPTEXT offset="75">Jurors are not government officials, and do not perform a representational function. Being a juror is more akin to voting, a civic duty that occurs in private. Like voters in an exit poll, jurors ought to be free to speak afterward about their deliberations, but they are not obligated to.</PROPTEXT>
+              <INSCHEME scheme="Argument from the Constitution of Positive Normative Facts" schid="6" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="H" missing="yes">
+              <PROPTEXT offset="-1">If a civic duty is not representational, those who fulfill it are entitled to privacy in doing so.</PROPTEXT>
+              <INSCHEME scheme="Argument from the Constitution of Positive Normative Facts" schid="6" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="P" missing="yes">
+          <PROPTEXT offset="-1">If those who fulfill a duty are entitled to privacy in doing so, there is a reason not to take this privacy away from them</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="2" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>lmciver</AUTHOR>
+    <DATE>2004-07-19</DATE>
+    <SOURCE>The New York Times, Editorial/Op-Ed, "The 13th Juror", 27 November 2002.</SOURCE>
+    <COMMENTS>Although the brevity of the text suggests that doing so is not warranted, it is possible to analyse further the argument from J and O to C. For example, it might be tempting to view the argument as proceeding from the statement that televising Mr. Harrison's case skewed the jury, i.e. from J, to a causal law stating that televising cases skews the jury, and then as inferring from this law to the conclusion that future televised cases will skew juries.</COMMENTS>
+  </EDATA>
+</ARG>

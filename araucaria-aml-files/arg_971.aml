@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+<?Araucaria UTF-8?>
+<SCHEMESET>
+<SCHEME>
+<NAME>Probabilifying Conveyance Argument</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>If A, then A makes B probable</PREMISE>
+<CONCLUSION>B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Sameness of Meaning</NAME>
+<FORM>
+<PREMISE>"A" means the same as "B"</PREMISE>
+<PREMISE>A</PREMISE>
+<CONCLUSION>B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from Singular Cause</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>If A, then A causes B</PREMISE>
+<CONCLUSION>B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument to Common Cause</NAME>
+<FORM>
+<PREMISE>A is similar to B</PREMISE>
+<PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+<PREMISE>C caused A</PREMISE>
+<CONCLUSION>C caused both A and B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Class-Membership Argument</NAME>
+<FORM>
+<PREMISE>A is an F</PREMISE>
+<PREMISE>All Fs are members of the class of Gs</PREMISE>
+<CONCLUSION>A is a G</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from Species to Genus</NAME>
+<FORM>
+<PREMISE>A is a G</PREMISE>
+<PREMISE>Gs are a species of F</PREMISE>
+<CONCLUSION>A is an F</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument to Singular Cause</NAME>
+<FORM>
+<PREMISE>If A, then A is an effect of B</PREMISE>
+<PREMISE>A</PREMISE>
+<CONCLUSION>B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from Numerical Identity</NAME>
+<FORM>
+<PREMISE>A is numerically identical to B</PREMISE>
+<PREMISE>A is F</PREMISE>
+<CONCLUSION>B is F</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from Causal Law</NAME>
+<FORM>
+<PREMISE>Facts of type F cause facts of type G</PREMISE>
+<PREMISE>A is a fact of type F</PREMISE>
+<CONCLUSION>Something is a G</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Concrete Facts.</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+<CONCLUSION>B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Properties</NAME>
+<FORM>
+<PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+<PREMISE>A</PREMISE>
+<CONCLUSION>B is F</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+<FORM>
+<PREMISE>B</PREMISE>
+<PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+<CONCLUSION>A ought to be the case</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Causal Laws</NAME>
+<FORM>
+<PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+<PREMISE>A</PREMISE>
+<CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from Implication</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>"A" logically implies "B"</PREMISE>
+<CONCLUSION>B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+<CONCLUSION>B should not be the case</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Constitution Facts</NAME>
+<FORM>
+<PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+<PREMISE>A</PREMISE>
+<CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Necessary Conditions</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+<CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Possibilities</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+<CONCLUSION>It is possible that B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+<FORM>
+<PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+<PREMISE>A</PREMISE>
+<CONCLUSION>If B, B will cause C</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+<FORM>
+<PREMISE>C</PREMISE>
+<PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+<CONCLUSION>A causes B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Kind Instance</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+<CONCLUSION>There is a thing of kind F</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from Whole to Part</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>If A, then B is a part of A </PREMISE>
+<CONCLUSION>B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from Non-Causal Law</NAME>
+<FORM>
+<PREMISE>A is an F</PREMISE>
+<PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+<CONCLUSION>A is a G</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from the Constitution of Impossibilities</NAME>
+<FORM>
+<PREMISE>A</PREMISE>
+<PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+<CONCLUSION>It is not possible that B</CONCLUSION>
+</FORM>
+</SCHEME>
+<SCHEME>
+<NAME>Argument from Part to Whole</NAME>
+<FORM>
+<PREMISE>If A, then A is a part of B</PREMISE>
+<PREMISE>A</PREMISE>
+<CONCLUSION>B</CONCLUSION>
+</FORM>
+</SCHEME>
+</SCHEMESET>
+<TEXT>...scientists do not draw conclusions based on superficial resemblance. Sometimes organisms that are similar are not closely related (dolphins and sharks) and organisms that are on the surface very dissimilar (hyraxes and elephants, cetaceans and hippos) are closely related. Hyraxes or dassies, there are many other species than just Procavia capensis, have specific anatomical traits only found in elephants. How would you scientifically explain this observation? This is an excellent argument against similarity due to common design since the two organisms share many detailed antomical similarites but lead totally different lifestyles. In your language they are similar yet designed for different lifestyles. Common descent is a scientific hypothesis that can account for both similarites and differences through the principle of descent with modification, independent creation can not.    Herm  </TEXT>
+<AU>
+<PROP identifier="B" missing="no">
+<PROPTEXT offset="496">against similarity due to common design</PROPTEXT>
+<INSCHEME scheme="Argument from Non-Causal Law" schid="0"/>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+</PROP>
+<LA>
+<AU>
+<PROP identifier="A" missing="no">
+<PROPTEXT offset="542">the two organisms share many detailed antomical similarites but lead totally different lifestyles.</PROPTEXT>
+<INSCHEME scheme="Argument from Non-Causal Law" schid="0"/>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+</PROP>
+</AU>
+<AU>
+<PROP identifier="C" missing="yes">
+<PROPTEXT offset="-1">If two organisms share many detailed anatomical similarities but lead totally different lifestiles, their similarity is not due to common design</PROPTEXT>
+<INSCHEME scheme="Argument from Non-Causal Law" schid="0"/>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="warrant"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+</PROP>
+</AU>
+</LA>
+</AU>
+<EDATA>
+<AUTHOR>davidclarke</AUTHOR>
+<DATE>2007-01-31</DATE>
+<SOURCE>Christian Apologetics &amp; Research Ministry, Boards, Topic: Evolution, Topic #14571, "The closest relative to the elephant," by Herm, 11-08-03.</SOURCE>
+<COMMENTS>a. We assume that the conclusion given in B is that the similarity of these two organisms is not due to common design. One could also attempt to analyse the text as offering an argument for the broader claim that similarity is, in general, not due to common design.
+b. The statement, 'if two organism share many detailed anatomical similarities but lead totally different lifestyles, their similarity is not designed' is a non-causal law. At the same time, it is plausible to suppose that this non-causal law is supposed to obtain in virtue of a causal law, namely that if organisms are designed to be similar, they have similar lifestyles.</COMMENTS>
+</EDATA>
+</ARG>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+<?Araucaria UTF-8?>
+<SCHEMESET>
+<SCHEME>
+<NAME>dfvgddd</NAME>
+<FORM>
+<PREMISE>sdffggdfg</PREMISE>
+<PREMISE>sdfg</PREMISE>
+<CONCLUSION>sdgdfgsdgd</CONCLUSION>
+</FORM>
+<CQ>sdgdfg</CQ>
+<CQ>ddsg</CQ>
+</SCHEME>
+</SCHEMESET>
+<TEXT>Vice Chancellor Brown has claimed that semesterisation would lead to a reduced workload for staff, more flexibility for students, and simpler administration for the university. It seems to me, however, that semesterisation is going to involve an enormous amount of work and should be avoided at all costs.
+</TEXT>
+<AU>
+<PROP identifier="D" missing="no">
+<PROPTEXT offset="235">involve an enormous amount of work a</PROPTEXT>
+<OWNER name=" xvcvbb"/>
+<INSCHEME scheme="dfvgddd" schid="0"/>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="A" missing="no">
+<PROPTEXT offset="8">ncellor Brown has claimed that semesterisation </PROPTEXT>
+<OWNER name=" xvcvbb"/>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="C" missing="no">
+<PROPTEXT offset="67">o a reduced workload for staff, mor</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+</AU>
+</CA>
+<CA>
+<AU>
+<PROP identifier="B" missing="no">
+<PROPTEXT offset="119"> students, and simpler administration for the university. It seems to me,</PROPTEXT>
+<INSCHEME scheme="dfvgddd" schid="0"/>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+</AU>
+<EDATA>
+<AUTHOR>duncanhello</AUTHOR>
+<DATE>2006-06-22</DATE>
+<SOURCE></SOURCE>
+<COMMENTS></COMMENTS>
+</EDATA>
+</ARG>

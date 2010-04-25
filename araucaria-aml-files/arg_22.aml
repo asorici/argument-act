@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>1. The police were first alerted that something out of the ordinary had occurred when they received a telephone call from the appellant. The call was logged at 3.36 a.m. but there was evidence that made clear that it must have been at least 10 minutes earlier. The caller was the appellant and having given his name and address he said:   "You've got to help me. My father has rang me and said "Please come over. Your sister has gone crazy and has got the gun." Then the line went dead."  He went on to say that his sister had a history of psychiatric illness and he confirmed that there were guns at his father's house, which was White House Farm, Tolleshunt D'Arcy in Essex. The telephonist contacted the Police Information Room and a police car was despatched to the father's address. The appellant was asked to meet the police there.  2. When the police attended at the farm, they were joined by the appellant. There was no sound from the farm save for the barking of a dog and fearing that they might be in a hostage situation the police decided to wait until daylight. At about 7.45 a.m., armed officers entered the farm and found all 5 occupants dead from gunshot wounds. Mr. Bamber lay dead in the kitchen, his wife was dead on the floor in her bedroom, the boys were dead in their bed and Sheila Caffell was lying on the floor of the same room as her mother. Across her chest and pointing up at her neck, through which the wounds that had killed her had been fired, was the rifle used to shoot all five members of the family. Beside her body lay a Bible. The scene certainly gave the appearance that Sheila Caffell had shot herself, and the likelihood that this was the case was reinforced by information given to the police by the appellant.    </TEXT>
+  <AU>
+    <PROP identifier="H" missing="yes">
+      <PROPTEXT offset="-1">There is an increased likelihood that Sheila Cafell shot herself</PROPTEXT>
+      <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="D" missing="yes">
+          <PROPTEXT offset="-1">There is a likelihood that Sheila Cafell shot herself</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="1" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="C" missing="no">
+              <PROPTEXT offset="1564">The scene certainly gave the appearance that Sheila Caffell had shot herself</PROPTEXT>
+              <INSCHEME scheme="Argument from the Constitution of Properties" schid="1" />
+              <INSCHEME scheme="Argument from the Constitution of Concrete Facts." schid="2" />
+            </PROP>
+            <LA>
+              <AU>
+                <PROP identifier="B" missing="no">
+                  <PROPTEXT offset="1075">At about 7.45 a.m., armed officers entered the farm and found all 5 occupants dead from gunshot wounds. Mr. Bamber lay dead in the kitchen, his wife was dead on the floor in her bedroom, the boys were dead in their bed and Sheila Caffell was lying on the floor of the same room as her mother. Across her chest and pointing up at her neck, through which the wounds that had killed her had been fired, was the rifle used to shoot all five members of the family. Beside her body lay a Bible. </PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Concrete Facts." schid="2" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="F" missing="yes">
+                  <PROPTEXT offset="-1">If her body was found to have the murder weapon and found to have it directed at the wounds that killed her, and if there were no observations to suggest that anyone else had killed her, it certainly appears that she did it.</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Concrete Facts." schid="2" />
+                </PROP>
+              </AU>
+            </LA>
+          </AU>
+          <AU>
+            <PROP identifier="G" missing="yes">
+              <PROPTEXT offset="-1">If some event appears to be the case, there is a likelihood that it is the case.</PROPTEXT>
+              <INSCHEME scheme="Argument from the Constitution of Properties" schid="1" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="E" missing="yes">
+          <PROPTEXT offset="-1">If available testimony is that some event occured and there already is a likelihood that it occured, there is an increased likelihood that it occured.</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="A" missing="no">
+          <PROPTEXT offset="261">The caller was the appellant and having given his name and address he said:   "You've got to help me. My father has rang me and said "Please come over. Your sister has gone crazy and has got the gun." Then the line went dead."  He went on to say that his sister had a history of psychiatric illness and he confirmed that there were guns at his father's house, which was White House Farm, Tolleshunt D'Arcy in Essex.</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>Mark</AUTHOR>
+    <DATE>2003-09-05</DATE>
+    <SOURCE>England and Wales Court Service, Court of Appeal (Criminal Division), Judgment, Reference by the criminal case review commission under section 9 of the criminal appeal act 1995, 12 December 2002. Cite: [2002]WECA Crim 2912.</SOURCE>
+    <COMMENTS>The argument from B and F to c could be further classified as a type of argument from the constitution of concrete facts (and not merely as an argument from the constitution of concrete facts). If appearances are correctly classified as entities, it could be classified as an argument from the constitution of (kinds of) things. If, by contrast, appearances are modifications of things, it could be classified as an argument from the constitution of properties.</COMMENTS>
+  </EDATA>
+</ARG>

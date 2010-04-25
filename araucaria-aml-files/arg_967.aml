@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+<?Araucaria UTF-8?>
+<SCHEMESET/>
+<TEXT>this contains lots of stuff&#13;
+well not yet but it will.&#13;
+total crap likes.&#13;
+&#13;
+A bird is not a plane&#13;
+a plane is an efficient method of transport.&#13;
+to have good transport you should buy a plane.</TEXT>
+<AU>
+<PROP identifier="E" missing="no">
+<PROPTEXT offset="147">o have good transport you should buy a plane.</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="D" missing="no">
+<PROPTEXT offset="100">a plane is an efficient method of transport.&#13;</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="C" missing="no">
+<PROPTEXT offset="77">A bird is not a plane&#13;</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+</AU>
+</CA>
+<LA>
+<AU>
+<PROP identifier="B" missing="no">
+<PROPTEXT offset="29">well not yet but it will.&#13;</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="F" missing="yes">
+<PROPTEXT offset="-1">this is an amazing missing premise</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+</AU>
+<AU>
+<PROP identifier="A" missing="no">
+<PROPTEXT offset="1">his contains lots of stuff&#13;</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="warrant"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</LA>
+</AU>
+<EDATA>
+<AUTHOR>SteveTheTester</AUTHOR>
+<DATE>2006-06-11</DATE>
+<SOURCE>Using this for testing</SOURCE>
+<COMMENTS>Testing text</COMMENTS>
+</EDATA>
+</ARG>

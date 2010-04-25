@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>Yet, if the carriers are not built and properly equipped, a shadow will fall over the whole of Britain's defence capability. It will not only be the Royal Navy that will be threatened with descent into decline. It will be the Army and the Royal Air Force as well.   First, the Services' ability to mount independent operations will be compromised. The Army will not be able to undertake missions at a distance from the home base, because it will not have the air cover essential to its operability. The same goes for the Royal Air Force. It cannot acquire land bases from which to operate outside the home area unless the Navy can provide cover while it does so.   Second, Britain's military standing with America, currently so high, will suffer unless it can maintain some sort of equivalence with the American military machine, now so preponderant.  The Pentagon, while expressing its appreciation of British combat skills, already qualifies its admiration. The British forces, it says, compensate for technical deficiencies by human achievement. It is likely to become less complimentary if Britain falls technically further behind.   Finally, to touch a matter close to the Prime Minister's heart, Britain is at present enjoying an artificial military superiority over its European partners. The bigger EU states - France, Italy, Spain and now Germany - are professionalising their armed forces. They are also bracing themselves to accept higher levels of defence spending.     </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="4"> if the carriers are not built and properly equipped, a shadow will fall over the whole of Britain's defence capability. It will not only be the Royal Navy that will be threatened with descent into decline. It will be the Army and the Royal Air Force as well. </PROPTEXT>
+      <INSCHEME scheme="Argument from the Constitution of Constitution Facts" schid="0" />
+      <INSCHEME scheme="Argument from the Constitution of Constitution Facts" schid="1" />
+      <INSCHEME scheme="Argument from the Constitution of Constitution Facts" schid="2" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="C" missing="no">
+          <PROPTEXT offset="673">Britain's military standing with America, currently so high, will suffer unless it can maintain some sort of equivalence with the American military machine, now so preponderant.  </PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Constitution Facts" schid="2" />
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="H" missing="yes">
+              <PROPTEXT offset="-1">If the Pentagon is already qualifying its admiration of British combat skills, it is likely to be less complimentary if Britain falls technically further behind</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="F" missing="no">
+              <PROPTEXT offset="852">The Pentagon, while expressing its appreciation of British combat skills, already qualifies its admiration. The British forces, it says, compensate for technical deficiencies by human achievement.</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="I" missing="yes">
+          <PROPTEXT offset="-1">If Britain's military standing with America will suffer unless it can maintain some sort of equivalence with the American military machine, then - if Britain does not build and properly equip the new carriers, a shadow will fall over its defence cabability</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Constitution Facts" schid="2" />
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="D" missing="no">
+          <PROPTEXT offset="1202">Britain is at present enjoying an artificial military superiority over its European partners. The bigger EU states - France, Italy, Spain and now Germany - are professionalising their armed forces. They are also bracing themselves to accept higher levels of defence spending.     </PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Constitution Facts" schid="1" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="J" missing="yes">
+          <PROPTEXT offset="-1">If the bigger EU states are professionalising their armed forces, then - if Britain does not build and properly equip the new carriers, a shadow will fall over its defence cababilities</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Constitution Facts" schid="1" />
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="B" missing="no">
+          <PROPTEXT offset="273">the Services' ability to mount independent operations will be compromised.</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Constitution Facts" schid="0" />
+          <INSCHEME scheme="Argument from the Sameness of Meaning" schid="4" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="Q" missing="yes">
+              <PROPTEXT offset="-1">The Navy's ability to mount independent operations will be compromised</PROPTEXT>
+              <INSCHEME scheme="Argument from the Sameness of Meaning" schid="4" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="G" missing="yes">
+              <PROPTEXT offset="-1">If the Army and the Royal Air Force will not be able to undertake missions at a distance and the Navy's ability to mount independent operations will be compromised, the Services' ability to mount independent operations will be compromised</PROPTEXT>
+              <INSCHEME scheme="Argument from the Sameness of Meaning" schid="4" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="E" missing="no">
+              <PROPTEXT offset="348">The Army will not be able to undertake missions at a distance from the home base</PROPTEXT>
+              <INSCHEME scheme="Argument from the Sameness of Meaning" schid="4" />
+              <INSCHEME scheme="Argument from the Constitution of Properties" schid="5" />
+            </PROP>
+            <LA>
+              <AU>
+                <PROP identifier="N" missing="yes">
+                  <PROPTEXT offset="-1">The Army cannot undertake missions at a distance without aircover essential to its operability</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Properties" schid="5" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="K" missing="no">
+                  <PROPTEXT offset="437"> it will not have the air cover essential to its operability</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Properties" schid="5" />
+                </PROP>
+              </AU>
+            </LA>
+          </AU>
+          <AU>
+            <PROP identifier="L" missing="no">
+              <PROPTEXT offset="499">The same goes for the Royal Air Force</PROPTEXT>
+              <INSCHEME scheme="Argument from the Sameness of Meaning" schid="4" />
+              <INSCHEME scheme="Argument from the Constitution of Properties" schid="6" />
+            </PROP>
+            <LA>
+              <AU>
+                <PROP identifier="M" missing="no">
+                  <PROPTEXT offset="538">It cannot acquire land bases from which to operate outside the home area unless the Navy can provide cover while it does so</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Properties" schid="6" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="O" missing="yes">
+                  <PROPTEXT offset="-1">If the Navy cannot offer the Air Force appropriate aircover at a distance, it cannot undertake missions at a distane</PROPTEXT>
+                  <INSCHEME scheme="Argument from the Constitution of Properties" schid="6" />
+                </PROP>
+              </AU>
+            </LA>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="P" missing="yes">
+          <PROPTEXT offset="-1">If the Services' ability to mount independent operations will be compromised, then - if Britain does not build and properly equip the new carriers, a shadow will fall over its defence cabability</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Constitution Facts" schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>Mark</AUTHOR>
+    <DATE>2003-09-05</DATE>
+    <SOURCE>The Daily Telegraph, Opinion, "Labour must keep its promise to build two new aircraft carriers" by John Keegan, 6-5-03.</SOURCE>
+    <COMMENTS>1. Premise Q is argued for in an earlier segment of the article.</COMMENTS>
+  </EDATA>
+</ARG>
