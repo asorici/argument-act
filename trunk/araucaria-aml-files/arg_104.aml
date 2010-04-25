@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>California 's law extends  the time in which prosecution is allowed,authorizes prosecutions  that the passage of time has previously barred,and was enacted after  prior limitations periods for Stogner ' s alleged offenses had expired.  Such features produce the kind of retroactivity that the Constitution  forbids.First,the law threatens the kinds of harm that the Clause  seeks to avoid,for the Clause protects liberty by preventing govern-  ments from enacting statutes with "manifestly unjust and oppressive "  retroactive effects.Calder v.Bull,3 Dall.386,391.Second,the law  falls literally within the categorical descriptions of ex post facto laws  that Justice Chase set forth more than 200 years ago in Calder v.  Bull,which this Court has recognized as an authoritative account of  the Clause 's scope,Collins v.Youngblood,497 U.S.37,46.It falls  within the second category,which Justice Chase understood to in-  clude a new law that inflicts punishments where the party was not,  by law,liable to any punishment.Third,numerous legislators,  courts,and commentators have long believed it well settled that the  Clause forbids resurrection of a time-barred prosecution.The Recon-  struction Congress of 1867 rejected a bill that would have revived  time-barred treason prosecutions against Jefferson Davis and others,  passing instead a law extending unexpired limitations periods.  Roughly contemporaneous State Supreme Courts echoed the view  that laws reviving time-barred prosecutions are ex post facto.Even  courts that have upheld extensions of unexpired statutes of limita-  tions have consistently distinguished situations where the periods  have expired ,often using language that suggests a presumption that  reviving time-barred criminal cases is not allowed.  </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="0">California 's law extends  the time in which prosecution is allowed,authorizes prosecutions  that the passage of time has previously barred,and was enacted after  prior limitations periods for Stogner ' s alleged offenses had expired.  Such features produce the kind of retroactivity that the Constitution  forbids</PROPTEXT>
+      <INSCHEME scheme="Class-Membership Argument" schid="0" />
+      <INSCHEME scheme="Class-Membership Argument" schid="1" />
+      <INSCHEME scheme="Class-Membership Argument" schid="2" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="B" missing="no">
+          <PROPTEXT offset="393">the Clause protects liberty by preventing govern-  ments from enacting statutes with "manifestly unjust and oppressive "  retroactive effects</PROPTEXT>
+          <INSCHEME scheme="Class-Membership Argument" schid="2" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="M" missing="yes">
+          <PROPTEXT offset="-1">the law's resurrection of time-barred prosecution threatens manifestly unjust and oppressive retroactive effects</PROPTEXT>
+          <INSCHEME scheme="Class-Membership Argument" schid="2" />
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="K" missing="yes">
+          <PROPTEXT offset="-1">The Clause bars time-barred prosecution</PROPTEXT>
+          <INSCHEME scheme="Class-Membership Argument" schid="1" />
+          <INSCHEME scheme="Argument to Singular Cause" schid="3" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="E" missing="no">
+              <PROPTEXT offset="1028">numerous legislators,  courts,and commentators have long believed it well settled that the  Clause forbids resurrection of a time-barred prosecution.</PROPTEXT>
+              <INSCHEME scheme="Argument to Singular Cause" schid="3" />
+              <INSCHEME scheme="Argument from Implication" schid="4" />
+            </PROP>
+            <LA>
+              <AU>
+                <PROP identifier="F" missing="no">
+                  <PROPTEXT offset="1177">The Recon-  struction Congress of 1867 rejected a bill that would have revived  time-barred treason prosecutions against Jefferson Davis and others,  passing instead a law extending unexpired limitations periods.</PROPTEXT>
+                  <INSCHEME scheme="Argument from Implication" schid="4" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="G" missing="no">
+                  <PROPTEXT offset="1415">State Supreme Courts echoed the view  that laws reviving time-barred prosecutions are ex post facto</PROPTEXT>
+                  <INSCHEME scheme="Argument from Implication" schid="4" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="D" missing="yes">
+                  <PROPTEXT offset="-1">If the Reconstruction Congress rejected a bill that would have revived  time-barred treason prosecutions, State Supreme Courts echoed the view that laws reviving time-barred prosecutions are ex post facto and even courts that have upheld extensions of unexpired statutes of limitations have consistently distinguished situations where periods have expired, then it follows that numerous legislators, courts and commentators have long believed it settled that the Ex Post Facto Clause forbids resurrection of a time barred prosecution.</PROPTEXT>
+                  <INSCHEME scheme="Argument from Implication" schid="4" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="H" missing="no">
+                  <PROPTEXT offset="1515">Even  courts that have upheld extensions of unexpired statutes of limita-  tions have consistently distinguished situations where the periods  have expired ,often using language that suggests a presumption that  reviving time-barred criminal cases is not allowed.  </PROPTEXT>
+                  <INSCHEME scheme="Argument from Implication" schid="4" />
+                </PROP>
+              </AU>
+            </LA>
+          </AU>
+          <AU>
+            <PROP identifier="I" missing="yes">
+              <PROPTEXT offset="-1">If numerous legislators, courts, and commentators have long believed it well settled that the Clause forbids resurrection of time-barred prosecution, the Clause bars time-barred prosecution</PROPTEXT>
+              <INSCHEME scheme="Argument to Singular Cause" schid="3" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="O" missing="yes">
+          <PROPTEXT offset="-1">This law allows time-barred prosecution</PROPTEXT>
+          <INSCHEME scheme="Class-Membership Argument" schid="1" />
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="C" missing="no">
+          <PROPTEXT offset="571">the law  falls literally within the categorical descriptions of ex post facto laws  that Justice Chase set forth more than 200 years ago in Calder v.  Bull</PROPTEXT>
+          <INSCHEME scheme="Class-Membership Argument" schid="0" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="J" missing="yes">
+          <PROPTEXT offset="-1">It is an accurate account of the Clause's scope</PROPTEXT>
+          <INSCHEME scheme="Class-Membership Argument" schid="0" />
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="5" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="Q" missing="no">
+              <PROPTEXT offset="727">which this Court has recognized as an authoritative account of  the Clause 's scope,Collins v.Youngblood,497 U.S.37,46</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="5" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="P" missing="yes">
+              <PROPTEXT offset="-1">If the Court recognizes a decision as authoritative, it is</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="5" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>Mark</AUTHOR>
+    <DATE>2003-09-05</DATE>
+    <SOURCE>United States Supreme Court, Stogner v. California, Slip Opinion, Docket No. 01-1757, 26-6-03.</SOURCE>
+    <COMMENTS />
+  </EDATA>
+</ARG>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>Planning permission for the bypass was granted by the Devon County Council in November 1999. In July 2000, the present orders were made under the Highways Act 1980 for the bridge and side roads, and under the Acquisition of Land Act 1981 for the compulsory purchase of land needed for the scheme. There were no statutory objections (that is, from owners of interests directly affected), but nine non-statutory objections. There was a public inquiry, which lasted five days in June 2001. The inspector's report (submitted in October 2001) ran to 61 pages, and dealt in detail with the many issues which had been raised. He was satisfied that there was a need for the bypass. He accepted the authority's case that Barnstaple suffered from "acute traffic congestion", which was a "restriction on the economic growth of the area", and that the proposed bypass was the only satisfactory solution. He rejected objections based on a number of grounds, including inadequacy of the authority's Economic Impact Study and Environmental Assessment, incompatibility with EC Directives, and adverse effects on public safety. Overall, he found that the "cumulative weight" of the arguments pointed to a "clear conclusion" in favour of the Council's case, and recommended confirmation of the orders. The Secretary of State generally accepted the inspector's conclusions and recommendations.  </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="1186">a "clear conclusion" in favour of the Council's case</PROPTEXT>
+      <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="B" missing="no">
+          <PROPTEXT offset="712">Barnstaple suffered from "acute traffic congestion", which was a "restriction on the economic growth of the area", and that the proposed bypass was the only satisfactory solution.</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="C" missing="no">
+          <PROPTEXT offset="895">rejected objections based on a number of grounds, including inadequacy of the authority's Economic Impact Study and Environmental Assessment, incompatibility with EC Directives, and adverse effects on public safety. </PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="D" missing="yes">
+          <PROPTEXT offset="-1">If Barnstable suffered from acute traffic congestion that was a restriction on the economic growth of the area and the proposed bypass was the only satisfactory solution, and if the authority's Economic Impact Study and Environmental Assessment was adequate, not incompatible with EC directives and had no adverse effects on public safety, then there was a clear conclusion for the Council's case for permitting a bypass.   </PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>lmciver</AUTHOR>
+    <DATE>2004-07-19</DATE>
+    <SOURCE>England &amp; Wales Court Service, In the Supreme Court of Judicature Court of Appeal, Civil Division [2003] EWCA Civ 1170, 31st July 2003. Between Anthony Brown (Appellant) and Secretary of State for Transport (Respondent).</SOURCE>
+    <COMMENTS />
+  </EDATA>
+</ARG>

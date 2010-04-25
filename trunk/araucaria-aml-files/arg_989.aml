@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+<?Araucaria UTF-8?>
+<SCHEMESET/>
+<TEXT>EU influence has fostered judicial independence in Romania. EU influence has overkilled the barriers to judicial independence in Romania (and elsewhere in Eastern Europe). EU has an agenda to raise up in the new Member States a supremacist judiciary. Under EU influence, check-and-balance mechanisms in the hands of the elected branches to control the judiciary have been removed. The Judicial Council has been formally removed from under the control of the Justice Ministry [practice?]. The powers of the General Prosecutor have been formally abolished [practice?]. [Formal institutions designed to secure the Judiciary s independence are informally gotten around in ways that have become routines]&#13;
+</TEXT>
+<AU>
+<PROP identifier="Wigmore_1" missing="no">
+<PROPTEXT offset="60">EU influence has overkilled the barriers to judicial independence in Romania (and elsewhere in Eastern Europe).</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="Wigmore_2" missing="no">
+<PROPTEXT offset="172">EU has an agenda to raise up in the new Member States a supremacist judiciary.</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="Wigmore_3" missing="no">
+<PROPTEXT offset="251">Under EU influence, check-and-balance mechanisms in the hands of the elected branches to control the judiciary have been removed.</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="Wigmore_5" missing="no">
+<PROPTEXT offset="488">The powers of the General Prosecutor have been formally abolished [practice?]. </PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+</AU>
+</CA>
+</AU>
+</CA>
+<CA>
+<AU>
+<PROP identifier="Wigmore_4" missing="no">
+<PROPTEXT offset="381">The Judicial Council has been formally removed from under the control of the Justice Ministry [practice?]. </PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="Wigmore_6" missing="yes">
+<PROPTEXT offset="-1">xxx</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+</AU>
+</CA>
+</AU>
+<EDATA>
+<AUTHOR>cparau</AUTHOR>
+<DATE>2009-07-08</DATE>
+<SOURCE></SOURCE>
+<COMMENTS></COMMENTS>
+</EDATA>
+</ARG>

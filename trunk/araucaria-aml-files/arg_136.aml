@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>As logical as the poverty-breeds-terrorism argument may seem, study after study shows that suicide attackers and their supporters are rarely ignorant or impoverished. Nor are they crazed, cowardly, apathetic or asocial. If terrorist groups relied on such maladjusted people, "they couldn't produce effective and reliable killers," according to Todd Stewart, a retired Air Force general who directs the Ohio State University program in international and domestic security.   In the suicide bombing of a cafe in Tel Aviv last week that killed three bystanders, for instance, the bomber and the man accused of being his accomplice grew up in Britain, in relatively prosperous circumstances, and attended college.   The Princeton economist Alan Krueger and others released a study in 2002 comparing Lebanese Hezbollah militants who died in violent action to other Lebanese of the same age group. He found that the Hezbollah members were less likely to come from poor homes and more likely to have a secondary school education.  Nasra Hassan, a Pakistani relief worker, interviewed nearly 250 aspiring Palestinian suicide bombers and their recruiters. "None were uneducated, desperately poor, simple-minded or depressed," she reported in 2001. "They all seemed to be entirely normal members of their families."  A 2001 poll by the nonprofit Palestinian Center for Policy and Survey Research indicated that Palestinian adults with 12 years or more of education are far more likely to support bomb attacks than those who cannot read.   Officials with the Army Defense Intelligence Agency who have interrogated Saudi-born members of Al Qaeda being detained at Guantanamo Bay, Cuba, have told me that these fundamentalists, especially those in leadership positions, are often educated above reasonable employment level; a surprising number have graduate degrees and come from high-status families. Their motivation and commitment are evident in their willingness to sacrifice material and emotional comforts (families, jobs, physical security), to travel long distances and to pay their own way. </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="62">study after study shows that suicide attackers and their supporters are rarely ignorant or impoverished</PROPTEXT>
+      <INSCHEME scheme="Argument from Implication" schid="0" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="F" missing="yes">
+          <PROPTEXT offset="-1">Krueger's study shows that suicide attackers and their supporters are rarely ignorant or impoverished.</PROPTEXT>
+          <INSCHEME scheme="Argument from Implication" schid="0" />
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="1" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="B" missing="no">
+              <PROPTEXT offset="712">The Princeton economist Alan Krueger and others released a study in 2002 comparing Lebanese Hezbollah militants who died in violent action to other Lebanese of the same age group. He found that the Hezbollah members were less likely to come from poor homes and more likely to have a secondary school education.</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="1" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="G" missing="yes">
+              <PROPTEXT offset="-1">If Alan Krueger's study shows that Lebanese Hezbollah members are less likely to be poor and more likely to have secondary education, his study shows that suicide attackers and their supporters are rarely ignorant or impoverished.</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="1" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="I" missing="yes">
+          <PROPTEXT offset="-1">Nasra Hassan's study shows that suicide attackers and their supporters are rarely ignorant or impoverished.</PROPTEXT>
+          <INSCHEME scheme="Argument from Implication" schid="0" />
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="2" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="C" missing="no">
+              <PROPTEXT offset="1024">Nasra Hassan, a Pakistani relief worker, interviewed nearly 250 aspiring Palestinian suicide bombers and their recruiters. "None were uneducated, desperately poor, simple-minded or depressed," she reported in 2001. "They all seemed to be entirely normal members of their families."</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="2" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="H" missing="yes">
+              <PROPTEXT offset="-1">If Nasra Hassan's study of almost 250 aspiring Palestinian suicide bombers and their recruiters shows that none were uneducated or desperately poor, her study shows that suicide attackers and their supporters are rarely ignorant or impoverished.</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="2" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="K" missing="yes">
+          <PROPTEXT offset="-1">Officials' interrogation of Suadi-born members of Al Qaeda shows that suicide attackers and their supporters are rarely ignorant or impoverished.</PROPTEXT>
+          <INSCHEME scheme="Argument from Implication" schid="0" />
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="J" missing="yes">
+              <PROPTEXT offset="-1">If Officials' interrogation of Suadi-born members of Al Qaeda shows that these members are often educated above reasonable employment level, that a surprising number of them have graduate degrees and come from high status families - then their study shows that suicide attackers and their supporters are rarely ignorant or impoverished.</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="E" missing="no">
+              <PROPTEXT offset="1529">Officials with the Army Defense Intelligence Agency who have interrogated Saudi-born members of Al Qaeda being detained at Guantanamo Bay, Cuba, have told me that these fundamentalists, especially those in leadership positions, are often educated above reasonable employment level; a surprising number have graduate degrees and come from high-status families. </PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="3" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="M" missing="yes">
+          <PROPTEXT offset="-1">The poll shows that suicide attackers and their supporters are rarely ignorant.</PROPTEXT>
+          <INSCHEME scheme="Argument from Implication" schid="0" />
+          <INSCHEME scheme="Probabilifying Conveyance Argument" schid="4" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="D" missing="no">
+              <PROPTEXT offset="1307">A 2001 poll by the nonprofit Palestinian Center for Policy and Survey Research indicated that Palestinian adults with 12 years or more of education are far more likely to support bomb attacks than those who cannot read.  </PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="4" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="L" missing="yes">
+              <PROPTEXT offset="-1">If a 2001 poll by the nonprofit Palestinian Center for Policy and Survey Research indicated that Palestinian adults with 12 or more years of education are far more likely to support bomb attacks than those who cannot read, the poll shows that suicide attackers and their supporters are rarely ignorant.</PROPTEXT>
+              <INSCHEME scheme="Probabilifying Conveyance Argument" schid="4" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="N" missing="yes">
+          <PROPTEXT offset="-1">If the studies of Kreuger, Hassan,  the Palestinian Center for Policy and Survey Research and the Army Defense Intelligence Agency show that suicide attackers and their supporters are rarely ignorant or impoverished, study after study shows this.</PROPTEXT>
+          <INSCHEME scheme="Argument from Implication" schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>lmciver</AUTHOR>
+    <DATE>2004-07-28</DATE>
+    <SOURCE>New York Times, Op-Ed Contributor, "Who Wants to be a Martyr?" by Scott Atran, 5-May-03.</SOURCE>
+    <COMMENTS>1. The inferences in each of the four probabilifying conveyance arguments can, in fact, be analysed as involving a series of steps. We have not done so as the brevity of the text does not warrant it.
+2. F, I, K and M describe the conclusions of the various studies that the author draws upon. However, M differs from the others in that it is merely about the lack of ignorance among suicide attackers and their supporters. It does not mention the absence of poverty. Nevertheless, the author does not, presumably for pragmatic reasons, differentiate between the support M offers for A and that which F, I and K offer.</COMMENTS>
+  </EDATA>
+</ARG>

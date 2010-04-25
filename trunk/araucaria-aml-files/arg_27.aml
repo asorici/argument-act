@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>In considering the intention of Parliament when passing the 1985 Act, or perhaps more properly the intention of the draftsman in settling its terms, there are three (but only three) hypotheses to be considered: (1) that reference to the 1938 Act was omitted because it was regarded as clear that the 1938 Act would continue to operate, in cases to which it applied, irrespective of the terms of Part V; (2) that reference to the 1938 Act was omitted because it was not in the mind of the draftsman of Part V; (3) that reference to the 1938 Act was omitted because Part V was not seen to encroach upon or conflict with the operation of section 5.        9. I would reject the first hypothesis for two reasons. First, it is the practice of parliamentary draftsmen to show an abundance of caution and to favour the avoidance of doubt. Secondly, had the draftsman conceived that a secure tenant's right to buy could be subject to a condition of ministerial consent under section 5 that right would not have been defined in section 118 in the terms quoted in paragraph 7 above, and provision would have been made for asserting and admitting or denying, and handling, claims to exercise the right to buy where ministerial consent was required. If I concluded (as I do not) that section 5 was intended to operate in cases covered by Part V, I would agree with Buxton LJ that the Part V procedures could be made to work, but the absence of any indication that the procedures were devised to apply to conditional rights fortifies the inference that section 5 was not intended to operate in cases covered by Part V. Had it been so intended, the draftsman would have imposed a duty on a local authority to refer to the Secretary of State a claim to exercise the right to buy made by a tenant whose case fell within section 5.      </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="220">reference to the 1938 Act was omitted because it was regarded as clear that the 1938 Act would continue to operate, in cases to which it applied, irrespective of the terms of Part V</PROPTEXT>
+    </PROP>
+    <REFUTATION>
+      <AU>
+        <PROP identifier="I" missing="yes">
+          <PROPTEXT offset="-1">It is not the case that Reference to the 1938 Act was omitted because it was regarded as clear that the 1938 Act would continue to operate, in cases in which it applied, irrespective of the terms of Part V</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="D" missing="yes">
+              <PROPTEXT offset="-1">They did not regard it as clear that the 1938 Act would continue to operate in cases to which it applied irrespective of the terms of Part V</PROPTEXT>
+              <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+              <INSCHEME scheme="Argument from Implication" schid="1" />
+              <INSCHEME scheme="Argument to Singular Cause" schid="2" />
+            </PROP>
+            <LA>
+              <AU>
+                <PROP identifier="C" missing="no">
+                  <PROPTEXT offset="842">had the draftsman conceived that a secure tenant's right to buy could be subject to a condition of ministerial consent under section 5 that right would not have been defined in section 118 in the terms quoted in paragraph 7 above, and provision would have been made for asserting and admitting or denying, and handling, claims to exercise the right to buy where ministerial consent was required. </PROPTEXT>
+                  <INSCHEME scheme="Argument to Singular Cause" schid="2" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="H" missing="yes">
+                  <PROPTEXT offset="-1">No provision has been made for asserting, admitting or denying, and handling, claims to exercise the right to buy where ministerial consent was required.</PROPTEXT>
+                  <INSCHEME scheme="Argument to Singular Cause" schid="2" />
+                </PROP>
+              </AU>
+            </LA>
+            <LA>
+              <AU>
+                <PROP identifier="E" missing="yes">
+                  <PROPTEXT offset="-1">It is their practice not to assume that it is clear that an act continues to operate irrespective of later legislation</PROPTEXT>
+                  <INSCHEME scheme="Argument from Implication" schid="1" />
+                  <INSCHEME scheme="Argument from Implication" schid="3" />
+                </PROP>
+                <LA>
+                  <AU>
+                    <PROP identifier="B" missing="no">
+                      <PROPTEXT offset="716">it is the practice of parliamentary draftsmen to show an abundance of caution and to favour the avoidance of doubt. </PROPTEXT>
+                      <INSCHEME scheme="Argument from Implication" schid="3" />
+                    </PROP>
+                  </AU>
+                  <AU>
+                    <PROP identifier="F" missing="yes">
+                      <PROPTEXT offset="-1">For parliamentary draftsment, showing an abundance of caution and favouring the absence of doubt involves not assuming that it is clear that acts continue to operate irrespective of later legislation</PROPTEXT>
+                      <INSCHEME scheme="Argument from Implication" schid="3" />
+                    </PROP>
+                  </AU>
+                </LA>
+              </AU>
+              <AU>
+                <PROP identifier="G" missing="yes">
+                  <PROPTEXT offset="-1">the 1938 Act is an instance of their practice</PROPTEXT>
+                  <INSCHEME scheme="Argument from Implication" schid="1" />
+                </PROP>
+              </AU>
+            </LA>
+          </AU>
+          <AU>
+            <PROP identifier="J" missing="yes">
+              <PROPTEXT offset="-1">Since they did not regard it as clear that the 1938 Act would continue to operate in cases to which it applied irrespective of the terms of Part V, their reason for omitting reference to the 1938 Act was not that they regarded it as clear that the 1938 Act would continue to operate, in cases in which it applied, irrespective of the terms of Part V</PROPTEXT>
+              <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+    </REFUTATION>
+  </AU>
+  <EDATA>
+    <AUTHOR>Mark</AUTHOR>
+    <DATE>2003-09-05</DATE>
+    <SOURCE>House of Lords (UK), Judgments, Regina v. Secretary of State for the Environment, Transport &amp; the Regions (Appelant) and Others Ex Parte O'Byrne (Respondent), 14 November 2002. Cite No. [2002]UKHL45.</SOURCE>
+    <COMMENTS />
+  </EDATA>
+</ARG>

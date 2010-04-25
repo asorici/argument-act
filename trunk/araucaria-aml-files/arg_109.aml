@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>  For  example, just last week the subject of  Thursday's hearing in the Committee  on Armed Services was a proposal from  the administration to exempt the De-partment  of Defense from five key en-vironmental  laws from the Clean Air  Act to the Endangered Species Act.  These laws not only protect endan-gered  species and eco-systems, they  protect the health of people living on  and around military bases. If the ex-emptions  were granted, American tax-payers  and State and local govern-ments  would bear the burden of clean-up  costs and face public health risks  from toxic contamination resulting  from military operations. The evidence  shows there is no reasonable case for  such exemptions. The environmental  laws already allow the Department of  Defense to apply for exemptions on a  case-by-case basis if they really need  it. Both the GAO and EPA Adminis-  trator Whitman have testified that en-vironmental  laws have not affected  military readiness. There is no evi-dence  that the military has ever been  refused an exemption from laws that  were necessary and that they sought it.  </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="632">The evidence  shows there is no reasonable case for  such exemptions. </PROPTEXT>
+      <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="B" missing="no">
+          <PROPTEXT offset="702">The environmental  laws already allow the Department of  Defense to apply for exemptions on a  case-by-case basis if they really need  it. </PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="D" missing="no">
+          <PROPTEXT offset="967">There is no evi-dence  that the military has ever been  refused an exemption from laws that  were necessary and that they sought it.  </PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="E" missing="yes">
+          <PROPTEXT offset="-1">If the evidence is that environmental laws have not affected military readiness, the military can apply for exemptions from such laws where necessary, and there is no evidence that the military has ever been refused such an exemption, then the evidence shows that there is no reasonable case for the military to be exempted from environmental laws</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="G" missing="yes">
+          <PROPTEXT offset="-1">The evidence is that environmental laws have not affected military readiness</PROPTEXT>
+          <INSCHEME scheme="Argument from the Constitution of Properties" schid="0" />
+          <INSCHEME scheme="Argument from Numerical Identity" schid="1" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="F" missing="yes">
+              <PROPTEXT offset="-1">The testimony of the GAO and of the Administrator Whitman is the evidence regarding whether the environmental laws have affected the military</PROPTEXT>
+              <INSCHEME scheme="Argument from Numerical Identity" schid="1" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="C" missing="no">
+              <PROPTEXT offset="841">Both the GAO and EPA Adminis-  trator Whitman have testified that en-vironmental  laws have not affected  military readiness.</PROPTEXT>
+              <INSCHEME scheme="Argument from Numerical Identity" schid="1" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>Mark</AUTHOR>
+    <DATE>2003-09-05</DATE>
+    <SOURCE>Congressional Record (US) - 108th Congress, House of Representatives, Tuesday, March 18 2003 [Vol. 149 No. 43, Page H1909] .</SOURCE>
+    <COMMENTS>On our reading, the conclusion, A, affirms that the evidence has the property of being something that shows there is no reasonable case for such exceptions. It is this property that is constituted by the facts described by B, D and G.</COMMENTS>
+  </EDATA>
+</ARG>

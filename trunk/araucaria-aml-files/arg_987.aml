@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET/>
+  <TEXT>Vice Chancellor Brown has claimed that semesterisation would lead to a reduced workload for staff, more flexibility for students, and simpler administration for the university. It seems to me, however, that semesterisation is going to involve an enormous amount of work and should be avoided at all costs.
+</TEXT>
+  <AU>
+    <PROP identifier="B" missing="no">
+      <PROPTEXT offset="275">hould be avoided at all costs.</PROPTEXT>
+      <ROLE class="wigmoreFact" element="none"/>
+      <ROLE class="addedNegation" element="no"/>
+      <ROLE class="toulmin" element="data"/>
+      <ROLE class="wigmore" element="evidenceTestAffirm"/>
+      <TUTOR end="0" start="0"/>
+    </PROP>
+    <CA>
+      <AU>
+        <PROP identifier="A" missing="no">
+          <PROPTEXT offset="31">ed that semesterisation would lead to a reduced workload for staff, more flexibility for students, and simpler administration for the</PROPTEXT>
+          <ROLE class="wigmoreFact" element="none"/>
+          <ROLE class="addedNegation" element="no"/>
+          <ROLE class="toulmin" element="data"/>
+          <ROLE class="wigmore" element="evidenceTestAffirm"/>
+          <TUTOR end="0" start="0"/>
+        </PROP>
+      </AU>
+    </CA>
+  </AU>
+  <EDATA>
+    <AUTHOR>msnaith</AUTHOR>
+    <DATE>2009-01-15</DATE>
+    <SOURCE/>
+    <COMMENTS/>
+  </EDATA>
+</ARG>

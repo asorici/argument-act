@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+<?Araucaria UTF-8?>
+<SCHEMESET/>
+<TEXT>In most presidential elections in the United States, more than half the&#13;
+states are ignored; voters who don't live in so-called swing states are in&#13;
+effect bystanders in these quadrennial events. An Amendment to the U.S.&#13;
+Constitution should replace the archaic electoral vote system with a direct&#13;
+vote. Only in this manner will citizens in all 50 states be able to take&#13;
+part fully in selecting our nation's leaders. &#13;
+-Lawrence R. Foster, "End the Electoral College," New York Times, 27 September 2000&#13;
+</TEXT>
+<AU>
+<PROP identifier="A" missing="no">
+<PROPTEXT offset="196">An Amendment to the U.S.&#13;
+Constitution should replace the archaic electoral vote system with a direct&#13;
+vote.</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="D" missing="no">
+<PROPTEXT offset="304"> Only in this manner will citizens in all 50 states be able to take&#13;
+part fully in selecting our nation's leaders. &#13;</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="B" missing="no">
+<PROPTEXT offset="0">In most presidential elections in the United States, more than half the&#13;
+states are ignored</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+<CA>
+<AU>
+<PROP identifier="C" missing="no">
+<PROPTEXT offset="93">voters who don't live in so-called swing states are in&#13;
+effect bystanders in these quadrennial events.</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+</AU>
+</CA>
+</AU>
+<EDATA>
+<AUTHOR>clarkm26</AUTHOR>
+<DATE>2007-09-06</DATE>
+<SOURCE></SOURCE>
+<COMMENTS></COMMENTS>
+</EDATA>
+</ARG>

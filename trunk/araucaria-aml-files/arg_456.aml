@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME> Argumentation based on a Symptomatic Relation: Sign </NAME>
+      <FORM>
+        <PREMISE> Z is true of X </PREMISE>
+        <PREMISE> Z is a sign of Y </PREMISE>
+        <CONCLUSION> Y is true of X </CONCLUSION>
+      </FORM>
+      <CQ>Aren't there also other non-Y's that have the characteristic Z?</CQ>
+      <CQ>Aren't there also other Y's that do not have the characteristic Z?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argumentation based on a Symptomatic Relation: Sign, Converse </NAME>
+      <FORM>
+        <PREMISE> Y is true of X </PREMISE>
+        <PREMISE> Z is a sign of Y </PREMISE>
+        <CONCLUSION> Z is true of X </CONCLUSION>
+      </FORM>
+      <CQ>Aren't there also other non-Y's that have the characteristic Z?</CQ>
+      <CQ>Aren't there also other Y's that do not have the characteristic Z?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argumentation based on a Symptomatic Relation: Example </NAME>
+      <FORM>
+        <PREMISE> Z is true of X </PREMISE>
+        <PREMISE> Z is an example of Y </PREMISE>
+        <CONCLUSION> Y is true of X </CONCLUSION>
+      </FORM>
+      <CQ>Aren't there also other non-Y's that have the characteristic Z?</CQ>
+      <CQ>Aren't there also other Y's that do not have the characteristic Z?</CQ>
+      <CQ>Are the cases mentioned as examples representative?</CQ>
+      <CQ>Are the cases sufficient to justify the generalization?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argumentation based on a Symptomatic Relation: Definition </NAME>
+      <FORM>
+        <PREMISE> Z is true of X </PREMISE>
+        <PREMISE> Z displays the characteristics of the definition of Y </PREMISE>
+        <CONCLUSION> Y is true of X </CONCLUSION>
+      </FORM>
+      <CQ>Aren't there also other non-Y's that have the characteristic Z?</CQ>
+      <CQ>Aren't there also other Y's that do not have the characteristic Z?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argumentation based on a Relation of Analogy </NAME>
+      <FORM>
+        <PREMISE> Y is true of Z </PREMISE>
+        <PREMISE> Z is comparable to X </PREMISE>
+        <CONCLUSION> Y is true of X </CONCLUSION>
+      </FORM>
+      <CQ>Are there any significant differences between Z and X?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argumentation based on a Causal Relation: from Cause to Effect </NAME>
+      <FORM>
+        <PREMISE> Z is true of X </PREMISE>
+        <PREMISE> Z leads to Y </PREMISE>
+        <CONCLUSION> Y is true of X </CONCLUSION>
+      </FORM>
+      <CQ>Does Z always lead to Y?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argumentation based on a Causal Relation: from Effect to Cause </NAME>
+      <FORM>
+        <PREMISE> Y is true of X </PREMISE>
+        <PREMISE> Z leads to Y </PREMISE>
+        <CONCLUSION> Z is true of X </CONCLUSION>
+      </FORM>
+      <CQ>Could the effect (Y) have been caused by something else?</CQ>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argumentation based on a Causal Relation: Pragmatic Argumentation</NAME>
+      <FORM>
+        <PREMISE> X leads to Y </PREMISE>
+        <PREMISE> Y is positive (negative) for agent A </PREMISE>
+        <CONCLUSION> Agent A should (should not) do X </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME> Argumentation based on a Symptomatic Relation </NAME>
+      <FORM>
+        <PREMISE> Z is true of X </PREMISE>
+        <PREMISE> Z is synptomatic of Y </PREMISE>
+        <CONCLUSION> Y is true of X </CONCLUSION>
+      </FORM>
+      <CQ>Aren't there also other non-Y's that have the characteristic Z?</CQ>
+      <CQ>Aren't there also other Y's that do not have the characteristic Z?</CQ>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>Jack is an experienced teacher, because he spends hardly any time on lesson preparation     Van Eemeren, Grootendost, Hekenmans, Argumentation, Lawrence Erlbaum, London, 2002, p. 97  </TEXT>
+  <AU>
+    <PROP identifier="A" missing="no">
+      <PROPTEXT offset="0">Jack is an experienced teacher</PROPTEXT>
+      <INSCHEME scheme=" Argumentation based on a Symptomatic Relation: Sign " schid="0" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="B" missing="no">
+          <PROPTEXT offset="40">he spends hardly any time on lesson preparation </PROPTEXT>
+          <INSCHEME scheme=" Argumentation based on a Symptomatic Relation: Sign " schid="0" />
+        </PROP>
+      </AU>
+      <AU>
+        <PROP identifier="C" missing="yes">
+          <PROPTEXT offset="-1">Little time spent on lesson preparation is characteristic of experienced teachers</PROPTEXT>
+          <INSCHEME scheme=" Argumentation based on a Symptomatic Relation: Sign " schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>Fabri</AUTHOR>
+    <DATE>2004-10-08</DATE>
+    <SOURCE>Van Eemeren, Grootendost, Hekenmans, Argumentation, Lawrence Erlbaum, London, 2002, p. 97</SOURCE>
+    <COMMENTS />
+  </EDATA>
+</ARG>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+  <?Araucaria UTF-8?>
+  <SCHEMESET>
+    <SCHEME>
+      <NAME>Probabilifying Conveyance Argument</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A makes B probable</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Sameness of Meaning</NAME>
+      <FORM>
+        <PREMISE>"A" means the same as "B"</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Singular Cause</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A causes B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Common Cause</NAME>
+      <FORM>
+        <PREMISE>A is similar to B</PREMISE>
+        <PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+        <PREMISE>C caused A</PREMISE>
+        <CONCLUSION>C caused both A and B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Class-Membership Argument</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>All Fs are members of the class of Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Species to Genus</NAME>
+      <FORM>
+        <PREMISE>A is a G</PREMISE>
+        <PREMISE>Gs are a species of F</PREMISE>
+        <CONCLUSION>A is an F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument to Singular Cause</NAME>
+      <FORM>
+        <PREMISE>If A, then A is an effect of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Numerical Identity</NAME>
+      <FORM>
+        <PREMISE>A is numerically identical to B</PREMISE>
+        <PREMISE>A is F</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Causal Law</NAME>
+      <FORM>
+        <PREMISE>Facts of type F cause facts of type G</PREMISE>
+        <PREMISE>A is a fact of type F</PREMISE>
+        <CONCLUSION>Something is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Concrete Facts.</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the concrete fact that B</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Properties</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that B is F</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B is F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Positive Normative Facts</NAME>
+      <FORM>
+        <PREMISE>B</PREMISE>
+        <PREMISE>If B, then B constitutes the fact that A ought to be the case</PREMISE>
+        <CONCLUSION>A ought to be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Causal Laws</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that it is a causal law that Fs are Gs</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>It is a causal law that Fs are Gs</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Implication</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>"A" logically implies "B"</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Negative Normative Facts</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B should not be the case</PREMISE>
+        <CONCLUSION>B should not be the case</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Constitution Facts</NAME>
+      <FORM>
+        <PREMISE>If A, then A constitutes the fact that if B, B constitutes the fact that C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B constitutes the fact that C </CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Necessary Conditions</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that B is a necessary condition for C</PREMISE>
+        <CONCLUSION>B must obtain if C is to obtain</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Possibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is possible that B</PREMISE>
+        <CONCLUSION>It is possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Conditionals</NAME>
+      <FORM>
+        <PREMISE>If A, then - A constitutes the fact that if B, B will cause C</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>If B, B will cause C</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Singular Causal Facts</NAME>
+      <FORM>
+        <PREMISE>C</PREMISE>
+        <PREMISE>If C, then C constitutes the fact that A causes B</PREMISE>
+        <CONCLUSION>A causes B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Kind Instance</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes a thing of kind F</PREMISE>
+        <CONCLUSION>There is a thing of kind F</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Whole to Part</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then B is a part of A </PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Non-Causal Law</NAME>
+      <FORM>
+        <PREMISE>A is an F</PREMISE>
+        <PREMISE>It is a non-causal law that Fs are Gs</PREMISE>
+        <CONCLUSION>A is a G</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from the Constitution of Impossibilities</NAME>
+      <FORM>
+        <PREMISE>A</PREMISE>
+        <PREMISE>If A, then A constitutes the fact that it is not possible that B</PREMISE>
+        <CONCLUSION>It is not possible that B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+    <SCHEME>
+      <NAME>Argument from Part to Whole</NAME>
+      <FORM>
+        <PREMISE>If A, then A is a part of B</PREMISE>
+        <PREMISE>A</PREMISE>
+        <CONCLUSION>B</CONCLUSION>
+      </FORM>
+    </SCHEME>
+  </SCHEMESET>
+  <TEXT>During his childhood, Muhammad garnered quite a reputation for his outstanding moral character, so much that he was titled al-Amin, or 'The Faithful'. Sir William Muir once stated "Our authorities all agree in ascribing to the youth of Muhammad a modesty of deportment and purity of manners rare among Meccans." During his youth, Muhammad never once touched wine, nor engaged in any game of gambling, nor did he even begin to develop a liking to war, in which the Arabs of his time were constantly engaged in. Certainly these characteristics were unusual in a man surrounded by a society indulged in all forms of idolatry and immorality.     Nor did Muhammad develop a fond of wealth, and not once was he energetic in pursuit of riches. Muhammad would've have rather spent his time in prayer, or in solitude, during much of his youth. When young, he become a member of the Hilfal-Fudzul, an alliance formed to vindicate the rights of the weak and help the plight of the poor. He spent to help those who were poor after marrying the wealthy widow Khadija, and in every instance did he free a slave who entered his household.     Imam Ghazali, the great Islamic scholar, summed up the Prophet (saas)'s treatment of those around him in light of the information found in the hadiths: "... Everyone thought that the Prophet honoured him more..." He was affectionate towards everyone, never interupted their speech, no matter how short or long, always was the first to stretch his hand to greet, and the last to let go. He greeted everyone with a smile, and left with a smile.     If you would take a look at the society in which Muhammad grew up, in which differing warring tribes fought bloody wars over the slightest of percieved insults. Where the various peoples were steeped in immorality and idolatry, and yet, 40 years later, the whole of Arabia was unified as one. Quite a feat I would imagine.     So this is my 'Problem of Muhammad', or 'Problem of Islam'. If we were to take a look at Arabia before and after the coming of Muhammad, we would see two completely different societies. Now, something has to accomodate for this. Not even did the blessed Biblical prophets, nor Jesus himself change the behavior of a people so steeped in immorality and idolatry.     So, if Muhammad exhibited such outstanding moral characteristics that those who were not close to him would come to believe that he was always a trustworthy and honourable person, and that they would have no reason to disbelieve in his claim of Divine Revelation. But, what is different between Muhammad and other perported figures who claimed Divine Revelation, were those who were closest to him. They as well, believed with all their hearts that this man, whom they slept with, whom they ate with and whom they fought with, was in fact recieving Revelation from GOD. They knew because of his outstanding moral character, and from his trustworthy personality.     Now, on what basis do have of condemning his claim of recieving Divine Revelation as demonic? GOD would obviously not decieve such an outstanding moral figure, one who exemplified the meaning of true morals. And moreover, God would not let such a man be decieved by the Devil!     If Islam was really demonic, would we have the countless calls for prayer to God, the countless calls to help the needy and the poor, the countless calls of submission in all aspects of life to God? It would seem, that the Devil himself is ardently submitting himself to God! How can Christians claim that what Muhammad recieved was in reality demonic, in the face of these facts?  </TEXT>
+  <AU>
+    <PROP identifier="L" missing="yes">
+      <PROPTEXT offset="-1">What Muhammad received was of divine origin</PROPTEXT>
+      <INSCHEME scheme="Argument from Whole to Part" schid="0" />
+      <INSCHEME scheme="Argument from Whole to Part" schid="1" />
+    </PROP>
+    <LA>
+      <AU>
+        <PROP identifier="N" missing="yes">
+          <PROPTEXT offset="-1">Divine revelation accounts for this</PROPTEXT>
+          <INSCHEME scheme="Argument from Whole to Part" schid="0" />
+          <INSCHEME scheme="Argument from Non-Causal Law" schid="2" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="G" missing="no">
+              <PROPTEXT offset="2093">something has to accomodate for this.</PROPTEXT>
+              <INSCHEME scheme="Argument from Non-Causal Law" schid="2" />
+              <INSCHEME scheme="Argument from Causal Law" schid="3" />
+            </PROP>
+            <LA>
+              <AU>
+                <PROP identifier="H" missing="no">
+                  <PROPTEXT offset="2131">Not even did the blessed Biblical prophets, nor Jesus himself change the behavior of a people so steeped in immorality and idolatry.</PROPTEXT>
+                  <INSCHEME scheme="Argument from Causal Law" schid="3" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="F" missing="no">
+                  <PROPTEXT offset="1574"> If you would take a look at the society in which Muhammad grew up, in which differing warring tribes fought bloody wars over the slightest of percieved insults. Where the various peoples were steeped in immorality and idolatry, and yet, 40 years later, the whole of Arabia was unified as one. Quite a feat I would imagine.   </PROPTEXT>
+                  <INSCHEME scheme="Argument from Causal Law" schid="3" />
+                </PROP>
+              </AU>
+              <AU>
+                <PROP identifier="B" missing="yes">
+                  <PROPTEXT offset="-1">If a society changes radically for the better and does so to an extent that the Biblical Prophets and Jesus did not succeed in bringing about in their societies, something must accomodate for this.</PROPTEXT>
+                  <INSCHEME scheme="Argument from Causal Law" schid="3" />
+                </PROP>
+              </AU>
+            </LA>
+          </AU>
+          <AU>
+            <PROP identifier="M" missing="yes">
+              <PROPTEXT offset="-1">Accounts for change that are so positive that they involve coming to know God and what is good are accounts in terms of divine revelation.</PROPTEXT>
+              <INSCHEME scheme="Argument from Non-Causal Law" schid="2" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="E" missing="yes">
+          <PROPTEXT offset="-1">If divine revelation accounts for this, what Muhammad received was of divine origin</PROPTEXT>
+          <INSCHEME scheme="Argument from Whole to Part" schid="0" />
+        </PROP>
+      </AU>
+    </LA>
+    <LA>
+      <AU>
+        <PROP identifier="I" missing="no">
+          <PROPTEXT offset="2667">They as well, believed with all their hearts that this man, whom they slept with, whom they ate with and whom they fought with, was in fact recieving Revelation from GOD. They knew because of his outstanding moral character, and from his trustworthy personality</PROPTEXT>
+          <INSCHEME scheme="Argument from Whole to Part" schid="1" />
+          <INSCHEME scheme="Argument from Singular Cause" schid="4" />
+        </PROP>
+        <LA>
+          <AU>
+            <PROP identifier="A" missing="no">
+              <PROPTEXT offset="0">During his childhood, Muhammad garnered quite a reputation for his outstanding moral character, so much that he was titled al-Amin, or 'The Faithful'. Sir William Muir once stated "Our authorities all agree in ascribing to the youth of Muhammad a modesty of deportment and purity of manners rare among Meccans." During his youth, Muhammad never once touched wine, nor engaged in any game of gambling, nor did he even begin to develop a liking to war, in which the Arabs of his time were constantly engaged in. Certainly these characteristics were unusual in a man surrounded by a society indulged in all forms of idolatry and immorality.  </PROPTEXT>
+              <INSCHEME scheme="Argument from Singular Cause" schid="4" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="C" missing="no">
+              <PROPTEXT offset="642">Nor did Muhammad develop a fond of wealth, and not once was he energetic in pursuit of riches. Muhammad would've have rather spent his time in prayer, or in solitude, during much of his youth. When young, he become a member of the Hilfal-Fudzul, an alliance formed to vindicate the rights of the weak and help the plight of the poor. He spent to help those who were poor after marrying the wealthy widow Khadija, and in every instance did he free a slave who entered his household.     Imam Ghazali, the great Islamic scholar, summed up the Prophet (saas)'s treatment of those around him in light of the information found in the hadiths: "... Everyone thought that the Prophet honoured him more..." He was affectionate towards everyone, never interupted their speech, no matter how short or long, always was the first to stretch his hand to greet, and the last to let go. He greeted everyone with a smile, and left with a smile. </PROPTEXT>
+              <INSCHEME scheme="Argument from Singular Cause" schid="4" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="P" missing="yes">
+              <PROPTEXT offset="-1">If someone who claims to have received divine revelation is known by those who are close to him to have an outstanding moral character and a trustworthy personality, that person is known by them to have received divine revelation.</PROPTEXT>
+              <INSCHEME scheme="Argument from Singular Cause" schid="4" />
+            </PROP>
+          </AU>
+          <AU>
+            <PROP identifier="Q" missing="yes">
+              <PROPTEXT offset="-1">Muhammad claimed to have received divine revelation</PROPTEXT>
+              <INSCHEME scheme="Argument from Singular Cause" schid="4" />
+            </PROP>
+          </AU>
+        </LA>
+      </AU>
+      <AU>
+        <PROP identifier="O" missing="yes">
+          <PROPTEXT offset="-1">If they knew he received divine revelation, he did.</PROPTEXT>
+          <INSCHEME scheme="Argument from Whole to Part" schid="1" />
+        </PROP>
+      </AU>
+    </LA>
+  </AU>
+  <EDATA>
+    <AUTHOR>Mark</AUTHOR>
+    <DATE>2003-09-05</DATE>
+    <SOURCE>Christian Apologetics and Research Ministry, Boards, Topics, Islam, Topic #1097: "The Problem of Muhammad" by ElShaddai, 23-04-03.</SOURCE>
+    <COMMENTS>1. Towards the end of the analysed text, ElShaddai offers arguments in which he considers and rejects possible rebuttals of L. As Araucaria does not facilitate the analysis of rebuttals, these are not analysed here.
+2. Our attributing of premise H, namely the premise that only divine revelation can explain the positive changes in Arabia, to Elshaddai is partly based on comments he makes further on in his next posting. So too, the conclusion, L, is made explicit in the next two postings, although the author does add that he is merely playing devil's advocate in drawing it.
+3.  On might be tempted to suppose that G, i.e. 'this must be accomodated', states that this must have a cause, and that the immediate conclusion the author draws from G is L, i.e. 'the cause must be divine'. On this analysis, the argument moves directly from G to L rather than via N. However, context and the author's use of the term 'accomodated' suggests that G describes the existence of an explanation, and thus that it is more appropriate to suppose that the immediate conclusion to be drawn from G is about this explanation.</COMMENTS>
+  </EDATA>
+</ARG>

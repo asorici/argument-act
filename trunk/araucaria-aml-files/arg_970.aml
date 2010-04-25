@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ARG SYSTEM "argument.dtd">
+<ARG>
+<?Araucaria UTF-8?>
+<SCHEMESET/>
+<TEXT>Vice Chancellor Brown has claimed that semesterisation would lead to a reduced workload for staff, more flexibility for students, and simpler administration for the university. It seems to me, however, that semesterisation is going to involve an enormous amount of work and should be avoided at all costs.
+</TEXT>
+<AU>
+<PROP identifier="C" missing="no">
+<PROPTEXT offset="171">sity. It seems to me, however, that se</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="D" missing="no">
+<PROPTEXT offset="227">oing to involve an enormous amoun</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="A" missing="no">
+<PROPTEXT offset="0">Vice Chancellor Brown has claimed th</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+</AU>
+</CA>
+<LA>
+<AU>
+<PROP identifier="B" missing="no">
+<PROPTEXT offset="67">o a reduced workload for staff, more flexibility for s</PROPTEXT>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+<CA>
+<AU>
+<PROP identifier="F" missing="yes">
+<PROPTEXT offset="-1">yet another missing premise</PROPTEXT>
+<OWNER name="fzdxgchvbjk"/>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="data"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</CA>
+</AU>
+<AU>
+<PROP identifier="E" missing="no">
+<PROPTEXT offset="281">be avoided a</PROPTEXT>
+<OWNER name="steve"/>
+<ROLE class="wigmoreFact" element="none"/>
+<ROLE class="addedNegation" element="no"/>
+<ROLE class="toulmin" element="warrant"/>
+<ROLE class="wigmore" element="evidenceTestAffirm"/>
+<TUTOR end="0" start="0"/>
+</PROP>
+</AU>
+</LA>
+</AU>
+<EDATA>
+<AUTHOR>SteveTheTester2</AUTHOR>
+<DATE>2006-06-22</DATE>
+<SOURCE>dsf</SOURCE>
+<COMMENTS>dsf</COMMENTS>
+</EDATA>
+</ARG>
