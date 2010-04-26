@@ -31,7 +31,7 @@
 <NAME>Argument to Common Cause</NAME>
 <FORM>
 <PREMISE>A is similar to B</PREMISE>
-<PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by Cs causing both A and B</PREMISE>
+<PREMISE>If A is similar to B and C caused A, then the similarity between A and B is caused by C?s causing both A and B</PREMISE>
 <PREMISE>C caused A</PREMISE>
 <CONCLUSION>C caused both A and B</CONCLUSION>
 </FORM>
