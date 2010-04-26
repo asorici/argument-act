@@ -344,10 +344,10 @@
 </FORM>
 </SCHEME>
 </SCHEMESET>
-<TEXT>Obecni w regionie wspóBpracownicy BBC alarmuj, |e zapasy wody i jedzenia w zalanych regionach s wyjtkowo maBe. Je|eli szybko nie nadejdzie pomoc, w Birmie mo|e doj[ do katastrofy humanitarnej.</TEXT>
+<TEXT>Obecni w regionie wspBpracownicy BBC alarmuj?, |e zapasy wody i jedzenia w zalanych regionach s? wyj?tkowo maBe. Je|eli szybko nie nadejdzie pomoc, w Birmie mo|e doj[? do katastrofy humanitarnej.</TEXT>
 <AU>
 <PROP identifier="C" missing="no">
-<PROPTEXT offset="149">w Birmie mo|e doj[ do katastrofy humanitarnej.</PROPTEXT>
+<PROPTEXT offset="149">w Birmie mo|e doj[? do katastrofy humanitarnej.</PROPTEXT>
 <INSCHEME scheme=" Argument from Cause to Effect " schid="0"/>
 <ROLE class="wigmoreFact" element="none"/>
 <ROLE class="addedNegation" element="no"/>
@@ -358,7 +358,7 @@
 <LA>
 <AU>
 <PROP identifier="A" missing="no">
-<PROPTEXT offset="0">Obecni w regionie wspóBpracownicy BBC alarmuj, |e zapasy wody i jedzenia w zalanych regionach s wyjtkowo maBe. </PROPTEXT>
+<PROPTEXT offset="0">Obecni w regionie wspBpracownicy BBC alarmuj?, |e zapasy wody i jedzenia w zalanych regionach s? wyj?tkowo maBe. </PROPTEXT>
 <INSCHEME scheme=" Argument from Cause to Effect " schid="0"/>
 <ROLE class="wigmoreFact" element="none"/>
 <ROLE class="addedNegation" element="no"/>

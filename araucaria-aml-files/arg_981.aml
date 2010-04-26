@@ -344,10 +344,10 @@
 </FORM>
 </SCHEME>
 </SCHEMESET>
-<TEXT>Najbardziej honorowe wyj[cie, czyli podanie si zarzdu PZPN do dymisji, jest maBo prawdopodobne, choby nie wiadomo jak silne byBy naciski Ministerstwa Sportu. Bo nad PZPN s jeszcze Europejska Unia PiBkarska i Midzynarodowa Federacja PiBkarska, a one |daj, by rzd przestrzegaB ustaleD dokonanych wówczas, gdy zwizek byB zawieszony przez ministra Tomasza Lipca.</TEXT>
+<TEXT>Najbardziej honorowe wyj[cie, czyli podanie si? zarz?du PZPN do dymisji, jest maBo prawdopodobne, cho?by nie wiadomo jak silne byBy naciski Ministerstwa Sportu. Bo nad PZPN s? jeszcze Europejska Unia PiBkarska i Mi?dzynarodowa Federacja PiBkarska, a one |?daj?, by rz?d przestrzegaB ustaleD dokonanych wwczas, gdy zwi?zek byB zawieszony przez ministra Tomasza Lipca.</TEXT>
 <AU>
 <PROP identifier="A" missing="no">
-<PROPTEXT offset="0">Najbardziej honorowe wyj[cie, czyli podanie si zarzdu PZPN do dymisji, jest maBo prawdopodobne, choby nie wiadomo jak silne byBy naciski Ministerstwa Sportu.</PROPTEXT>
+<PROPTEXT offset="0">Najbardziej honorowe wyj[cie, czyli podanie si? zarz?du PZPN do dymisji, jest maBo prawdopodobne, cho?by nie wiadomo jak silne byBy naciski Ministerstwa Sportu.</PROPTEXT>
 <INSCHEME scheme=" Argument from Cause to Effect " schid="0"/>
 <ROLE class="wigmoreFact" element="none"/>
 <ROLE class="addedNegation" element="no"/>
@@ -358,7 +358,7 @@
 <LA>
 <AU>
 <PROP identifier="B" missing="no">
-<PROPTEXT offset="161">Bo nad PZPN s jeszcze Europejska Unia PiBkarska i Midzynarodowa Federacja PiBkarska,</PROPTEXT>
+<PROPTEXT offset="161">Bo nad PZPN s? jeszcze Europejska Unia PiBkarska i Mi?dzynarodowa Federacja PiBkarska,</PROPTEXT>
 <INSCHEME scheme=" Argument from Cause to Effect " schid="0"/>
 <ROLE class="wigmoreFact" element="none"/>
 <ROLE class="addedNegation" element="no"/>
@@ -369,7 +369,7 @@
 </AU>
 <AU>
 <PROP identifier="C" missing="no">
-<PROPTEXT offset="248">a one |daj, by rzd przestrzegaB ustaleD dokonanych wówczas, gdy zwizek byB zawieszony przez ministra Tomasza Lipca.</PROPTEXT>
+<PROPTEXT offset="248">a one |?daj?, by rz?d przestrzegaB ustaleD dokonanych wwczas, gdy zwi?zek byB zawieszony przez ministra Tomasza Lipca.</PROPTEXT>
 <INSCHEME scheme=" Argument from Cause to Effect " schid="0"/>
 <ROLE class="wigmoreFact" element="none"/>
 <ROLE class="addedNegation" element="no"/>

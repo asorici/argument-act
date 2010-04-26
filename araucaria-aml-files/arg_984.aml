@@ -344,7 +344,7 @@
 </FORM>
 </SCHEME>
 </SCHEMESET>
-<TEXT>Miliardy zBotych mo|na by zaoszczdzi dziki internetowym przetargom. Przez to, |e urzdnicy boj si sieci i wol mie wszystko na papierze, utrzymanie administracji kosztuje nas du|o dro|ej.
+<TEXT>Miliardy zBotych mo|na by zaoszcz?dzi? dzi?ki internetowym przetargom. Przez to, |e urz?dnicy boj? si? sieci i wol? mie? wszystko na papierze, utrzymanie administracji kosztuje nas du|o dro|ej.
 </TEXT>
 <AU>
 <PROP identifier="A" missing="no">
@@ -359,7 +359,7 @@
 <LA>
 <AU>
 <PROP identifier="B" missing="no">
-<PROPTEXT offset="0">Miliardy zBotych mo|na by zaoszczdzi dziki internetowym przetargom. </PROPTEXT>
+<PROPTEXT offset="0">Miliardy zBotych mo|na by zaoszcz?dzi? dzi?ki internetowym przetargom. </PROPTEXT>
 <INSCHEME scheme=" Argument from Waste " schid="0"/>
 <ROLE class="wigmoreFact" element="none"/>
 <ROLE class="addedNegation" element="no"/>
@@ -370,7 +370,7 @@
 </AU>
 <AU>
 <PROP identifier="C" missing="no">
-<PROPTEXT offset="84">urzdnicy boj si sieci i wol mie wszystko na papierze,</PROPTEXT>
+<PROPTEXT offset="84">urz?dnicy boj? si? sieci i wol? mie? wszystko na papierze,</PROPTEXT>
 <INSCHEME scheme=" Argument from Waste " schid="0"/>
 <ROLE class="wigmoreFact" element="none"/>
 <ROLE class="addedNegation" element="no"/>
