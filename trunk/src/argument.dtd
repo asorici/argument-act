@@ -1,0 +1,177 @@
+<!-- **************************************
+     *                                    *
+     *   argument.dtd                     *
+     *                                    *
+     *   XML DTD for Argument Markup      *
+     *   Version 1.3                      *
+     *                                    *
+     *   20 December 2001                 *
+     *                                    *
+     *   Copyright 2001, 2002             *
+     *   Chris Reed & Glenn Rowe          *
+     *   Department of Applied Computing  *
+     *   University of Dundee             *
+     *                                    *
+     *   Released under the               *
+     *   GNU General Public License       *
+     *                                    *
+     **************************************
+-->
+     
+<!-- ARG
+     Topmost element
+     TEXT and SCHEMESET children are both optional
+     Notice that the potentially multiple CAs and LAs can come in 
+     any order, hence the final Kleene star. Thus we do not 
+     require that all CA's precede LA's as would be the case if
+     we had only (CA*, LA*).
+-->
+<!ELEMENT ARG (SCHEMESET?, TEXT?, AU?)>
+
+<!-- TEXT
+     The original text of the argument
+-->
+<!ELEMENT TEXT (#PCDATA)>
+
+<!-- AU
+     An argument unit, composed of a proposition (a conclusion)
+     followed, optionally, by a single refutation, followed,
+     optionally, by premises arranged in either convergent or
+     linked structures.
+-->
+<!ELEMENT AU (PROP, REFUTATION?, (CA | LA)*)>
+
+<!-- PROP
+     A proposition (premise or conclusion) within the argument.
+     The text is available in PROPTEXT; the INSCHEMES are 
+     the schemes of which this node is a member.
+     Attributes:
+        - identifier is optional; browsers should be prepared to
+          generate identifiers if they are not available in the XML.
+          If identifiers are used, they must be consistent (i.e.
+          each proposition must have unique identifier) hence ID type.
+        - missing: used to indicate premises which are left implicit.
+-->
+<!ELEMENT PROP (PROPTEXT, OWNER*, INSCHEME*)>
+<!ATTLIST PROP identifier ID      #IMPLIED
+               missing    (yes | no) "no">
+
+<!-- PROPTEXT
+     The text associated with a given node or proposition.
+     Attributes:
+        - offset. Number of characters into text specified in TEXT
+          section to which this proposition corresponds. Optional:
+          if omitted, browsers should open the argument read-only.
+          If no TEXT section is specified, this offset should be ignored.
+          If the PROP is MISSING=YES then offset should be ignored.
+-->
+<!ELEMENT PROPTEXT (#PCDATA)>
+<!ATTLIST PROPTEXT offset CDATA #IMPLIED>
+
+<!-- OWNER
+     The name of a party who is attributed with the proposition.
+     One proposition may be owned by many parties - or may not
+     be registered as being owned by any party.
+     The details of the party are specified in the attribute -
+     notice that OWNER is an empty element and does not therefore
+     need any further data.
+     Attributes:
+        - name. The name of the party (names are assumed to be
+          unique, but one party may 'own' many propositions).
+-->
+<!ELEMENT OWNER EMPTY>
+<!ATTLIST OWNER name CDATA #REQUIRED>
+
+<!-- INSCHEME
+     A scheme of which the current proposition is a member. The
+     details of the scheme are specified in two attributes, both
+     of which are required. For multiple schemes, use one
+     INSCHEME element for each scheme. Note that INSCHEME is an
+     empty element and does not therefore need any further data.
+     Attributes:
+        - scheme. Textual name of an argument scheme which should
+          match a scheme in the scheme set used by the browser or
+          specified in the SCHEMESET section
+        - schid. Identifier to a particular scheme in this arg:
+          browsers are expected to be able to handle more than one
+          occurrence of a given scheme at a given node.
+-->
+<!ELEMENT INSCHEME EMPTY>
+<!ATTLIST INSCHEME scheme CDATA #REQUIRED
+                   schid  CDATA #REQUIRED>
+
+<!-- REFUTATION
+     A proposition which expresses the converse of a proposition.
+     In a formal system, this would simply be the negation, but
+     in real language, a more flexible, individually specified
+     proposition is more appropriate. Notice that links between
+     propositions are always links of support. To characterise
+     rebutting, undercutting and refuting links, it is necessary
+     to introduce a refutation proposition. Thus if A refutes B,
+     introduce C (or not B, if you like) as the refutation of B, 
+     then support C with A. 
+-->
+<!ELEMENT REFUTATION (AU)>
+
+<!-- CA
+     A convergent argument. The PROP specified immediately previously
+     is its conclusion, and the PROP within its body is its premise.
+     A convergent arg has exactly one premise (other convergent args
+     may have the same conclusion, of course).
+     Again, as for ARG, there can be any number of CA and LA supports
+     arranged in any order.
+-->
+<!ELEMENT CA (AU*)>
+
+<!-- LA
+     A linked argument. The PROP specified immediately previously
+     is its conclusion, and the PROPs in its body are its premises.
+     A linked argument must have two or more premises, and again
+     those premises can be supported by any number of CA or LA
+     in any order.
+-->
+<!ELEMENT LA (AU, AU+)>
+
+<!-- SCHEMESET
+     The first section of an ARG, coming before the TEXT and the 
+     structure supporting the topmost conclusion. Includes any number
+     of SCHEME definitions. There is no requirement that any or
+     all of these schemes be used in the argument that follows.
+     The Araucaria software assumes that any schemes used in the
+     argument are defined in this section.
+-->
+<!ELEMENT SCHEMESET (SCHEME)*>
+
+<!-- SCHEME
+     The definition of an argument scheme, with a name (potentially
+     used in the scheme= attribute of a PROP) and any number of
+     critical questions.
+-->
+<!ELEMENT SCHEME (NAME, FORM, CQ*)>
+
+<!-- NAME
+     The name of a scheme. These must be unique (though there may be
+     multiple occurrences of any one scheme in an argument).
+-->
+<!ELEMENT NAME (#PCDATA)>
+
+<!-- FORM
+     The description of a scheme - its premises (any number) and
+     conclusion (exactly one)
+-->
+<!ELEMENT FORM (PREMISE*, CONCLUSION)>
+
+<!-- PREMISE
+     A premise in an argumentation scheme
+-->
+<!ELEMENT PREMISE (#PCDATA)>
+
+<!-- CONCLUSION
+     The conclusion of an argumentation scheme
+-->
+<!ELEMENT CONCLUSION (#PCDATA)>
+
+<!-- CQ
+     A critical question.
+-->
+<!ELEMENT CQ (#PCDATA)>
