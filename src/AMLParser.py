@@ -1,5 +1,5 @@
 from xml.dom import minidom
-import ArgumentationBasicSchema
+import ArgumentationStructures
 
 class AMLParser:
         """
@@ -16,8 +16,11 @@ class AMLParser:
                 self.text = None
                 self.schemaList = None
                 self.argUnits = None
-                
-                self.parseFile()
+                try:
+                        self.argdoc = minidom.parse(self.filename)
+                except:
+                        self.argdoc = None
+                        raise
                 
         #returns a list containing all schema used in the file
         def getAllSchema(self):
@@ -27,18 +30,29 @@ class AMLParser:
                         schemeSetNode = schemeSetNode.getElementsByTagName("SCHEME")
                         for scheme in schemeSetNode:
                                 name = scheme.getElementsByTagName("NAME")[0].firstChild.nodeValue
-                                premises, conclusion = self.parseSchemeForm(scheme.getElementsByTagName("FORM")[0])
-                                s = ArgumentationBasicSchema.ArgumentationBasicSchema(name, premises, conclusion)
+                                premises, conclusion, cqs = self.parseScheme(scheme)
+                                s = ArgumentationStructures.ArgumentationBasicSchema(name, premises, conclusion, cqs)
                                 self.schemaList.append(s)
                 return self.schemaList
 
+        #parses a single schema entry
+        def parseScheme(self, scheme):
+                cqList = scheme.getElementsByTagName("CQ")
+                premises, conclusion = self.parseSchemeForm(scheme.getElementsByTagName("FORM")[0])
+                return premises, conclusion, self.__parseListOfElements(cqList)
+
+        #parses the inner form element in a schema
         def parseSchemeForm(self, node):
                 premiseList = node.getElementsByTagName("PREMISE")                                                                        
                 conclusion = node.getElementsByTagName("CONCLUSION")[0].firstChild.nodeValue
-                premises = []
-                for premise in premiseList:
-                        premises.append(premise.firstChild.nodeValue)
-                return premises, conclusion
+                return self.__parseListOfElements(premiseList), conclusion
+
+        #general purpose parser function that extracts the content for the first child of each node in the given node list
+        def __parseListOfElements(self, nodeList):
+                l = []
+                for node in nodeList:
+                        l.append(node.firstChild.nodeValue)
+                return l
         
         #returns a string containing the plain text in the file
         def getText(self):
@@ -49,100 +63,44 @@ class AMLParser:
                         except:
                                 raise
                 return self.text
-        
-        #returns all argumentation untis in the file
-        def getArgumentationUnits(self):
-                return None
-        
-        def parseFile(self):
-                """ returns a dictionary containing the argument text, the top conclusion and supporting premises. """
-                
-                try:
-                        self.argdoc = minidom.parse(self.filename)
-                        
-                        #text = self.getArgumentText()
-                        #conclusion = self.getTopConclusion()
-                        #premiseList = self.getPremiseList()
-                        
-                        #return {"text" : text, "conclusion" : conclusion, "premiseList" : premiseList}
-                except:
-                        self.argdoc = None
-                        raise
+
+        #returns all argumentation untis for a given node
+        def getArgumentationUnits(self, node = None):
+                if (node == None):
+                        node = self.argdoc.childNodes[1] #the first node is the DTD declaration
+                l = []
+                for argument in node.childNodes:
+                        if (argument.nodeName == "AU"):
+                                l.append(self.getArgumentationUnit(argument))
+                return l
+
+        def getArgumentationUnit(self, argNode):
+                propNode = argNode.getElementsByTagName('PROP')[0]
+                proptextNode = argNode.getElementsByTagName('PROPTEXT')[0]
+                schemeNode = argNode.getElementsByTagName('INSCHEME')[0]
+                refutation = None
+                refNode = argNode.getElementsByTagName("REFUTATION")
+                if (refNode != []):
+                        refutation = self.getArgumentationUnit(refNode[0].firstChild)
+                laList, caList = self.getPremises(argNode)
+                return ArgumentationStructures.ArgumentationUnit(propNode.getAttribute("identifier"), propNode.getAttribute('missing'),
+                                                                 refutation, proptextNode.getAttribute("offset"),
+                                                                 proptextNode.firstChild.nodeValue, schemeNode.getAttribute("scheme"),
+                                                                 schemeNode.getAttribute("schid"), laList, caList)
                                 
-        def getTopConclusion(self):
-                if self.argdoc == None:
-                        return None
-                else:
-                        try:
-                                """ get top most AU tag - the first PROP tag after that is the top conclusion """
-                                
-                                auNode = self.argdoc.getElementsByTagName('AU')[0]
-                                return self.__getNodeData(auNode)
-                        except:
-                                raise
-        
-        def getPremiseList(self):
-                if self.argdoc == None:
-                        return None
-                else:
-                        try:
-                                """ get the argument premises - disregarding argumentative structure within premises """
-                                auNode = self.argdoc.getElementsByTagName('AU')[0]
-                                
-                                premises = self.__getPremises(auNode)
-                                
-                                return premises
-                        except:
-                                raise
-                                
-        def __getPremises(self, argnode):
-                premises = []
+        def getPremises(self, argnode):
                 laNodes = []
                 caNodes = []
                 
                 childNodes = argnode.childNodes
                 for node in childNodes:
                         if node.nodeName == 'LA':
-                                laNodes.append(node)
+                                laNodes.extend(self.getArgumentationUnits(node))
                         elif node.nodeName == 'CA':
-                                caNodes.append(node)
-                
-                for lanode in laNodes:
-                        auNodes = lanode.childNodes
-                        for aunode in auNodes:
-                                if aunode.nodeName == 'AU':
-                                        data = self.__getNodeData(aunode)
-                                        if data:
-                                                premises.append(data)
-                                                
-                                        premises += self.__getPremises(aunode)
-                
-                for canode in caNodes:
-                        auNodes = canode.childNodes
-                        for aunode in auNodes:
-                                if aunode.nodeName == 'AU':
-                                        data = self.__getNodeData(aunode)
-                                        if data:
-                                                premises.append(data)
-                                                
-                                        premises += self.__getPremises(aunode)
-                
-                return premises
-                
-        
-        def __getNodeData(self, argnode):
-                dict = {}
-                
-                propNode = argnode.getElementsByTagName('PROP')[0]
-                proptextNode = propNode.getElementsByTagName('PROPTEXT')[0]
-                schemeNode = propNode.getElementsByTagName('INSCHEME')[0]
-                
-                dict['text'] = proptextNode.firstChild.nodeValue
-                dict['missing'] = propNode.getAttribute('missing')
-                dict['scheme'] = schemeNode.getAttribute('scheme')
-                
-                return dict
+                                caNodes.append(self.getArgumentationUnits(node))
+                return laNodes, caNodes
 
 a = AMLParser("f:\\proiecte\\NLP\\araucaria-aml-files\\arg_1.aml")
-a.parseFile()
-print a.getText()
+#print repr(a.getAllSchema())
+print repr(a.getArgumentationUnits())
+#print a.getText()
