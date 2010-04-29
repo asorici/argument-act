@@ -147,10 +147,107 @@ For the problem of determining argument limits (grouping of argumentative statem
 \par
 In the determination of argument types, we also consider the use of statistical classifiers.
 The problem here is that while a classification of argumentative statements into premises and conclusions is possible (as shown by Palau and Moens by use of a SVM), the task of determining a specific scheme for an argument is much more challenging. In particular, we have to rely on some domain ontology in order to be able to find semantic features that will allow us to classify the arguments as belonging to a certain scheme.
+\par
 Extensive use of other NLP tools such as POS taggers will also be made in order to enrich the possible set of features used for classification.
 
 \par
 Lastly, the problem of determining the argumentation structure, that is, of relations existing between the arguments, will have to take all the results obtained by the previous steps into consideration. The employed algorithm will make the assumption that the discourse follows the rules of the chosen dialog type and that arguments used within it belong to the appropriate argumentation schemes.
+
+\section{Argumentation System architecture - Module description}
+\par
+This section gives a general overview of the most important modules of our application. We will give a graphical representation of the main modules and of the relation between them. Afterwards, we will give a more detailed description of each module, highlighting the approaches and algorithms considered for their implementation.
+
+\begin{center}
+\includegraphics{NLP_Architecture.png}
+\end{center}
+
+\subsection{Argument Identification Module}
+\par
+The Argument Identification Module classifies all sentences into argumentative and non-argumentative utterances. This module’s essential role is to determine which parts of the text are also parts of argument structures.
+\par
+This module will use a classifier in order to extract argumentative. We will take, most probably, one of the next two options for implementation: a naive Bayes classifier or a maximum-entropy method.
+\par
+The most important features our classifier will use are:
+\begin{description}
+\item[Unigrams] Each word in the sentence.
+\item[Bigrams] Each pair of successive words.
+\item[Trigrams] Each three successive words.
+\item[Adverbs] Detected with a part-of-speech (POS) tagger (e.g. QTag 1).
+\item[Verbs] Detected with a POS tagger. Only the main verbs (excluding ``to be'', ``to do'' and ``to have'') are considered.
+\item[Modal auxiliary] Indicates if a modal auxiliary is present using a POS tagger.
+\item[Word couples] All possible combinations of two words in the sentence are considered.
+\item[Text statistics] Sentence length, average word length and number of punctuation marks.
+\item[Punctuation] The sequence of punctuation marks present in the sentence is used as a feature (e.g. ``:.''). When a punctuation mark occurs more than once in a row, it is considered the same pattern (e.g. two or more successive commas both result in ``,+'').
+\item[Key words] Keywords refer to several words or word sequences obtained from a list of terms indicative for argumentation. Examples from the list are ``but'', ``consequently'', and ``because of''.
+\end{description}
+
+\subsection{Segmentation Module}
+\par
+The Argumentation Identification Module uses this module to partition different argumentative sentences (units) into their corresponding arguments, that is, to determine the limits of each individual argument.
+\par
+In order to achieve this we opt to calculate the semantic distance between the different argumentative units, and group sentences in one argument if they discuss content that is semantically related. As in the work of Palau and Moens, we assume that the relatedness of two sentences is a function of the relatedness of their words.
+\par
+Given this assumption we take the semantic relatedness of words to be given by their semantic distances in a lexico-semantic resource such as WordNet.
+\par
+Measures of relatedness are more general in that they can be made across part of speech boundaries, and they are not limited to considering is-a relations.
+\par
+Several measures of relatedness which are based on the WordNet database can be used.
+\begin{itemize}
+\item The hso (Hirst and St-Onge, 1998) measures classifies relations in WordNet as having direction, and then establishes the relatedness between two concepts A and B by finding a path that is neither too long nor that changes direction too often. 
+\item The lesk (Banerjee and Pedersen, 2003) and vector measures incorporate information from WordNet glosses. The lesk measure finds overlaps between the glosses of concepts A and B, as well as concepts that are directly linked to A and B. 
+\item The vector measure (Patwardhan, 2003) creates a co–occurrence matrix for each word used in the WordNet glosses from a given corpus, and then represents each gloss/concept with a vector that is the average of these co–occurrence vectors.
+\end{itemize}
+\par
+WordNet provides modules that implement these measures and that offer a specific API for their usage.
+\par
+Using these measures we can compute an overall semantic relatedness of the argumentation units. By means of a clustering algorithm that will use the distances given by the above mentioned methods we can then segment sentences into their corresponding arguments (clusters), thus finding the intended argument limits.
+
+\subsection {Argumentation Scheme Library}
+\par
+The Argumentation Scheme Library contains abstract forms of argument that capture patterns of reasoning. Each argumentation scheme describes the relations between internal parts (the premises and the conclusion) of a complex argument and, also, the set of critical questions that may attack that argument. Chris Reed and Douglas Walton, in their research report ``Towards a Formal and Implemented Model of Argumentation Schemes in Agent Communication'' describe the conventional techniques to handle the structure of argumentation schemes in such way that agents may use them in reasoning and also that communication structures can be built around those schemes.
+\par
+Example of Argumentation Scheme – Argument from Position To Know:
+\begin{description}
+\item[Major Premise]: Source \emph{a} is in a position to know about things in a certain subject domain \emph{S} containing proposition \emph{A}.
+\item[Minor Premise]: \emph{a} asserts that \emph{A} (in Domain \emph{S}) is true (false).
+\item[Conclusion]: \emph{A} is true (false).
+\end{description}
+This type of argument is defeasible by questioning. Matching the argument from position to know are three critical questions:
+\begin{description}
+\item[CQ1]: Is \emph{a} in a position to know whether \emph{A} is true (false)?
+\item[CQ2]: Is \emph{a} an honest (trustworthy, reliable) source?
+\item[CQ3]: Did \emph{a} assert that \emph{A} is true (false)?
+\end{description}
+\par
+Our Argumentation Scheme Library will be trained from Araucaria DB, which contains several real instantiations of argumentation schemes. The representation used is Argument Markup Language, based upon the industry standard XML.
+
+\subsection{Argument Structure Module}
+\par
+The Argument Identification Module and Segmentation Module were used to distinguish between argumentative and non-argumentative sentences and to group argumentative sentences together into their corresponding argument.
+\par
+The purpose of this module thus becomes to determine the internal structure of an argument, i.e. the organization of its clauses into conclusions and supporting premises. 
+\par
+We will consider two possible approaches for this task.
+\par
+The first relies again on work done by Palau and Moens in Argumentation Mining: The Detection, Classification and Structuring of Arguments in Text and considers the partition of an argument’s units into premises or conclusions.
+\par
+For each argument, certain features will be determined. The list can comprise features such as:
+\begin{description}
+\item[Tense of Main Verb]: Tense of the verb from the main clause of the sentence; having as nominal values ``Present'', ``Past'' or ``No Verb''.
+\item[History]: The most probable argumentative category of previous and next sentence.
+\item[Rhetorical Patterns]: Type of rhetorical pattern occurring on current, previous and next sentences (e.g. ``however,'')
+\item[Argumentative Patterns]: Type of argumentative pattern occurring in sentence
+\end{description}
+A SVM (Support Vector Machine) based algorithm that uses these features will then be used to classify the sentences of an argument into either premises or conclusions.
+\par
+The second approach is an extension of the first one. Rather than just distinguishing between premise and conclusion, this approach tries to map the argument’s structure onto one or several argumentation schemes. 
+\par
+The definition and format of these schemes is provided by the Argumentation Scheme Library module. 
+\par
+Making use of more extended features, that will also include the ones listed above, our SVM based algorithm will this time be trained to distinguish between different argumentation schemes. 
+
+
+
 
 
 %
