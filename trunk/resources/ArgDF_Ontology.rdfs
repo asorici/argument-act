@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:kb="http://protege.stanford.edu/kb#"
+  xmlns:a="http://protege.stanford.edu/system#">
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#edgeFromINode">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:label>edgeFromINode</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#I-Node"/>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#S-Node"/>
+  <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/kb#edge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#ConclusionDesc">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>ConclusionDesc</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#Form"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#hasPremise">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:minCardinality>1</a:minCardinality>
+  <rdfs:label>hasPremise</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#Premise"/>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#RA-Node"/>
+  <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/kb#edgeFromSNode"/>
+  <a:inverseProperty rdf:resource="http://protege.stanford.edu/kb#supports"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#RA-Node">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>RA-Node</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#S-Node"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#hasPremiseDescription">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:minCardinality>1</a:minCardinality>
+  <rdfs:label>hasPremiseDescription</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#PremiseDesc"/>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#Scheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#hasException">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:label>hasException</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#ConflictScheme"/>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#PresumptiveInferenceScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#Form">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>Form</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#Node"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#isAttacked">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:label>isAttacked</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#CA-Node"/>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#Conclusion"/>
+  <a:inverseProperty rdf:resource="http://protege.stanford.edu/kb#attacks"/>
+  <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/kb#edgeFromINode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#hasDescription">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:maxCardinality>1</a:maxCardinality>
+  <a:minCardinality>1</a:minCardinality>
+  <rdfs:label>hasDescription</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#Form"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#hasConclusionDescription">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:maxCardinality>1</a:maxCardinality>
+  <rdfs:label>hasConclusionDescription</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#ConclusionDesc"/>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#Scheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#RuleScheme">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>RuleScheme</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#Scheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#PA-Node">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>PA-Node</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#S-Node"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#S-Node">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>S-Node</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#Node"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#PreferenceScheme">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+  <rdfs:label>PreferenceScheme</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#Scheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#PremiseDesc">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>PremiseDesc</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#Form"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#InductiveInference">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>InductiveInference</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#RuleScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#ConflictScheme">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>ConflictScheme</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#Scheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#Conclusion">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>Conclusion</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#I-Node"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#I-Node">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>I-Node</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#Node"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#hasSchemeName">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:maxCardinality>1</a:maxCardinality>
+  <rdfs:label>hasSchemeName</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#Scheme"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#Scheme">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>Scheme</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#attacks">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:label>attacks</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#CA-Node"/>
+  <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/kb#edgeFromINode"/>
+  <a:inverseProperty rdf:resource="http://protege.stanford.edu/kb#isAttacked"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#Premise">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>Premise</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#I-Node"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#LogicalPreferenceScheme">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>LogicalPreferenceScheme</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#PreferenceScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#edge">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:label>edge</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#Node"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#DeductiveInference">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>DeductiveInference</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#RuleScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#fulfilsConclusionDesc">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:maxCardinality>1</a:maxCardinality>
+  <rdfs:label>fulfilsConclusionDesc</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#Conclusion"/>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#ConclusionDesc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#ArgOnt_Instance_50396">
+  <rdf:type rdf:resource="http://protege.stanford.edu/kb#Premise"/>
+  <kb:text>test exception</kb:text>
+  <rdfs:label>ArgOnt_Instance_50396</rdfs:label>
+  <kb:edgeFromINode rdf:resource="http://protege.stanford.edu/kb#ArgOnt_Instance_50394"/>
+  <kb:attacks rdf:resource="http://protege.stanford.edu/kb#ArgOnt_Instance_50394"/>
+  <kb:fulfilsPremiseDesc rdf:resource="http://protege.stanford.edu/kb#ArgOnt_Instance_12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#entails">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:maxCardinality>1</a:maxCardinality>
+  <rdfs:label>entails</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#PremiseDesc"/>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#Presumption"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#fulfilsScheme">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:maxCardinality>1</a:maxCardinality>
+  <rdfs:label>fulfilsScheme</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#S-Node"/>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#Scheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#caNode_isAttacked">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:label>caNode_isAttacked</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#CA-Node"/>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#I-Node"/>
+  <a:inverseProperty rdf:resource="http://protege.stanford.edu/kb#caNode_Attacks"/>
+  <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/kb#edgeFromSNode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#caNode_Attacks">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:label>caNode_Attacks</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#CA-Node"/>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#I-Node"/>
+  <a:inverseProperty rdf:resource="http://protege.stanford.edu/kb#caNode_isAttacked"/>
+  <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/kb#edgeFromSNode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#PresumptivePreferenceScheme">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>PresumptivePreferenceScheme</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#PreferenceScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#PresumptiveInferenceScheme">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>PresumptiveInferenceScheme</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#RuleScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#hasConclusion">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:maxCardinality>1</a:maxCardinality>
+  <a:minCardinality>1</a:minCardinality>
+  <rdfs:label>hasConclusion</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#Conclusion"/>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#RA-Node"/>
+  <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/kb#edgeFromSNode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#hasPresumption">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:label>hasPresumption</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#Presumption"/>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#PresumptiveInferenceScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#supports">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdfs:label>supports</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#Premise"/>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#RA-Node"/>
+  <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/kb#edgeFromINode"/>
+  <a:inverseProperty rdf:resource="http://protege.stanford.edu/kb#hasPremise"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#CA-Node">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>CA-Node</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#S-Node"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#edgeFromSNode">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:minCardinality>1</a:minCardinality>
+  <rdfs:label>edgeFromSNode</rdfs:label>
+  <rdfs:range rdf:resource="http://protege.stanford.edu/kb#Node"/>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#S-Node"/>
+  <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/kb#edge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#text">
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <a:maxCardinality>1</a:maxCardinality>
+  <rdfs:label>text</rdfs:label>
+  <rdfs:domain rdf:resource="http://protege.stanford.edu/kb#I-Node"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#Presumption">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>Presumption</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/kb#Form"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://protege.stanford.edu/kb#Node">
+  <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:label>Node</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
