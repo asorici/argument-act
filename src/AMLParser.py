@@ -99,8 +99,3 @@ class AMLParser:
                         elif node.nodeName == 'CA':
                                 caNodes.append(self.getArgumentationUnits(node))
                 return laNodes, caNodes
-
-a = AMLParser("f:\\proiecte\\NLP\\araucaria-aml-files\\arg_1.aml")
-#print repr(a.getAllSchema())
-print repr(a.getArgumentationUnits())
-#print a.getText()
