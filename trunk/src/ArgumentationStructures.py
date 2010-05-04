@@ -29,7 +29,7 @@ class ArgumentationUnit:
         self.caList = caList
 
     def __str__(self):
-        return repr(self)
+        return self.id
 
     def addArgument(self, argument):
         self.argList.append(argument)
@@ -49,10 +49,10 @@ class ArgumentationUnit:
         if argUnit is None:
             argUnit = self
         result = [(argUnit.conclusion, int(argUnit.offset))]
-        la = [entry[0] for entry in map(self.extractTextAndOffset, argUnit.laList)]
-        ca = [entry[0] for entry in map(self.extractTextAndOffset, argUnit.caList)]
+        if not self.refutation is None:
+            result.extend(self.refutation.extractTextAndOffset())
+        la = reduce(lambda x,y: x + y, map(self.extractTextAndOffset, argUnit.laList), [])
+        ca = reduce(lambda x,y: x + y, map(self.extractTextAndOffset, argUnit.caList), [])
         result.extend(la)
         result.extend(ca)
         return result
-        
-    

@@ -3,6 +3,7 @@ from nltk import data
 import nltk.tag
 import csv, tst, string
 import AMLParser
+import os.path
 
 class BasicArgumentClassifier:
 
@@ -24,13 +25,20 @@ class BasicArgumentClassifier:
 class BasicArgumentTrainer:
     " " " Provieds a training set for the BasicArgumentClassifier " " "
     
-    def __init__(self):
+    def __init__(self, pathToAmlFiles = "..\\araucaria-aml-files\\"):
         #this is the sentence tokenizer for english language
         self.sentenceTokenizer = data.LazyLoader("tokenizers\\punkt\\english.pickle")
         #this is the feature extractor
         self.featureExtractor = BasicArgumentFeatureBuilder("..\\resources\\arg-dictionary.csv", False)
         self.text = None
+        self.pathToFiles = pathToAmlFiles
 
+    #builds a training set from all aml files with number between start and stop
+    def _buildTrainingExamples(self, start, stop):
+        name = self.pathToFiles + "arg_"
+        fileList = filter(os.path.exists, map(lambda x: name + str(x) + ".aml", range(start, stop)))
+        return reduce(lambda x,y : x + y, map(self.buildTrainingExample, fileList))
+        
     #builds a training set from an aml file
     def buildTrainingExample(self, amlFile):
         parser = AMLParser.AMLParser(amlFile)
@@ -42,21 +50,24 @@ class BasicArgumentTrainer:
         senIntervals = map(self._mapToInterval, sentenceList)
         labels = self._generateLabels(argIntervals, senIntervals)
         return map(lambda x,y:(x,y), featureList, labels)   
-        
+
     def _generateLabels(self, argIntervals, senIntervals):
         i = 0
         result = ["n"] * len(senIntervals)
-        #skip the intervals for missing arguments
-        while argIntervals[i][0] < 0 :
+        #skip the intervals for missing
+        while argIntervals[i][0] < 0:
             i = i + 1
         for j in range(len(senIntervals)):
-            #no more intervals available
-            if i >= len(argIntervals):
-                break
+            #skip first sentences if non argumentative
+            if senIntervals[j][1] < argIntervals[i][0]:
+                continue
             while i < len(argIntervals) and not self._intervalIntersect(argIntervals[i], senIntervals[j]):
                 i = i + 1
             if i < len(argIntervals):
                 result[j] = "y"
+            else:
+                #rest of the sentences remain non argumentative
+                break
         return result
 
     def _intervalIntersect(self, a, b):
@@ -172,5 +183,7 @@ class BasicArgumentCallbackFunction(object):
 
 #a = BasicArgumentFeatureBuilder("..\\resources\\arg-dictionary.csv", True)
 #print a.extractFeatures("For of the -  weather we would badly cancelled our trip.") #this is not true english just good test case :)
+a = tic()
 a = BasicArgumentTrainer()
-print a.buildTrainingExample("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_101.aml")
+print a._buildTrainingExamples(0,20)
+#print a.buildTrainingExample("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_15.aml")
