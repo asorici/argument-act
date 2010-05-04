@@ -100,6 +100,6 @@ class AMLParser:
                                 caNodes.append(self.getArgumentationUnits(node))
                 return laNodes, caNodes
 
-a = AMLParser("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_1.aml")
-u = a.getArgumentationUnits()[0]
-print u.extractText()
+#a = AMLParser("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_1.aml")
+#u = a.getArgumentationUnits()[0]
+#print u.extractText()
