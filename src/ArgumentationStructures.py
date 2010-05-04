@@ -44,5 +44,15 @@ class ArgumentationUnit:
         result.extend(la)
         result.extend(ca)
         return result
+
+    def extractTextAndOffset(self, argUnit=None):
+        if argUnit is None:
+            argUnit = self
+        result = [(argUnit.conclusion, int(argUnit.offset))]
+        la = [entry[0] for entry in map(self.extractTextAndOffset, argUnit.laList)]
+        ca = [entry[0] for entry in map(self.extractTextAndOffset, argUnit.caList)]
+        result.extend(la)
+        result.extend(ca)
+        return result
         
     
