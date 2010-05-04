@@ -81,7 +81,7 @@ class AMLParser:
                 refutation = None
                 refNode = argNode.getElementsByTagName("REFUTATION")
                 if (refNode != []):
-                        refutation = self.getArgumentationUnit(refNode[0].firstChild)
+                        refutation = self.getArgumentationUnit(refNode[0].getElementsByTagName("AU")[0])
                 laList, caList = self.getPremises(argNode)
                 return ArgumentationStructures.ArgumentationUnit(propNode.getAttribute("identifier"), propNode.getAttribute('missing'),
                                                                  refutation, proptextNode.getAttribute("offset"),
@@ -100,6 +100,6 @@ class AMLParser:
                                 caNodes.append(self.getArgumentationUnits(node))
                 return laNodes, caNodes
 
-#a = AMLParser("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_1.aml")
+#a = AMLParser("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_15.aml")
 #u = a.getArgumentationUnits()[0]
 #print u.extractText()
