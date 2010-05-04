@@ -34,4 +34,15 @@ class ArgumentationUnit:
     def addArgument(self, argument):
         self.argList.append(argument)
 
+    #recursively extracts all text from this argumentation unit(including the missing ones).
+    def extractText(self, argUnit=None):
+        if argUnit is None:
+            argUnit = self
+        result = [argUnit.conclusion]
+        la = [entry[0] for entry in map(self.extractText, argUnit.laList)]
+        ca = [entry[0] for entry in map(self.extractText, argUnit.caList)]
+        result.extend(la)
+        result.extend(ca)
+        return result
+        
     

@@ -2,13 +2,16 @@ from nltk.tokenize import punkt
 from nltk import data
 import nltk.tag
 import csv, tst, string
+import AMLParser
 
 class BasicArgumentClassifier:
 
     def __init__(self):
         #this is the sentence tokenizer for english language
         self.sentenceTokenizer = data.LazyLoader("tokenizers/punkt/english.pickle")
-
+        #this is the feature extractor
+        self.featureExtractor = BasicArgumentFeatureBuilder("..\\resources\\arg-dictionary.csv", False)
+        
     def getArgumentativeSentences(self, text):
         sentenceList = self.sentenceTokenizer.tokenize(text)
 
@@ -18,6 +21,24 @@ class BasicArgumentClassifier:
     def classify(featureset):
         return None
 
+class BasicArgumentTrainer:
+    " " " Provieds a training set for the BasicArgumentClassifier " " "
+    
+    def __init(self):
+        #this is the sentence tokenizer for english language
+        self.sentenceTokenizer = data.LazyLoader("tokenizers/punkt/english.pickle")
+        #this is the feature extractor
+        self.featureExtractor = BasicArgumentFeatureBuilder("..\\resources\\arg-dictionary.csv", False)
+
+    def buildTrainingExample(self, amlFile):
+        parser = AMLParser.AMLParser(amlFile)
+        text = parser.getText()
+        sentenceList = self.SentenceTokenizer.tokenize(text)
+        featureList = map(self.featureExtractor.extractFeatures, sentenceList)
+        lables = ['n'] * len(sentenceList)
+        argUnit = parser.getArgumentationUnits()[0]
+        argSentenceList = argUnit.extractText()
+        
 class BasicArgumentFeatureBuilder:
     " " " Extracts features from a sentence. Depends on SWIGPy and requires tst module " " "
     
@@ -113,5 +134,5 @@ class BasicArgumentCallbackFunction(object):
         #if no exception was thrown then there is no match
         return 0
 
-a = BasicArgumentFeatureBuilder("..\\resources\\arg-dictionary.csv", True)
-print a.extractFeatures("For of the -  weather we would badly cancelled our trip.") #this is not true english just good test case :)
+#a = BasicArgumentFeatureBuilder("..\\resources\\arg-dictionary.csv", True)
+#print a.extractFeatures("For of the -  weather we would badly cancelled our trip.") #this is not true english just good test case :)
