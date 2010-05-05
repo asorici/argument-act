@@ -1,7 +1,7 @@
 from nltk.tokenize import punkt
 from nltk import data
 import nltk.tag
-import csv, tst, string
+import csv, tst, string, pickle
 import AMLParser
 import os.path
 
@@ -34,10 +34,29 @@ class BasicArgumentTrainer:
         self.pathToFiles = pathToAmlFiles
 
     #builds a training set from all aml files with number between start and stop
-    def _buildTrainingExamples(self, start, stop):
+    def buildTrainingExamples(self, start, stop):
         name = self.pathToFiles + "arg_"
         fileList = filter(os.path.exists, map(lambda x: name + str(x) + ".aml", range(start, stop)))
         return reduce(lambda x,y : x + y, map(self.buildTrainingExample, fileList))
+
+    #trains a classifier of the specifified type and saves it in the given file
+    def trainClassifier(self, start, stop, classifierType="naive-bayes",
+                        fileName="..\\resources\\basic-arg.pickle"):
+        trainingSet = self.buildTrainingExamples(start, stop)
+        if classifierType == "naive-bayes":
+            classifier = nltk.NaiveBayesClassifier.train(trainingSet)
+        elif classifierType == "maxent":
+            algortihm = "IIS" #this is hardcoded for now. All algorithm should yeld the same results
+            classifier =  nltk.MaxentClassifier.train(trainingSet, algorithm, trace=0, max_iter=1000)
+        else :
+            return None
+        try :
+            f = open(fileName, "w")
+            pickle.dump(classifier, f)
+            f.close()
+        except IOError:
+            return None
+        return True
         
     #builds a training set from an aml file
     def buildTrainingExample(self, amlFile):
@@ -183,7 +202,7 @@ class BasicArgumentCallbackFunction(object):
 
 #a = BasicArgumentFeatureBuilder("..\\resources\\arg-dictionary.csv", True)
 #print a.extractFeatures("For of the -  weather we would badly cancelled our trip.") #this is not true english just good test case :)
-a = tic()
 a = BasicArgumentTrainer()
-print a._buildTrainingExamples(0,20)
+a.trainClassifier(0,10)
+#print a._buildTrainingExamples(0,20)
 #print a.buildTrainingExample("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_15.aml")
