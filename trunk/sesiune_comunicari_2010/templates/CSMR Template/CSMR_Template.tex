@@ -1,0 +1,160 @@
+\documentclass[twoside, 11pt, a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Any additional packages needed should be included after csmr.  %
+% Note that csmr.sty includes epsfig, amssymb and graphicx,      %
+% and defines many common macros, such as 'proof' and 'example'. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{csmr}
+\usepackage[cp1250]{inputenc}
+\usepackage{fancyhdr}
+
+% Definitions of handy macros can go here
+
+%\newcommand{\dataset}{{\cal D}}
+%\newcommand{\fracpartial}[2]{\frac{\partial #1}{\partial  #2}}
+
+% Heading arguments are {volume}{nmber}{submitted}{published}{author-full-names}
+
+\csmrheading{1}{1}{2010}
+
+% Short headings should be running head and authors last names
+
+\ShortHeadings{1}{1}{2010}{Instructions for Formatting CSMR article.}{Author 1 at al.}
+
+\begin{document}
+
+\title{Instructions for Formatting CSMR Articles: A \LaTeX\ Style}
+
+\author{\name Author 1, Author 2, Author 3, ...\\
+       \addr University POLITEHNICA of Bucharest\\
+       Faculty of Automatic Control and Computers, Computer Science Department\\
+       \email Emails: firstname.lastname@cti.pub.ro}
+
+\maketitle
+
+\begin{abstract}
+This document describes the required formatting of CSMR papers, including margins, fonts, citation styles, and figure placement. The template provided here is made to coincide with CSMR.sty LaTeX style. While the format requirements are only compulsory for final submissions, we strongly encourage authors to adopt this template, as well as its recommendations throughout the submission process.
+\end{abstract}
+
+\begin{keywords}
+  format, \LaTeX\ template, CSMR
+\end{keywords}
+
+\section{Introduction}
+
+To ensure that all articles published in the journal have a uniform appearance, authors must produce a PDF document that meets the formatting specifications outlined in this document. The same document will be used both for digital and hard copy version of the journal. Beside the PDF version of the paper authors have to send MS Word or \LaTeX\ document.
+
+This document briefly describes and illustrates format used by CSMR journal. Your paper should look as similar as possible to PDF version of this document. This template can be obtained form journal web site at the address http://csmr.cs.pub.ro. Below the basic specifications, including font sizes, margins, etc. will be outlined. The paper should look as similar to this example as possible. So, we encourage you to use this sample in the case of any dilemma. For any questions you cannot decide of, feel free to contact CSMR.
+
+\section{Style and Format}
+
+Papers must be printed in the single column format as shown in the enclosed sample. The page format should be set to A4. Margins should be 3.17 cm left and right. Headers should be 1,27 cm from top and footer should be 2.18 cm from bottom of page. Title should start 3.81 cm from the top of the page. 
+
+\subsection{Fonts}
+
+You should use Times Roman style fonts. Please, do not us any non-standard fonts in your paper. They could make problems in formatting of the paper, as well as in printing paper at many printers.
+
+Headers and Footers should be in 9 point type. The title of the paper should be in 14 point bold type. The abstract title should be in 11 point bold type, and the abstract itself should be in 10 point type. First headings should be in 12 point bold type and second headings should be in 11 point bold type. The text and body of the paper should be in 11 point type.
+
+\subsection{Title and Authors}
+
+The title appears near the top of the first page, centered. Authors' names should appear in designated areas below the title of the paper in twelve point bold type. Authors' affiliations and complete addresses should be in italics. 
+
+\subsection{Abstract}
+
+The abstract appears at the beginning of the paper, indented 0.64 cm from the left and right margins. The title "Abstract'' should appear in bold face 11 point type, centered above the body of the abstract. The abstract body should be in 10 point type. 
+
+\subsection{Headings and Sections}
+
+When necessary, headings should be used to separate major sections of your paper. First-level headings should be in 12 point bold type and second-level headings should be in 11 point bold type. Do not skip a line between paragraphs. Third-level headings should also be in 11 point italic type. All headings should be capitalized. After a heading, the first sentence should not be indented.
+
+References to sections (as well as figures, tables, theorems and so on), should be capitalized, as in "In Section 4, we show that...''. 
+
+\subsubsection{Appendices}
+
+Appendices, if included, follow the acknowledgments. Each appendix should be lettered, e.g., ''Appendix A''. 
+
+\subsubsection{Aknowledgements}
+The acknowledgments section, if included, appears after the main body of the text and is headed ''Acknowledgments.'' The section should not be numbered. This section includes acknowledgments of help from associates and colleagues, financial support, a
+nd permission to publish. 
+
+\subsection{Figures and Tables}
+
+Figures and tables should be inserted in proper places throughout the text. Do not group them together at the beginning of a page, nor at the bottom of the paper. Number figures sequentially, e.g., Figure 1, and so on.
+
+%\begin{figure}[htp]
+%		\centering
+%		\includegraphics[scale=0.50]{fig1}
+%		\caption{FigureX Caption}
+%		\label{figX}
+%\end{figure}
+
+The figure or table number and the caption should appear under the illustration. Leave a margin of 0.64 cm around the area covered by the figure and caption. Captions, labels, and other text in illustrations must be at least nine-point type. 
+
+\begin{table}
+\centerline{\begin{tabular}{|c|c|c|}
+\hline & \textbf{CPU Speed} & \textbf{Wage} \\
+\hline \textbf{A} & & \\
+\hline \textbf{B} & & \\
+\hline \textbf{C} & & \\
+\hline 
+\end{tabular}}
+\caption{Note well that CSMR expects table captions below the table. $>=$ 9pt font.}
+\end{table}
+
+\subsection{Headers and Footers}
+
+The first page of your article should include the short journal name, volume, number and year in the upper left corner, and ISSN in the upper right corner. 
+
+On the even numbered pages, the header of the page should be the authors' names in the upper left corner and short title of the paper in the upper right corner. On the odd pages, starting with page 3, the header should be the full name of the journal, aligned right. 
+
+\subsubsection{Page Numbering and Publication Date}
+
+Upon completion of your article and final approval of the editor, you will be assigned a page number that should be the first page of your article. You should number the remainder of your article accordingly. Page numbers should appear at the bottom of the page in the center. You will also be 
+assigned a volume number and publication date that you will use in the header. 
+
+\subsubsection{Footnotes}
+
+We encourage authors to use footnotes sparingly, especially since they may be difficult to read online. Footnotes should be numbered sequentially and should appear at the bottom of the page, as shown below \footnote{A footnote should appear like this. Please ensure that your footnotes are complete, fully punctuated sentences.}.  
+
+\subsection{References}
+
+The reference section should be labeled ''References'' and should appear at the end of the paper in the format described in this sample. A sample list of references is given in Appendix A. Please prepare complete and accurate citations. Do not include references that are not cited in the text of the paper.
+
+Citations within the text should the number of the reference in the reference section in the brackets, for example \cite{1}. In the case of three or more authors, the reference can be shortened by referring only the first author, followed by "et al.'', as in \cite{2}. Multiple citations should be separated by a colon, as in \cite{1}, \cite{2}. 
+
+\section{Formating Templates}
+
+To ready your work for publication, please typeset it using software such LaTeX that produces PDF output. A LATEX style file is available at CSMR web site. There is also a template for Microsoft Word, which can produce PDF files via the Acrobat product. The MS Word template is available on the CSMR web site. We recommend working from the \LaTeX\ source of the sample article, which has been annotated to simplify use of the macros in the style file or MS Word template file. If you must use a document preparation system other than \LaTeX\ or MS Word, please discuss this with the editor prior to submitting your final document. If you do not have the software necessary to produce acceptable PDF files, the editor will recommend a professional service for formatting your article. (Authors will be responsible for paying for this service). 
+
+\acks{Who helped, funded etc.}
+
+% Manual newpage inserted to improve layout of sample file - not
+% needed in general before appendices/bibliography.
+\newpage
+
+\section*{Apendix A: Reference Example}
+Any appendix comes before the references.  The following formatting examples are intended to be illustrative, 
+not exhaustive. If you are uncertain about the proper format for a reference, please contact the CSMR editors. 
+\begin{itemize}
+\item Proceeding papers as in \cite{4}
+\item Journal article as in \cite{3}
+\item Technical Reports as in \cite{5}
+\item Books as in \cite{1}
+\item Edited Book as in \cite{2}
+\item Dissertations and Theses s in \cite{6}
+\item Forthcoming papers as in \cite{7}
+\end{itemize}
+
+We strongly recommend that you do not use URLs as references. They are highly unstable and you have very good 
+chance that URL you give as reference will be dead in short time. If you use URLs as references anyway, use references
+as in \cite{8}.
+
+\vskip 0.2in
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\end{document}
+
