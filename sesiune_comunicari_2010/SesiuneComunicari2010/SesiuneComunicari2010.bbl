@@ -1,9 +1,90 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{abbas-ales}
+S.~ABBAS and H.~SAWAMURA.
+\newblock {ALES: An Innovative Argument Learning Environment}.
+
+\bibitem{amgoud2009constrained}
+L.~Amgoud, C.~Devred, and M.C. Lagasquie-Schiex.
+\newblock {A constrained argumentation system for practical reasoning}.
+\newblock {\em Argumentation in Multi-Agent Systems}, pages 37--56, 2009.
+
+\bibitem{amgoud2000modelling}
+L.~Amgoud, N.~Maudet, and S.~Parsons.
+\newblock {Modelling dialogues using argumentation}.
+\newblock In {\em MultiAgent Systems, 2000. Proceedings. Fourth International
+  Conference on}, pages 31--38, 2000.
 
 \bibitem{AIF}
 Carlos Chesnevar, Jarred McGinnis, Sanjay Modgil, Iyad Rahwan, Chris Reed,
   Guillermo Simari, Matthew South, Gerard Vreeswijk, and Steven Willmott.
 \newblock Towards an argument interchange format.
 \newblock {\em The Knowledge Engineering Review}, 0(0):1--25, 2007.
+
+\bibitem{jcn}
+J.~Jiang and D.~Conrath.
+\newblock Semantic similarity based on corpus statistics and lexical taxonomy.
+\newblock {\em Proceedings on International Conference on Research in
+  Computational Linguistics}, pages 19--33, 1997.
+\newblock Taiwan.
+
+\bibitem{lin}
+D.~Lin.
+\newblock An information-theoretic definition of similarity.
+\newblock {\em Proceedings of the International Conference on Machine
+  Learning}, Madison, August 1998.
+
+\bibitem{modgil2009argumentation}
+S.~Modgil and M.~Luck.
+\newblock {Argumentation based resolution of conflicts between desires and
+  normative goals}.
+\newblock {\em Argumentation in Multi-Agent Systems}, pages 19--36, 2009.
+
+\bibitem{ontañón2009argumentation}
+S.~Onta{\~n}{\'o}n and E.~Plaza.
+\newblock {Argumentation-Based Information Exchange in Prediction Markets}.
+\newblock {\em Argumentation in Multi-Agent Systems}, pages 181--196, 2009.
+
+\bibitem{Palau}
+R.M. Palau and M.F. Moens.
+\newblock {Argumentation Mining: The Detection, Classification and Structuring
+  of Arguments in Text}.
+\newblock 2009.
+
+\bibitem{parsons1998agents}
+S.~Parsons, C.~Sierra, and N.~Jennings.
+\newblock {Agents that reason and negotiate by arguing}.
+\newblock {\em Journal of Logic and Computation}, 8(3):261, 1998.
+
+\bibitem{rahwan2009argumentation}
+I.~Rahwan and G.R. Simari.
+\newblock {\em {Argumentation in Artificial Intelligence}}.
+\newblock Springer Publishing Company, Incorporated, 2009.
+
+\bibitem{reed2004araucaria}
+C.~Reed and G.~Rowe.
+\newblock {Araucaria: Software for argument analysis, diagramming and
+  representation}.
+\newblock {\em International Journal of AI Tools}, 14(3-4):961--980, 2004.
+
+\bibitem{reedwalton}
+C.~Reed and D.~Walton.
+\newblock {Towards a formal and implemented model of argumentation schemes in
+  agent communication}.
+\newblock {\em Autonomous Agents and Multi-Agent Systems}, 11(2):173--188,
+  2005.
+
+\bibitem{Resnik}
+P.~Resnik.
+\newblock Using information content to evaluate semantic similarity in a
+  taxonomy.
+\newblock {\em Proceedings of the 14th International Joint Conference on
+  Artificial Intelligence}, pages 448--453, August 1995.
+\newblock Montreal.
+
+\bibitem{trojahn2009argumentation}
+C.~Trojahn, P.~Quaresma, and R.~Vieira.
+\newblock {An argumentation framework based on strength for ontology mapping}.
+\newblock {\em Argumentation in Multi-Agent Systems}, pages 57--71, 2009.
 
 \end{thebibliography}
