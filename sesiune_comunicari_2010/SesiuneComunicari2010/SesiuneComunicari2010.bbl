@@ -1,8 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{miau1}
-miau.
-\newblock {\em miau miau}.
-\newblock miau miorlau, 100.
+\bibitem{AIF}
+Carlos Chesnevar, Jarred McGinnis, Sanjay Modgil, Iyad Rahwan, Chris Reed,
+  Guillermo Simari, Matthew South, Gerard Vreeswijk, and Steven Willmott.
+\newblock Towards an argument interchange format.
+\newblock {\em The Knowledge Engineering Review}, 0(0):1--25, 2007.
 
 \end{thebibliography}

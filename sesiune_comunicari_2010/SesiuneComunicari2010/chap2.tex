@@ -1,1 +1,13 @@
 % ---- architecture ~ 4 pages ----
+
+\section{Society Overview}
+\label{sec:society}
+
+In this section we present the structure of the agent society and the argumentation framework used in interaction between agents. First our argumentation framework consists of a number of intelligent agents capable of exchanging arguments using the AIF\cite{AIF}. These agents can understand human language and are able to extract arguments from text in English. In addition to the AIF at least one topic ontology is needed in the framework to provide the ground knowledge accepted by all agents in the system. Note that the society is not constrained to use a specific ontology as a whole, but rather each agent needs at least one ontology. This allows agents to play different roles in the society analogous to the roles humans play in our society. For example an agent may have several ontologies describing legal concepts, while other agent may only know about animals. In this approach ontologies shared by all agents represent a limited form common sense knowledge. As we will see in section[\ref{sec:application}] the framework can be augmented with additional capabilities to retrieve data from external sources and insert it into AIF. 
+
+Humans can also take part in a debate using English language. A human can debate on a given topic with one or more agents. As shown in section[\ref{sec:application}] each agent has it's own behaviour and different agents may accept different arguments as valid based on their knowledge and various behaviour parameters. In a debate each agent maintains an own view of the argumentation and will try at best to attack and defend arguments based on it's own position in the debate. If an agent can't determine the acceptability of an argument using the 
+
+\section{Application Architecture}
+\label{sec:application}
+
+In this section we present the architecture of the agent. At the top level we have build an autonomous intelligent agent that has it's own behaviour module and reasoning capabilities. Moreover each agent can understand natural language and interact with humans and other agents.
