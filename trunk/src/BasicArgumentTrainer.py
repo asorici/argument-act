@@ -1,9 +1,9 @@
 from nltk import data
-import nltk.tag
-import csv, tst, string, pickle
+import csv, pickle
 import os.path
-from nltk.tokenize import punkt
 import BasicArgumentFeatureBuilder
+import AMLParser
+import nltk
 
 class BasicArgumentTrainer:
     " " " Provieds a training set for the BasicArgumentClassifier " " "
@@ -18,15 +18,33 @@ class BasicArgumentTrainer:
         self.pathToFiles = pathToAmlFiles
 
     #builds a training set from all aml files with number between start and stop
-    def buildTrainingExamples(self, start, stop):
+    def buildTrainingExamples(self, start, stop, even = None):
         name = self.pathToFiles + "arg_"
-        fileList = filter(os.path.exists, map(lambda x: name + str(x) + ".aml", range(start, stop)))
+        if even:
+            nameList = filter(self._isEven, range(start, stop))
+        elif not even is None:
+            nameList = filter(self._isOdd, range(start, stop))
+        else:
+            nameList = range(start, stop)
+        fileList = filter(os.path.exists, map(lambda x: name + str(x) + ".aml", nameList))
         return reduce(lambda x,y : x + y, map(self.buildTrainingExample, fileList))
 
+    def _isEven(self, x):
+        if x % 2 == 0:
+            return x
+        else:
+            return None
+
+    def _isOdd(self, x):
+        if x % 2 == 0:
+            return None
+        else:
+            return x
+        
     #trains a classifier of the specifified type and saves it in the given file
     def trainClassifier(self, start, stop, classifierType="naive-bayes",
                         fileName="..\\resources\\basic-arg.pickle"):
-        trainingSet = self.buildTrainingExamples(start, stop)
+        trainingSet = self.buildTrainingExamples(start, stop, True)
         if classifierType == "naive-bayes":
             classifier = nltk.NaiveBayesClassifier.train(trainingSet)
         elif classifierType == "maxent":
@@ -88,4 +106,4 @@ class BasicArgumentTrainer:
         return (pi, pi + len(sentence))
 
 a = BasicArgumentTrainer()
-a.trainClassifier(0,10)
+a.trainClassifier(0, 100)

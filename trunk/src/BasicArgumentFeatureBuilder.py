@@ -1,5 +1,6 @@
 from nltk.tokenize import punkt
-import tst
+import tst, string
+import nltk.tag
 
 class BasicArgumentFeatureBuilder:
     " " " Extracts features from a sentence. Depends on SWIGPy and requires tst module " " "

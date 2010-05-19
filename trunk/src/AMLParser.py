@@ -77,16 +77,27 @@ class AMLParser:
         def getArgumentationUnit(self, argNode):
                 propNode = argNode.getElementsByTagName('PROP')[0]
                 proptextNode = argNode.getElementsByTagName('PROPTEXT')[0]
-                schemeNode = argNode.getElementsByTagName('INSCHEME')[0]
+                schemeNodeList = argNode.getElementsByTagName('INSCHEME')
+                if schemeNodeList is None or len(schemeNodeList) == 0:
+                        schemeName = None
+                        schemeId = None
+                else:
+                        schemeNode = schemeNodeList[0]
+                        schemeName = schemeNode.getAttribute("scheme")
+                        schemeId = schemeNode.getAttribute("schid")
                 refutation = None
                 refNode = argNode.getElementsByTagName("REFUTATION")
                 if (refNode != []):
-                        refutation = self.getArgumentationUnit(refNode[0].getElementsByTagName("AU")[0])
+                        nodeList = refNode[0].getElementsByTagName("AU")
+                        if nodeList is None:
+                                print self.filename
+                        else:
+                                refutation = self.getArgumentationUnit(nodeList[0])
                 laList, caList = self.getPremises(argNode)
                 return ArgumentationStructures.ArgumentationUnit(propNode.getAttribute("identifier"), propNode.getAttribute('missing'),
                                                                  refutation, proptextNode.getAttribute("offset"),
-                                                                 proptextNode.firstChild.nodeValue, schemeNode.getAttribute("scheme"),
-                                                                 schemeNode.getAttribute("schid"), laList, caList)
+                                                                 proptextNode.firstChild.nodeValue, schemeName, schemeId, laList,
+                                                                 caList)
                                 
         def getPremises(self, argnode):
                 laNodes = []
