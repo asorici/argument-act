@@ -56,3 +56,18 @@ class ArgumentationUnit:
         result.extend(la)
         result.extend(ca)
         return result
+    
+    def get_text_units(self, arg_unit=None):
+        if arg_unit is None:
+            arg_unit = self
+        print arg_unit.conclusion
+        print [arg.conclusion for arg in arg_unit.laList]
+        c = []
+        p = []
+        if len(arg_unit.laList) == 0 and len(arg_unit.caList) == 0:
+            p.append(arg_unit.conclusion)
+        else:
+            c.append(arg_unit.conclusion)
+        p1, c1 = reduce(lambda (x1, y1),(x2, y2): (x1 + x2, y1 + y2), map(self.get_text_units, arg_unit.laList),(p,c))
+        p2, c2 = reduce(lambda (x1, y1),(x2, y2): (x1 + x2, y1 + y2), map(self.get_text_units, arg_unit.caList),(p1,c1))
+        return p2, c2
