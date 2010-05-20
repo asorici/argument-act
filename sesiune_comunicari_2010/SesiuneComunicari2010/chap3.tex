@@ -3,4 +3,50 @@
 \section{Results and Future Work}
 \label{sec:results}
 
+\paragraph*{}The role of the segmentation module is that to partition different argumentative sentences (units) into their corresponding arguments, that is, to determine the limits of each individual argument.
+\paragraph*{}As presented in the description of the NLP module capabilities, we opt to calculate the semantic distance between the different argumentative units, and group sentences in one argument if they discuss content that is semantically related.
+\paragraph*{}The module receives a list of argumentative sentences as its input. It then uses a word tokenizer to split the sentences into lists of words. Stopwords such as "the", "in", "with" etc. are removed before going to the next step.
+\paragraph*{}We assume the semantic relatedness of words to be given by their semantic distances in a lexico-semantic resource such as WordNet. We use the lin similarity measure to compute the relatedness of two synsets. As each word in a sentence can have several senses, one would first have to go through a word sense disambiguation process to determine the most probable meaning. As this process is time-consuming, the current approach employs the use of the most common sense, as defined by WordNet, for each word we encounter.
+\paragraph*{}Using the lin similarity we compute a word similarity matrix between every pair of words, one from each sentence.
+\paragraph*{}To compute the estimated similarity between two sentences we then use the following method. Given two sentences A and B, for each word from sentence A we compute the most similar word from sentence B, as given by the previously computed matrix.
+
+\[ b^* = arg \max_b Sim(a,b) \]
+
+In a similar manner, for each word in sentence B we compute the most similar word from sentence A.
+
+\[ a^* = arg \max_a Sim(a,b) \]
+
+Afterwards the similarity between sentences A and B is given by
+\[ ( \sum{a^*} + \sum{b^*}) / (2 * (\mid A\mid + \mid B \mid ) \]
+The above process yields a sentence similarity matrix. This matrix is used as an input to a hierarchical clustering algorithm. We take an empirically determined cutoff distance of 0.875 to cut the resulting cluster dendrogram at the corresponding depth. This results in a list of sentence clusters, each of which contains the components of an individual argument.
+\subsubsection*{Case study}
+\paragraph*{}Here is a simple example. The initial text:
+\paragraph*{}\emph{``It is well established that if any statement is made on the floor of the House by a Member or Minister which another Member believes to be untrue, incomplete or incorrect, it does not constitute a breach of privilege.  In order to constitute a breach of privilege or contempt of the House, it has to be proved that the statement was not only wrong or misleading but it was made deliberately to mislead the House.  A breach of privilege can arise only when the Member or the Minister makes a false statement or an incorrect statement willfully, deliberately and knowingly. On a perusal of the comments of the Ministers in the matter, I am satisfied that there has been no misleading of the House by them as alleged by the Member. I have accordingly disallowed the notice of question of privilege.  Copies of the comments of the Ministers have already been made available to Dr. Raghuvansh Prasad Singh.''}
+\paragraph*{}The determined word lists:
+\begin{description}
+\item[L1:][`It', `well', 'established', 'statement', 'made', 'floor', 'House', 'Member', 'Minister',u'another', `Member', 'believes', 'untrue', 'incomplete', 'incorrect', 'constitute', 'breach', `privilege']
+\item[L2:] ['In', 'order', 'constitute', 'breach', 'privilege', 'contempt', 'House', 'proved', 'statement', 'wrong', 'misleading', 'made', 'deliberately', 'mislead', 'House']
+\item[L3:] ['A', 'breach', 'privilege', 'arise', 'Member', 'Minister', 'makes', 'false', 'statement', 'incorrect', 'statement', 'wilfully', 'deliberately', 'knowingly']
+\item[L4:] ['On', 'perusal', 'comments', 'Ministers', 'matter', 'I', 'satisfied', 'misleading', 'House', 'alleged', 'Member']
+\item[L5:] ['I', 'accordingly', 'disallowed', 'notice', 'question', 'privilege']
+\item[L6:] ['Copies', 'comments', 'Ministers', 'already', 'made', 'available', 'Dr', 'Raghuvansh', 'Prasad', 'Singh']
+\end{description}
+\paragraph*{}The (simmetric) sentence similarity matrix:
+\begin{center}
+  \begin{tabular}{ | l | c | c | c | c | c | c | }
+    \hline
+	& \emph{1} & \emph{2} & \emph{3} & \emph{4} & \emph{5} & \emph{6} \\ \hline
+    \emph{1} & 1.00 & 0.24 & 0.24 & 0.19 & 0.10 & 0.13  \\ \hline
+	\emph{2} & 0.24 & 1.00 & 0.21 & 0.19 & 0.14 & 0.10  \\ \hline
+	\emph{3} & 0.24 & 0.21 & 1.00 & 0.16 & 0.13 & 0.11  \\ \hline
+	\emph{4} & 0.19 & 0.19 & 0.16 & 1.00 & 0.13 & 0.12  \\ \hline
+	\emph{5} & 0.10 & 0.14 & 0.13 & 0.13 & 1.00 & 0.06  \\ \hline
+	\emph{6} & 0.13 & 0.10 & 0.11 & 0.12 & 0.06 & 1.00  \\ \hline
+  \end{tabular}
+\end{center}
+The resulting sentence clustering (only the indexes of the sentences are show):
+\[ [[5], [4, 3, 1, 0, 2]] \]
+We can see that sentences 1-5 belong to one argument and sentence 6, which is actually non-argumentative, this being only an illustrative example, belongs to a separate cluster.
+\paragraph*{}The current method yields some promising results, but there is still room for improvement, especially in the process of determining word similarities, where we hope to be able to implement a more advanced measurement solution. In particular, the Lin measure can only compute the similarity between words which have the same part of speech (noun, verb etc). The lesk or gloss-vector measures, which we will try to implement in future developments can cross these boundaries and are not limited by is-a relations.
+\subsubsection*{Future work}
 The next step we have to take towards completing the argumentation mining module of the agents consists of extracting argumentation schemes from natural text. Our approach will use a SVM classifier trained on AraucariaDB corpus with features like the position of sentence in the text, the tense of main verb, the most probable argumentative category of previous and next sentences or argumentative patterns to split argumentative propositions into premises and conclusions. Those sentences will then be integrated into higher level structures using the schemes define by Walton in \cite{walton1996argumentation}.
