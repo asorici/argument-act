@@ -1,4 +1,5 @@
-This is BibTeX, Version 0.99cThe top-level auxiliary file: SesiuneComunicari2010.aux
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: SesiuneComunicari2010.aux
 A level-1 auxiliary file: chap1.aux
 A level-1 auxiliary file: chap2.aux
 A level-1 auxiliary file: chap3.aux
@@ -6,5 +7,47 @@ The style file: plain.bst
 Database file #1: bibliography.bib
 Warning--empty journal in abbas-ales
 Warning--empty year in abbas-ales
+Warning--empty year in dung
 Warning--empty journal in Palau
-(There were 3 warnings)
+You've used 17 entries,
+            2118 wiz_defined-function locations,
+            597 strings with 6761 characters,
+and the built_in function-call counts, 5727 in all, are:
+= -- 571
+> -- 252
+< -- 7
++ -- 100
+- -- 82
+* -- 361
+:= -- 943
+add.period$ -- 52
+call.type$ -- 17
+change.case$ -- 91
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 239
+empty$ -- 430
+format.name$ -- 82
+if$ -- 1218
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 18
+newline$ -- 89
+num.names$ -- 34
+pop$ -- 99
+preamble$ -- 1
+purify$ -- 75
+quote$ -- 0
+skip$ -- 190
+stack$ -- 0
+substring$ -- 333
+swap$ -- 68
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 64
+warning$ -- 4
+while$ -- 59
+width$ -- 19
+write$ -- 184
+(There were 4 warnings)

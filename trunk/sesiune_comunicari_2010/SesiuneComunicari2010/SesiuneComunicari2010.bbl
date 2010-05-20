@@ -21,6 +21,13 @@ Carlos Chesnevar, Jarred McGinnis, Sanjay Modgil, Iyad Rahwan, Chris Reed,
 \newblock Towards an argument interchange format.
 \newblock {\em The Knowledge Engineering Review}, 0(0):1--25, 2007.
 
+\bibitem{dung}
+Phan~Minh Dung.
+\newblock On the acceptability of arguments and its fundamental role in
+  nonmonotonic reasoning, logic programming and n-persons games.
+\newblock Technical report, Asian Institute of Technology, GPO Box 2754,
+  Bangkok 10501, Thailand.
+
 \bibitem{jcn}
 J.~Jiang and D.~Conrath.
 \newblock Semantic similarity based on corpus statistics and lexical taxonomy.
@@ -86,5 +93,10 @@ P.~Resnik.
 C.~Trojahn, P.~Quaresma, and R.~Vieira.
 \newblock {An argumentation framework based on strength for ontology mapping}.
 \newblock {\em Argumentation in Multi-Agent Systems}, pages 57--71, 2009.
+
+\bibitem{walton1996argumentation}
+D.N. Walton.
+\newblock {\em {Argumentation schemes for presumptive reasoning}}.
+\newblock Lawrence Erlbaum, 1996.
 
 \end{thebibliography}
