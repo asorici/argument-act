@@ -111,6 +111,6 @@ class AMLParser:
                                 caNodes.append(self.getArgumentationUnits(node))
                 return laNodes, caNodes
 
-#a = AMLParser("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_15.aml")
+#a = AMLParser("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_204.aml")
 #u = a.getArgumentationUnits()[0]
 #print u.extractText()
