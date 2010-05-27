@@ -106,4 +106,4 @@ class BasicArgumentTrainer:
         return (pi, pi + len(sentence))
 
 a = BasicArgumentTrainer()
-a.trainClassifier(0, 100)
+a.trainClassifier(0, 1000)

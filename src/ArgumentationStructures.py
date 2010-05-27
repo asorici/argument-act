@@ -39,8 +39,8 @@ class ArgumentationUnit:
         if argUnit is None:
             argUnit = self
         result = [argUnit.conclusion]
-        la = [entry[0] for entry in map(self.extractText, argUnit.laList)]
-        ca = [entry[0] for entry in map(self.extractText, argUnit.caList)]
+        la = reduce(lambda x,y: x + y, map(self.extractText, argUnit.laList), [])
+        ca = reduce(lambda x,y: x + y, map(self.extractText, reduce(lambda x,y: x + y, argUnit.caList, [])), [])
         result.extend(la)
         result.extend(ca)
         return result
@@ -52,7 +52,7 @@ class ArgumentationUnit:
         if not self.refutation is None:
             result.extend(self.refutation.extractTextAndOffset())
         la = reduce(lambda x,y: x + y, map(self.extractTextAndOffset, argUnit.laList), [])
-        ca = reduce(lambda x,y: x + y, map(self.extractTextAndOffset, argUnit.caList), [])
+        ca = reduce(lambda x,y: x + y, map(self.extractTextAndOffset, reduce(lambda x,y: x + y, argUnit.caList, [])), [])
         result.extend(la)
         result.extend(ca)
         return result

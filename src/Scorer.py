@@ -9,8 +9,7 @@ class Scorer:
     def computeFScores(self, targetLabels, actualLabels):
         if self.prMeasures is None:
             self.prMeasures = self.computePRMeasures(targetLabels, actualLabels)
-        self.f1score = 2 * self.prMeasures[0] * self.prMeasures[1] /
-                (self.prMeasures[0] * self.prMeasures[1])
+        self.f1score = 2 * self.prMeasures[0] * self.prMeasures[1] / (self.prMeasures[0] * self.prMeasures[1])
         return self.f1score
 
     def computePRMeasures(self, targetLabels, actualLabels):
@@ -21,11 +20,19 @@ class Scorer:
         return self.prMeasures
     
     #returns true positive, false positive, true negative, false negative
-    def computeBasicStatistics
+    def computeBasicStatistics(self, targetLabels, actualLabels):
         self.basicMeasures = reduce(self._cbe, map(lambda x,y:(x,y), targetLabels,
                                      actualLabels), (0,0,0,0))
         return self.basicMeasures
 
+    def computeAccuracy(self, targetLabels, actualLabels):
+        return (0.0 + sum([1 for x in map(lambda y,z:(y,z), targetLabels, actualLabels) if x[0] == x[1]])) / len(targetLabels)
+
+    def _equal1(self, x, y):
+        if x == y:
+            return 1
+        else:
+            return 0
     def _cbe(self, value, pair):
         if pair[0] == "y":
             if pair[1] == "y": #tp
