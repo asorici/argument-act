@@ -1,6 +1,6 @@
 import AMLParser
 import WordSenseDisambiguation
-import time, subprocess
+import time, subprocess, string
 from nltk import data
 from nltk.tokenize import punkt
 from nltk.tokenize.punkt import PunktWordTokenizer
@@ -18,8 +18,15 @@ class BasicArgumentSegmentation:
 		self.semcor_ic = wordnet_ic.ic('ic-semcor.dat')
 		
 	def segment(self):
+		# spawn perl word-relatedness computation process
+		self.perl_proc = subprocess.Popen(["./word-relatedness.pl"], shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+		
 		similarityMatrix = self.sentenceSimilarity()
 		self.printSimilarityMatrix(similarityMatrix)
+		
+		self.perl_proc.stdin.close()
+		self.perl_proc.stdout.close()
+		self.perd_proc = None
 		
 		n, m = similarityMatrix.shape
 		self.distanceMatrix = zeros((n,m))
@@ -31,10 +38,18 @@ class BasicArgumentSegmentation:
 		data = range(len(self.sentenceList))
 		distanceFunction = lambda i, j: self.distanceMatrix[i][j]
 		
-		clusterer = HierarchicalClustering(data, distanceFunction, 'uclus')
-		clusters = clusterer.getlevel(0.875)
+		clusterer = HierarchicalClustering(data, distanceFunction, 'single')
+		clusters = clusterer.getlevel(0.88)
 		
-		return clusters
+		sentenceSegments = []
+		for cl in clusters:
+			group = []
+			for index in cl:
+				group.append(self.sentenceList[index])
+			sentenceSegments.append(group)
+		
+		#return clusters
+		return sentenceSegments
 	
 	def printSimilarityMatrix(self, matrix):
 		n, m = matrix.shape
@@ -159,20 +174,45 @@ class BasicArgumentSegmentation:
 						sense_j = synsets_j[0]
 						
 						try:
-							R[i][j] = sense_i.lin_similarity(sense_j, self.semcor_ic)
+							#R[i][j] = sense_i.lin_similarity(sense_j, self.semcor_ic)
 							#R[i][j] = sense_i.lch_similarity(sense_j)
-							if R[i][j] > 1 or R[i][j] < 0.01:
+							
+							# call perl word-relatedness script and get result
+							
+							wList = self._prepareWordSenses(sense_i, sense_j)
+							self.perl_proc.stdin.write(wList[0] + " " + wList[1] + "\n");
+							result = self.perl_proc.stdout.readline()
+							
+							R[i][j] = float(result.strip())
+							
+							if R[i][j] > 1 or R[i][j] < 0:
 								R[i][j] = 0
-							#if R[i][j] < 0:
-							#	R[i][j] = 0
 						except:
 							R[i][j] = 0
 					else:
 						R[i][j] = 0
 		return R
+	
+	def _prepareWordSenses(self, ws1, ws2):
+		name1 = ws1.name
+		name2 = ws2.name
+		
+		name1_parts = name1.split(".")
+		name2_parts = name2.split(".")
+		
+		if name1_parts[2][0] == '0':
+			name1_parts[2] = name1_parts[2][1:]
+		
+		if name2_parts[2][0] == '0':
+			name2_parts[2] = name2_parts[2][1:]
+			
+		name1 = string.join(name1_parts, "#")
+		name2 = string.join(name2_parts, "#")
+		
+		return [name1, name2]
 		
 
-amlFile = "../araucaria-aml-files/arg_128.aml"
+amlFile = "../araucaria-aml-files/arg_23.aml"
 parser = AMLParser.AMLParser(amlFile)
 text = parser.getText()
 sentenceTokenizer = data.LazyLoader("tokenizers/punkt/english.pickle")
