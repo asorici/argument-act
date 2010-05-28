@@ -10,7 +10,10 @@ if find_library('svm'):
 elif find_library('libsvm'):
 	libsvm = CDLL(find_library('libsvm'))
 else  :
-	libsvm = CDLL('./libsvm.so.1')
+	if sys.platform == 'win32':
+		libsvm = CDLL('../libsvm/libsvm.dll')
+	else :
+		libsvm = CDLL('../libsvm/libsvm.so.1')
 
 # Construct constants
 SVM_TYPE = ['C_SVC', 'NU_SVC', 'ONE_CLASS', 'EPSILON_SVR', 'NU_SVR' ]
