@@ -12,21 +12,27 @@ from cluster import *
 
 class BasicArgumentSegmentation:
 	
-	def __init__(self, sentencelist):
-		self.sentenceList = sentencelist
+	def __init__(self):
+		
 		self.brown_ic = wordnet_ic.ic('ic-brown.dat')
 		self.semcor_ic = wordnet_ic.ic('ic-semcor.dat')
+		self.cutoffDistance = 0.885
 		
-	def segment(self):
+	def segment(self, data):
 		# spawn perl word-relatedness computation process
-		self.perl_proc = subprocess.Popen(["./word-relatedness.pl"], shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+		#self.perl_proc = subprocess.Popen(["./word-relatedness.pl"], shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+		dataList, textLength = data
+		argSentences = map(lambda x: x[0], filter(lambda (x,y,z): y == 'y', dataList))
+		#offsets = map(lambda x: x[2], filter(lambda (x,y,z): y == 'y', dataList))
+		
+		self.sentenceList = argSentences
 		
 		similarityMatrix = self.sentenceSimilarity()
 		self.printSimilarityMatrix(similarityMatrix)
 		
-		self.perl_proc.stdin.close()
-		self.perl_proc.stdout.close()
-		self.perd_proc = None
+		#self.perl_proc.stdin.close()
+		#self.perl_proc.stdout.close()
+		#self.perl_proc = None
 		
 		n, m = similarityMatrix.shape
 		self.distanceMatrix = zeros((n,m))
@@ -38,15 +44,17 @@ class BasicArgumentSegmentation:
 		data = range(len(self.sentenceList))
 		distanceFunction = lambda i, j: self.distanceMatrix[i][j]
 		
-		clusterer = HierarchicalClustering(data, distanceFunction, 'single')
-		clusters = clusterer.getlevel(0.88)
+		clusterer = HierarchicalClustering(data, distanceFunction, 'average')
+		clusters = clusterer.getlevel(self.cutoffDistance)
 		
 		sentenceSegments = []
 		for cl in clusters:
 			group = []
+			offset = 0
 			for index in cl:
-				group.append(self.sentenceList[index])
-			sentenceSegments.append(group)
+				group.append((self.sentenceList[index], offset))
+				offset += len(self.sentenceList[index])
+			sentenceSegments.append((group, offset))
 		
 		#return clusters
 		return sentenceSegments
@@ -174,16 +182,16 @@ class BasicArgumentSegmentation:
 						sense_j = synsets_j[0]
 						
 						try:
-							#R[i][j] = sense_i.lin_similarity(sense_j, self.semcor_ic)
+							R[i][j] = sense_i.lin_similarity(sense_j, self.semcor_ic)
 							#R[i][j] = sense_i.lch_similarity(sense_j)
 							
 							# call perl word-relatedness script and get result
 							
-							wList = self._prepareWordSenses(sense_i, sense_j)
-							self.perl_proc.stdin.write(wList[0] + " " + wList[1] + "\n");
-							result = self.perl_proc.stdout.readline()
+							#wList = self._prepareWordSenses(sense_i, sense_j)
+							#self.perl_proc.stdin.write(wList[0] + " " + wList[1] + "\n");
+							#result = self.perl_proc.stdout.readline()
 							
-							R[i][j] = float(result.strip())
+							#R[i][j] = float(result.strip())
 							
 							if R[i][j] > 1 or R[i][j] < 0:
 								R[i][j] = 0
@@ -211,7 +219,7 @@ class BasicArgumentSegmentation:
 		
 		return [name1, name2]
 		
-
+"""
 amlFile = "../araucaria-aml-files/arg_23.aml"
 parser = AMLParser.AMLParser(amlFile)
 text = parser.getText()
@@ -225,7 +233,7 @@ print len(wordLists)
 for wList in wordLists:
 	print wList
 
-"""
+
 sim = argSeg._getWordSimilarityMatrix(wordLists[1], wordLists[2])
 n,m = sim.shape
 
@@ -248,7 +256,7 @@ for i in range(size):
 	
 	print ""
 """
-
+"""
 clusters = argSeg.segment()
 print clusters
-
+"""

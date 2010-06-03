@@ -25,10 +25,31 @@ class BasicArgumentClassifier:
         testSet = self.trainer.buildTrainingExamples(start, stop, False)
         featureList = map(lambda x: x[0], testSet)
         actualLabels = map(lambda x: x[1], testSet)
+        sentenceList = map(lambda x: x[2], testSet)
+        sentenceIntervals = map(lambda x: x[3], testSet)
+        
+        displacement = 0
+        index = 0
+        for i in range(len(sentenceIntervals)):
+            if i != 0 and sentenceIntervals[i][0] == 0:
+                displacement += sentenceIntervals[i-1][1]
+                if index == 0:
+                    index = i
+		
+        for i in range(index, len(sentenceIntervals)):
+            sentenceIntervals[i] = (sentenceIntervals[i][0] + displacement, sentenceIntervals[i][1] + displacement)
+		
+        textLength = sentenceIntervals[ len(sentenceIntervals) - 1 ][1]
+        sentenceOffsets = map(lambda x: x[0], sentenceIntervals)
         classLabels = self.batchClassify(featureList)
-        a = Scorer.Scorer()
-        print a.computeAccuracy(actualLabels, classLabels)
-        return None
+        
+        outputList = []
+        for i in range(len(sentenceIntervals)):
+            outputList.append((sentenceList[i], classLabels[i], sentenceOffsets[i]))
+		
+        #a = Scorer.Scorer()
+        #print a.computeAccuracy(actualLabels, classLabels)
+        return (outputList, textLength)
 
 #a = BasicArgumentFeatureBuilder("..\\resources\\arg-dictionary.csv", True)
 #print a.extractFeatures("For of the -  weather we would badly cancelled our trip.") #this is not true english just good test case :)
@@ -37,5 +58,11 @@ class BasicArgumentClassifier:
 #print a._buildTrainingExamples(0,20)
 #print a.buildTrainingExample("F:\\proiecte\\NLP\\araucaria-aml-files\\arg_15.aml")
 
+"""
 a = BasicArgumentClassifier()
-a.classifyFiles(475,483)
+data = a.classifyFiles(475,483)
+dataList, textLength = data
+
+argSentences = map(lambda x: x[0], filter(lambda (x,y,z): y == 'y', dataList))
+print argSentences
+"""

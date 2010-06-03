@@ -44,7 +44,8 @@ class BasicArgumentTrainer:
     #trains a classifier of the specifified type and saves it in the given file
     def trainClassifier(self, start, stop, classifierType="naive-bayes",
                         fileName="..\\resources\\basic-arg.pickle"):
-        trainingSet = self.buildTrainingExamples(start, stop, True)
+        #trainingSet = self.buildTrainingExamples(start, stop, True)
+        trainingSet = map(lambda x: (x[0], x[1]), self.buildTrainingExamples(start, stop, True))
         if classifierType == "naive-bayes":
             classifier = nltk.NaiveBayesClassifier.train(trainingSet)
         elif classifierType == "maxent":
@@ -70,7 +71,7 @@ class BasicArgumentTrainer:
         argIntervals = sorted(map(lambda x:(x[1], x[1] + len(x[0])), argUnit.extractTextAndOffset()), key=lambda x: x[0])
         senIntervals = map(self._mapToInterval, sentenceList)
         labels = self._generateLabels(argIntervals, senIntervals)
-        return map(lambda x,y:(x,y), featureList, labels)   
+        return map(lambda x,y,z,t:(x,y,z,t), featureList, labels, sentenceList, senIntervals)   
 
     def _generateLabels(self, argIntervals, senIntervals):
         i = 0
@@ -105,5 +106,5 @@ class BasicArgumentTrainer:
         pi = self.text.find(sentence)
         return (pi, pi + len(sentence))
 
-a = BasicArgumentTrainer()
-a.trainClassifier(0, 1000)
+#a = BasicArgumentTrainer()
+#a.trainClassifier(0, 1000)
