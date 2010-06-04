@@ -46,6 +46,10 @@ class BasicArgumentClassifier:
         return map(lambda x,y,z:(x,y,z), sentenceList,labels, featureList)
 
 a = BasicArgumentClassifier("..\\resources\\max-arg.pickle")
+f = file("..\\resources\\test.txt")
+print map(lambda x:(x[0],x[1]), a.classifyText(f.read()))
+f.close()
+
 #a = BasicArgumentClassifier()
 #a.classifyFiles(0,1000)
-a._testCalssifier(0, 10)
+#a._testCalssifier(487, 489)
