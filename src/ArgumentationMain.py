@@ -7,7 +7,7 @@ class ArgumentationAct:
 	def __init__(self):
 		self.classifierUnit = BasicArgumentClassifier()
 		self.segmentationUnit = BasicArgumentSegmentation()
-		self.argPropositionsUnit = ArgumentPropositionsClassifier()
+		self.argPropositionsUnit = ArgumentPropositionsClassifier.ArgumentPropositionsClassifier()
 
 	#should return an argumentation unit -either a schema or a arg unit
 	def parseText(self, text):
@@ -16,8 +16,8 @@ class ArgumentationAct:
 	def parseFromAml(self, start, stop):
 		data = self.classifierUnit.classifyFiles(start, stop)
 		textSegments = self.segmentationUnit.segment(data)
-		
-		print textSegments
+		classifiedTextSegments = self.argPropositionsUnit.predict2(textSegments)
+		print classifiedTextSegments
 		
 aa = ArgumentationAct()
 aa.parseFromAml(475,483)

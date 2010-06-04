@@ -25,3 +25,17 @@ p_label, p_acc, p_val = c.predict(test_data)
 ACC, MSE, SCC = evaluations(test_data[1], p_label)
 print ACC, MSE, SCC
 print "*The End"
+#test modul
+ss = []
+group = []
+group.append(("ceva",1))
+group.append(("altceva",2))
+group.append(("cu totul si cu totul altceva",4))
+ss.append((group,5))
+group = []
+group.append(("bau",2))
+group.append(("hau",4))
+ss.append((group,6))
+argPropositionsUnit = ArgumentPropositionsClassifier.ArgumentPropositionsClassifier()
+argPropositionsUnit.predict2(ss)
+ 

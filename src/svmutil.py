@@ -52,6 +52,8 @@ def evaluations(ty, pv):
 	Calculate accuracy, mean squared error and squared correlation coefficient
 	using the true values (ty) and predicted values (pv).
 	"""
+	if len(ty) == 0:
+		return (1,1,1)
 	if len(ty) != len(pv):
 		raise ValueError("len(ty) must equal to len(pv)")
 	total_correct = total_error = 0
