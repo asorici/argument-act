@@ -19,13 +19,13 @@ class BasicArgumentClassifier:
             return None
 
     def _testCalssifier(self, start, stop):
-        estSet = self.trainer.buildTrainingExamples(start, stop, False)
+        testSet = self.trainer.buildTrainingExamples(start, stop, False)
         featureList = map(lambda x: x[0], testSet)
         actualLabels = map(lambda x: x[1], testSet)
         classLabels = self.classifier.batch_classify(featureList)
         a = Scorer.Scorer()
         print a.computeAccuracy(actualLabels, classLabels)
-        print a.computeFScore(actualLabels, classLabels)
+        print a.computeFScores(actualLabels, classLabels)
         print a.prMeasures
         
     def classifyFiles(self, start, stop):
@@ -37,11 +37,7 @@ class BasicArgumentClassifier:
     def classifyAmlFile(self, amlFile):
         parser = AMLParser.AMLParser(amlFile)
         text = parser.getText()
-        a = self.classifyText(text)
-        print a
-        print "ooooo\n"
-        return a
-        #return self.classifyText(text)
+        return self.classifyText(text)
     
     def classifyText(self, text):
         sentenceList = self.trainer.sentenceTokenizer.tokenize(text)
@@ -52,4 +48,4 @@ class BasicArgumentClassifier:
 a = BasicArgumentClassifier("..\\resources\\max-arg.pickle")
 #a = BasicArgumentClassifier()
 #a.classifyFiles(0,1000)
-a.classifyFiles(0,3)
+a._testCalssifier(0, 10)
