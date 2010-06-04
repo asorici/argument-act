@@ -2,11 +2,14 @@ from nltk.tokenize import punkt
 import tst, string
 import nltk.tag
 
+from time import time, clock
+
 class BasicArgumentFeatureBuilder:
     " " " Extracts features from a sentence. Depends on SWIGPy and requires tst module " " "
     
     def __init__(self, dictPath = "..\\resources\\arg-dictionary.csv", buildDict = False):
         self.wordTokenizer = punkt.PunktWordTokenizer()
+        self.callbackFunction = BasicArgumentCallbackFunction()
         pos = dictPath.rfind(".")
         if pos < 0:
             pos = len(dictPath)
@@ -55,20 +58,23 @@ class BasicArgumentFeatureBuilder:
     def extractFeatures(self, sentence):
         tokens = self.wordTokenizer.tokenize(sentence)
         tagList = nltk.tag.pos_tag(tokens)
-        result = dict(modalVerb = 0, verb = 0, adverb = 0, punct = 0, key = 0)
-        for (word,tag) in tagList:
-            if tag == "MD":
-                result["modalVerb"] = 1
-            elif tag.startswith("VB") and self._isMainVerb(word):
-                result["verb"] = 1
-            elif tag.startswith("RB"):
-                result["adverb"] = 1
-            elif word in string.punctuation:
-                result["punct"] = 1 + result["punct"]
-        if self._containsKeyWord(sentence.lower()):
-            result["key"] = 1
+        result = dict(modalVerb = 0, verb = 0, adverb = 0, punct = 0, key = 0, slen = len(sentence),
+                      wlen = sum(map(len, tokens)) / len(tokens))
+        result = reduce(self._extractFeatures, tagList, result)
+        result["key"] = self._containsKeyWord(sentence.lower())
         return result
 
+    def _extractFeatures(self, result, pair):
+        if pair[1] == "MD":
+            result["modalVerb"] = result["modalVerb"] 
+        elif pair[1].startswith("VB") and self._isMainVerb(pair[0]):
+            result["verb"] = result["verb"]
+        elif pair[1].startswith("RB"):
+            result["adverb"] = 1  + result["adverb"]
+        elif pair[0] in string.punctuation:
+            result["punct"] = 1 + result["punct"]
+        return result
+    
     def _isMainVerb(self, word):
         if (word == "be") or (word == "have") or (word == "do"):
             return 0
@@ -77,21 +83,20 @@ class BasicArgumentFeatureBuilder:
 
     #this uses Aho-Corasick algorithm and performs a match in linear time in text length
     def _containsKeyWord(self, sentence):
-        fun = BasicArgumentCallbackFunction()
         try:
-            return self.dict.scan(sentence, tst.CallableAction(fun.hit, fun.result))
+            return self.dict.scan(sentence, tst.CallableAction(self.callbackFunction.hit, self.callbackFunction.result))
         except RuntimeError:
             return 1
 
 class BasicArgumentCallbackFunction(object):
     " " " represents a callback interface for the TST scaner " " "
-
+        
     #this explicitly raises an exception to force the caller to terminate. This is done to speed up the Aho-Corasick since
     #we're only interested in the first match of a given word.
     #TODO : Implement own exception just to be safe
     def hit(self, key, length, obj):
      	if length > 0 :
-     	    raise RuntimeError
+                raise RuntimeError
      	    
     def result(self):
         #if no exception was thrown then there is no match

@@ -1,7 +1,6 @@
 from nltk import data
 import csv, pickle
-import os.path
-import BasicArgumentFeatureBuilder
+import BasicArgumentFeatureBuilder, ArgUtils
 import AMLParser
 import nltk
 
@@ -14,50 +13,32 @@ class BasicArgumentTrainer:
         #this is the feature extractor
         self.featureExtractor = BasicArgumentFeatureBuilder.BasicArgumentFeatureBuilder(
             "..\\resources\\arg-dictionary.csv", False)
-        self.text = None
         self.pathToFiles = pathToAmlFiles
+        self.text = None
 
     #builds a training set from all aml files with number between start and stop
     def buildTrainingExamples(self, start, stop, even = None):
-        name = self.pathToFiles + "arg_"
-        if even:
-            nameList = filter(self._isEven, range(start, stop))
-        elif not even is None:
-            nameList = filter(self._isOdd, range(start, stop))
-        else:
-            nameList = range(start, stop)
-        fileList = filter(os.path.exists, map(lambda x: name + str(x) + ".aml", nameList))
+        u = ArgUtils.ArgUtils(self.pathToFiles)
+        fileList = u.buildFileList(start, stop, even)
         return reduce(lambda x,y : x + y, map(self.buildTrainingExample, fileList))
-
-    def _isEven(self, x):
-        if x % 2 == 0:
-            return x
-        else:
-            return None
-
-    def _isOdd(self, x):
-        if x % 2 == 0:
-            return None
-        else:
-            return x
         
     #trains a classifier of the specifified type and saves it in the given file
-    def trainClassifier(self, start, stop, classifierType="naive-bayes",
-                        fileName="..\\resources\\basic-arg.pickle"):
-        #trainingSet = self.buildTrainingExamples(start, stop, True)
-        trainingSet = map(lambda x: (x[0], x[1]), self.buildTrainingExamples(start, stop, True))
+    def trainClassifier(self, start, stop, fileName="..\\resources\\basic-arg.pickle", classifierType="naive-bayes"):
+        trainingSet = self.buildTrainingExamples(start, stop, True)
         if classifierType == "naive-bayes":
             classifier = nltk.NaiveBayesClassifier.train(trainingSet)
         elif classifierType == "maxent":
-            algortihm = "IIS" #this is hardcoded for now. All algorithm should yeld the same results
+            algorithm = "IIS" #this is hardcoded for now. All algorithm should yeld the same results
             classifier =  nltk.MaxentClassifier.train(trainingSet, algorithm, trace=0, max_iter=1000)
         else :
+            print "Classifier type unknown"
             return None
         try :
             f = open(fileName, "w")
             pickle.dump(classifier, f)
             f.close()
         except IOError:
+            print "Unable to save classifier file"
             return None
         return True
         
@@ -71,25 +52,23 @@ class BasicArgumentTrainer:
         argIntervals = sorted(map(lambda x:(x[1], x[1] + len(x[0])), argUnit.extractTextAndOffset()), key=lambda x: x[0])
         senIntervals = map(self._mapToInterval, sentenceList)
         labels = self._generateLabels(argIntervals, senIntervals)
-        return map(lambda x,y,z,t:(x,y,z,t), featureList, labels, sentenceList, senIntervals)   
-
+        return map(lambda x,y:(x,y), featureList, labels)
+    
     def _generateLabels(self, argIntervals, senIntervals):
         i = 0
+        j = 0
         result = ["n"] * len(senIntervals)
         #skip the intervals for missing
         while argIntervals[i][0] < 0:
             i = i + 1
-        for j in range(len(senIntervals)):
-            #skip first sentences if non argumentative
-            if senIntervals[j][1] < argIntervals[i][0]:
-                continue
-            while i < len(argIntervals) and not self._intervalIntersect(argIntervals[i], senIntervals[j]):
-                i = i + 1
-            if i < len(argIntervals):
+        while j < len(senIntervals) and i < len(argIntervals):
+            if self._intervalIntersect(argIntervals[i], senIntervals[j]):
                 result[j] = "y"
+                j = j + 1
+            elif argIntervals[i][1] < senIntervals[j][0]:
+                i = i + 1
             else:
-                #rest of the sentences remain non argumentative
-                break
+                j = j + 1
         return result
 
     def _intervalIntersect(self, a, b):
@@ -106,5 +85,6 @@ class BasicArgumentTrainer:
         pi = self.text.find(sentence)
         return (pi, pi + len(sentence))
 
-#a = BasicArgumentTrainer()
+a = BasicArgumentTrainer()
 #a.trainClassifier(0, 1000)
+a.trainClassifier(0, 1000, "..\\resources\\max-arg.pickle", "maxent")
