@@ -77,26 +77,22 @@ class AMLParser:
         def getArgumentationUnit(self, argNode):
                 propNode = argNode.getElementsByTagName('PROP')[0]
                 proptextNode = argNode.getElementsByTagName('PROPTEXT')[0]
-                schemeNodeList = argNode.getElementsByTagName('INSCHEME')
+                schemeNodeList = propNode.getElementsByTagName('INSCHEME')
                 if schemeNodeList is None or len(schemeNodeList) == 0:
-                        schemeName = None
-                        schemeId = None
+                        schemeNames = None
+                        schemeIds = None
                 else:
-                        schemeNode = schemeNodeList[0]
-                        schemeName = schemeNode.getAttribute("scheme")
-                        schemeId = schemeNode.getAttribute("schid")
+                        schemeNames = map(lambda x:x.getAttribute("scheme"), schemeNodeList)
+                        schemeIds = map(lambda x:x.getAttribute("schid"), schemeNodeList)
                 refutation = None
                 refNode = argNode.getElementsByTagName("REFUTATION")
                 if (refNode != []):
                         nodeList = refNode[0].getElementsByTagName("AU")
-                        if nodeList is None:
-                                print self.filename
-                        else:
-                                refutation = self.getArgumentationUnit(nodeList[0])
+                        refutation = self.getArgumentationUnit(nodeList[0])
                 laList, caList = self.getPremises(argNode)
                 return ArgumentationStructures.ArgumentationUnit(propNode.getAttribute("identifier"), propNode.getAttribute('missing'),
                                                                  refutation, proptextNode.getAttribute("offset"),
-                                                                 proptextNode.firstChild.nodeValue, schemeName, schemeId, laList,
+                                                                 proptextNode.firstChild.nodeValue, schemeNames, schemeIds, laList,
                                                                  caList)
                                 
         def getPremises(self, argnode):

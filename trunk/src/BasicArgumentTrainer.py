@@ -85,6 +85,6 @@ class BasicArgumentTrainer:
         pi = self.text.find(sentence)
         return (pi, pi + len(sentence))
 
-a = BasicArgumentTrainer()
+#a = BasicArgumentTrainer()
 #a.trainClassifier(0, 1000)
-a.trainClassifier(0, 1000, "..\\resources\\max-arg.pickle", "maxent")
+#a.trainClassifier(0, 1000, "..\\resources\\max-arg.pickle", "maxent")
