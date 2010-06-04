@@ -1,3 +1,5 @@
+from math import sqrt
+
 class Scorer:
     " " " Represents a general scorer for binary classifiers " " "
 
@@ -5,12 +7,16 @@ class Scorer:
         self.basicMeasures = None
         self.prMeasures = None
         self.f1score = None
+        self.accuracy = None
+        self.mathewsScore = None
         self.y = y
         
     def computeFScores(self, targetLabels, actualLabels):
         """computes the F1 score"""
         if self.prMeasures is None:
             self.prMeasures = self.computePRMeasures(targetLabels, actualLabels)
+            if self.prMeasures[0] == 0:
+                return 0
         self.f1score = 2 * self.prMeasures[0] * self.prMeasures[1] / (0.0 + self.prMeasures[0] + self.prMeasures[1])
         return self.f1score
 
@@ -34,8 +40,21 @@ class Scorer:
 
     def computeAccuracy(self, targetLabels, actualLabels):
         """computes the accuracy based on target labels and actual labels"""
-        return (0.0 + sum([1 for x in map(lambda y,z:(y,z), targetLabels, actualLabels) if x[0] == x[1]])) / len(targetLabels)
+        self.accuracy = (0.0 + sum([1 for x in map(lambda y,z:(y,z), targetLabels, actualLabels) if x[0] == x[1]])) / len(targetLabels)
+        return self.accuracy
 
+    def computeMathewsCoef(self, targetLabels, actualLabels):
+        if self.basicMeasures is None:
+           self.basicMeasures = self.computeBasicStatistics(targetLabels, actualLabels)
+        try:   
+            self.mathewsScore = (self.basicMeasures[0] * self.basicMeasures[2] - self.basicMeasures[1] * self.basicMeasures[3]) / sqrt(
+            (self.basicMeasures[0] + self.basicMeasures[1]) * (self.basicMeasures[0] + self.basicMeasures[3]) *
+            (self.basicMeasures[2] + self.basicMeasures[1]) * (self.basicMeasures[2] + self.basicMeasures[3]))
+        except:
+            self.mathewsScore = 0
+        return self.mathewsScore
+            
+                     
     def _equal1(self, x, y):
         if x == y:
             return 1

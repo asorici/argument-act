@@ -20,6 +20,8 @@ class BasicArgumentTrainer:
     def buildTrainingExamples(self, start, stop, even = None):
         u = ArgUtils.ArgUtils(self.pathToFiles)
         fileList = u.buildFileList(start, stop, even)
+        if len(fileList) == 0:
+            return None
         return reduce(lambda x,y : x + y, map(self.buildTrainingExample, fileList))
         
     #trains a classifier of the specifified type and saves it in the given file
