@@ -17,14 +17,14 @@ class ArgumentationBasicSchema:
 class ArgumentationUnit:
     " " "Defines an unit for argumentation " " "
     
-    def __init__(self, argId, missing, refutation, offset, conclusion, scheme, schId, laList, caList):
+    def __init__(self, argId, missing, refutation, offset, conclusion, schemes, schIds, laList, caList):
         self.id = argId
         self.missing = missing
         self.refutation = refutation
         self.offset = offset
         self.conclusion = conclusion
-        self.scheme = scheme
-        self.schId = schId
+        self.schemes = schemes
+        self.schIds = schIds
         self.laList = laList
         self.caList = caList
 
