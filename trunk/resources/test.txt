@@ -1,0 +1,123 @@
+Good evening, my friends! 
+good evening.
+so my name is Alin Danciu.
+my name is alexandru sorici and will try to convince you of the benefits that link grammars are bringing.
+and i wish to advocate for dependency grammars.
+My name is Tudor Berariu and I'll defend constituency grammar today. 
+i propose that we start by enumerating some differences between thosetypes of grammar. 
+and then argue on the positive and negative aspects of those differences. 
+i agree with this
+me too
+so to start
+i'm happy we agreed on that.
+a main difference between dependency and constituency is the lack of context-sensitivity in constituency.
+as such consistency based grammars have a big problem with non-projective structures.
+first off, i would like to say that link grammars are quite similar in their core concept to dependecy grammars.
+so any advantage that dep. grammars have over constituency grammars, link grammars will have them too.
+i will like to start by referring to Jung, who stated that "only dependency is able to express the syntactic "inner" relations of a sentence, but only constituency is able to express the linear order, the "outer" relations of a sentence.
+*I would*, sorry.
+the outer order is really not that important.
+unless you want to generate text using the grammar.
+i also agree that 'outer' order is of less importance than the 'inner' order.
+focusing on the outer order is not mandatory.
+after all the 'inner' relations of the sentence are important in constructing parsers.
+yes, it's less important than 'inner order', but there are aspects of the language that cannot be expressed or that are not contained in the inner order.
+link grammars offer an intuitive relation scheme between words.
+Rather than thinking in terms of syntactic functions (like subject or object) or constituents (like "verb phrase"), one must think in terms of relationships between pairs of words.
+constituency does that too.
+well.
+well link grammars might be more lexical but they don't make a proper distinction between objects, complements and adverbials.
+All semantic formal theories in the Montague style, except for perhaps the Prague School are based on constituency.
+that may be so for the current version of the parser, but improvements can be made.
+some distinctions might be made explicit by some additional rules.
+how about coordination?
+i agree that coordination is an open issue in dependency grammars.
+all dependency advocates stated that some kind of constituency is needed in dependency approaches to coordination.
+what about it?
+but using Tesnière"s jonctions this problem can be solved.
+how, give me more details about that.
+i agree with Reference to message No.(Text: "but using Tesnière"s jonctions this problem can be solved").
+you have to bring more to convince me.
+well since coordination is sort of an exception to dependecy theory, explicit rules for Tesniere's junction theory can be given.
+well Junction is employed to relate elements on the same level.
+and look how Malcuk defines the prosodic units.
+our prosodic unit is (roughly) what is currently called a phrase or constituent.
+for example in the sentence Peter and Mary love beer.
+he parse tree is like in figure.
+he refers to costituent, a constituency concept.
+as you may see in the figure, taken from lizergold the junction is used to express the relation between Peter and Marry.
+it seems to me that the only strong arguments in favor of constituency are based on uncommon exceptions to dependecy or link grammars.
+so there is basically hardly any advantage to them.
+well, let's take another example.
+try to analyse the following phrase.
+plus, gave a good example of tesniere's junction .
+I see Mary run.
+there are three valid alternatives to conceive of its structure.
+I see Mary, who happens to be running.
+I see the act of running exerted by Mary.
+well for your example the stemma in dependency grammar may look like this.
+I see the indivisible act of Mary-running.
+wait, for which of theinterpretations?
+and this coresponds to the first interpretation provided.
+one of the features of link grammar is that it can produce multiple parsings.
+dependency grammars can also produce multiple parsers with ease.
+you are right here.
+in terms of efficiency, dependency grammars do better than constituency.
+free word-order allows us to parse directly for functional relations, this is more efficient and constitutes a main reason why dependency parsers are faster than constituency parsers.
+Reference to message No.(Text: "in terms of efficiency, dependency grammars do better than constituency").
+latin and fino-ugric languages have this property, so i agree with you, dependency grammars do better.
+well that can be argued as well because most dependency parsers are NP-complete in the worst case.
+however in practice very fast dependency parsers can be built.
+well :))), i see you are coming around.
+not quite, i just agreed with you on one aspect.
+but, let's take another problem.
+Dependency does not recognize any sort of higher nodes.
+On place where dependency is less powerful than constituency is when intermediate categories are required.
+*one place.
+what do you have to say about that, punk?
+well using the translation rules may somehow repair this problem.
+lexical rules, as used in HPSG can also repair this deficiency of dependency.
+that's what i was going to say.
+can you tell me more about HPSG? how do they fix that?
+well HPSG is the acronym for Head-Driven Phrase Structure Grammar.
+and it's a framework used for parsing.
+there is a paper: A Computational Treatment of Lexical Rules in HPSG as Covariation in Lexical Entries that explains this wery well.
+and was developed by Carl Pollard and Ivan Sag.
+i see.
+also, as far as i know, hudson wants to employ some kind of lexical rules to extend the panlexicon, much as can be done with LFG rules, to avoid this problem.
+Link Grammar is indeed more lexical than most other dependency frameworks.
+let's make a deal : the debate between advocates of dependency and advocates of constituency has lost much of its force as linguistic theories have increasingly come to incorporate aspects of both.
+do we agree that an exclusive approach (either dependency or constituency) does not work alone?
+While this allows a lexicon-driven projective character that takes care of the idiosyncratic valencies of each word, we remember that one of the forces of Tesnière"s dependency is that we can take functional words up into the nucleus and form new multi-word nuclei by means of translations. Link Grammar"s extreme lexicalism is probably rather a mistake than an advance.
+also both constituency and link grammars suffers severe limitations regarding functionalism.
+a truly functional approach to syntax cannot be based on constituency only. We have to enrich constituency with a functional.
+layer and map structures as HPSG does.
+as well functionalism is rather an exception in Link Grammar, not the rule.
+and only the surface functions are recognized.
+and the complement function is not known either.
+well miorlau, i see you have prepared quite an extensive argument against link grammars.
+i agree to some of your claims, but i still consider that the advantages of link grammars outweigh that of the constituency grammars.
+well i also agree that link grammars are better than constituency grammars Reference to message No.(Text: "i agree to some of your claims, but i still consider that the advantages of link grammars outweigh that of the constituency grammars").
+still, i think we can conclude that none of the presented formalisms alone can achieve a good parsing perfomance in every possible case.
+i must agree that each has it's own particular advantages and maybe an aproach that combines all three would yield the best results.
+yes, you are right.
+and according to the arguments you bring, i think dependency grammars should lie at the core.
+i think a hybrid approach is the best.
+Jung sees the two principles as complementary, following Baumgärtner.
+i agree with his statement.
+well finally we've reached an agreement.
+the two principles i was referring to.
+are the constituency and dependency grammars.
+approaches to NLP.
+i see what you mean, and i agree.
+since link grammars are very similar to dependency grammars, the theory was advocating for is also included.
+I still see Mary running!
+;).
+dependency running you mean :P.
+come on, stop fooling around.
+anyway we all agree that a combined aproach works best.
+yes we do.
+at least i do.
+that's right.
+yeap.
+well, let's go back to study.

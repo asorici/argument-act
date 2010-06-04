@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY kb 'http://protege.stanford.edu/kb#'>
+	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:kb="&kb;"
+	 xmlns:rdfs="&rdfs;">
+<kb:ConflictScheme rdf:about="&kb;ArgOnt_Instance_1"
+	 kb:hasSchemeName="Conflict from bias"
+	 rdfs:label="ArgOnt_Instance_1">
+	<kb:hasPremiseDescription rdf:resource="&kb;ArgOnt_Instance_2"/>
+</kb:ConflictScheme>
+<kb:Presumption rdf:about="&kb;ArgOnt_Instance_10"
+	 kb:hasDescription="E's testimony does imply A"
+	 rdfs:label="ArgOnt_Instance_10"/>
+<kb:ConflictScheme rdf:about="&kb;ArgOnt_Instance_11"
+	 kb:hasSchemeName="Conflict from testimonial inconsistency"
+	 rdfs:label="ArgOnt_Instance_11">
+	<kb:hasPremiseDescription rdf:resource="&kb;ArgOnt_Instance_12"/>
+</kb:ConflictScheme>
+<kb:PremiseDesc rdf:about="&kb;ArgOnt_Instance_12"
+	 kb:hasDescription="Other experts disagree"
+	 rdfs:label="ArgOnt_Instance_12"/>
+<kb:PremiseDesc rdf:about="&kb;ArgOnt_Instance_2"
+	 kb:hasDescription="Speaker is biased"
+	 rdfs:label="ArgOnt_Instance_2"/>
+<kb:PresumptiveInferenceScheme rdf:about="&kb;ArgOnt_Instance_4"
+	 kb:hasSchemeName="Argument from expert opinion"
+	 rdfs:label="ArgOnt_Instance_4">
+	<kb:hasException rdf:resource="&kb;ArgOnt_Instance_1"/>
+	<kb:hasPresumption rdf:resource="&kb;ArgOnt_Instance_10"/>
+	<kb:hasException rdf:resource="&kb;ArgOnt_Instance_11"/>
+	<kb:hasConclusionDescription rdf:resource="&kb;ArgOnt_Instance_5"/>
+	<kb:hasPremiseDescription rdf:resource="&kb;ArgOnt_Instance_6"/>
+	<kb:hasPremiseDescription rdf:resource="&kb;ArgOnt_Instance_7"/>
+	<kb:hasPresumption rdf:resource="&kb;ArgOnt_Instance_8"/>
+	<kb:hasPresumption rdf:resource="&kb;ArgOnt_Instance_9"/>
+</kb:PresumptiveInferenceScheme>
+<kb:ConclusionDesc rdf:about="&kb;ArgOnt_Instance_5"
+	 kb:hasDescription="A may plausibly be taken to be true"
+	 rdfs:label="ArgOnt_Instance_5"/>
+<kb:PremiseDesc rdf:about="&kb;ArgOnt_Instance_6"
+	 kb:hasDescription="E asserts that A is known to be true"
+	 rdfs:label="ArgOnt_Instance_6"/>
+<kb:PremiseDesc rdf:about="&kb;ArgOnt_Instance_7"
+	 kb:hasDescription="E is an expert in domain D containing proposition A"
+	 rdfs:label="ArgOnt_Instance_7">
+	<kb:entails rdf:resource="&kb;ArgOnt_Instance_8"/>
+</kb:PremiseDesc>
+<kb:Presumption rdf:about="&kb;ArgOnt_Instance_8"
+	 kb:hasDescription="E is an expert in the field that A is in"
+	 rdfs:label="ArgOnt_Instance_8"/>
+<kb:Presumption rdf:about="&kb;ArgOnt_Instance_9"
+	 kb:hasDescription="E is credible as an expert source"
+	 rdfs:label="ArgOnt_Instance_9"/>
+</rdf:RDF>
