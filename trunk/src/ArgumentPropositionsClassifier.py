@@ -13,7 +13,7 @@ class ArgumentPropositionsClassifier:
         self.wordTokenizer = punkt.PunktWordTokenizer()
         self.path_to_features = path_to_features_files
         self.factors = None
-        print "*Model loaded into classifier"
+        #print "*Model loaded into classifier"
     
     def _transform_test_data_into_problemxy(self,input_data):
         labels = input_data[1]

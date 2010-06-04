@@ -1,7 +1,7 @@
 import AMLParser
 import WordSenseDisambiguation
 import time, subprocess, string
-from nltk import data
+from nltk import data, text
 from nltk.tokenize import punkt
 from nltk.tokenize.punkt import PunktWordTokenizer
 from nltk.tokenize.regexp import WordPunctTokenizer, RegexpTokenizer
@@ -21,14 +21,13 @@ class BasicArgumentSegmentation:
 	def segment(self, data):
 		# spawn perl word-relatedness computation process
 		#self.perl_proc = subprocess.Popen(["./word-relatedness.pl"], shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-		dataList, textLength = data
-		argSentences = map(lambda x: x[0], filter(lambda (x,y,z): y == 'y', dataList))
-		#offsets = map(lambda x: x[2], filter(lambda (x,y,z): y == 'y', dataList))
+		argSentences = map(lambda x: x[0], filter(lambda (x,y,z): y == 'y', data))
 		
 		self.sentenceList = argSentences
+		#self.textCollection = text.TextCollection(sentenceList)
 		
 		similarityMatrix = self.sentenceSimilarity()
-		self.printSimilarityMatrix(similarityMatrix)
+		#self.printSimilarityMatrix(similarityMatrix)
 		
 		#self.perl_proc.stdin.close()
 		#self.perl_proc.stdout.close()
@@ -49,6 +48,7 @@ class BasicArgumentSegmentation:
 		
 		sentenceSegments = []
 		for cl in clusters:
+			cl.sort()
 			group = []
 			offset = 0
 			for index in cl:
@@ -57,6 +57,7 @@ class BasicArgumentSegmentation:
 			sentenceSegments.append((group, offset))
 		
 		#return clusters
+		print clusters
 		return sentenceSegments
 	
 	def printSimilarityMatrix(self, matrix):
@@ -131,7 +132,11 @@ class BasicArgumentSegmentation:
 		X = wordLists[i]
 		Y = wordLists[j]
 		
-		R = self._getWordSimilarityMatrix(X, Y)
+		neighborSentences = False
+		if abs(i-j) == 1:
+			neighborSentences = True
+		
+		R = self._getWordSimilarityMatrix(X, Y, neighborSentences)
 		
 		sizeX = len(X)
 		sizeY = len(Y)
@@ -156,9 +161,12 @@ class BasicArgumentSegmentation:
 			
 			sumY += max_w2
 
-		return (sumX + sumY) / (2 * (sizeX + sizeY))
+		if sizeX == 0 and sizeY == 0:
+			return 0
+		else:
+			return (sumX + sumY) / (2 * (sizeX + sizeY))
 		
-	def _getWordSimilarityMatrix(self, X, Y):
+	def _getWordSimilarityMatrix(self, X, Y, neighborSentences):
 		sizeX = len(X)
 		sizeY = len(Y)
 		
@@ -172,7 +180,11 @@ class BasicArgumentSegmentation:
 				
 				# first check to see if words are the same
 				if wi == wj:
-					R[i][j] = 1
+					if not neighborSentences:
+						R[i][j] = 1
+					else:
+						R[i][j] = 3
+					
 				else:
 					synsets_i = wordnet.synsets(wi)
 					synsets_j = wordnet.synsets(wj)
@@ -182,7 +194,7 @@ class BasicArgumentSegmentation:
 						sense_j = synsets_j[0]
 						
 						try:
-							R[i][j] = sense_i.lin_similarity(sense_j, self.semcor_ic)
+							R[i][j] = sense_i.lin_similarity(sense_j, self.brown_ic)
 							#R[i][j] = sense_i.lch_similarity(sense_j)
 							
 							# call perl word-relatedness script and get result
