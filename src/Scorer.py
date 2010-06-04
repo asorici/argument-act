@@ -11,7 +11,7 @@ class Scorer:
         """computes the F1 score"""
         if self.prMeasures is None:
             self.prMeasures = self.computePRMeasures(targetLabels, actualLabels)
-        self.f1score = 2 * self.prMeasures[0] * self.prMeasures[1] / (self.prMeasures[0] * self.prMeasures[1])
+        self.f1score = 2 * self.prMeasures[0] * self.prMeasures[1] / (0.0 + self.prMeasures[0] + self.prMeasures[1])
         return self.f1score
 
     def computePRMeasures(self, targetLabels, actualLabels):
