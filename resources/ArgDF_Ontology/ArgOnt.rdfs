@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY a 'http://protege.stanford.edu/system#'>
+	 <!ENTITY kb 'http://protege.stanford.edu/kb#'>
+	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:a="&a;"
+	 xmlns:kb="&kb;"
+	 xmlns:rdfs="&rdfs;">
+<rdfs:Class rdf:about="&kb;CA-Node"
+	 rdfs:label="CA-Node">
+	<rdfs:subClassOf rdf:resource="&kb;S-Node"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Conclusion"
+	 rdfs:label="Conclusion">
+	<rdfs:subClassOf rdf:resource="&kb;I-Node"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;ConclusionDesc"
+	 rdfs:label="ConclusionDesc">
+	<rdfs:subClassOf rdf:resource="&kb;Form"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;ConflictScheme"
+	 rdfs:label="ConflictScheme">
+	<rdfs:subClassOf rdf:resource="&kb;Scheme"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;DeductiveInference"
+	 rdfs:label="DeductiveInference">
+	<rdfs:subClassOf rdf:resource="&kb;RuleScheme"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Form"
+	 rdfs:label="Form">
+	<rdfs:subClassOf rdf:resource="&kb;Node"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;I-Node"
+	 rdfs:label="I-Node">
+	<rdfs:subClassOf rdf:resource="&kb;Node"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;InductiveInference"
+	 rdfs:label="InductiveInference">
+	<rdfs:subClassOf rdf:resource="&kb;RuleScheme"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;LogicalPreferenceScheme"
+	 rdfs:label="LogicalPreferenceScheme">
+	<rdfs:subClassOf rdf:resource="&kb;PreferenceScheme"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Node"
+	 rdfs:label="Node">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;PA-Node"
+	 rdfs:label="PA-Node">
+	<rdfs:subClassOf rdf:resource="&kb;S-Node"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;PreferenceScheme"
+	 rdfs:label="PreferenceScheme">
+	<rdfs:subClassOf rdf:resource="&kb;Scheme"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Premise"
+	 rdfs:label="Premise">
+	<rdfs:subClassOf rdf:resource="&kb;I-Node"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;PremiseDesc"
+	 rdfs:label="PremiseDesc">
+	<rdfs:subClassOf rdf:resource="&kb;Form"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Presumption"
+	 rdfs:label="Presumption">
+	<rdfs:subClassOf rdf:resource="&kb;Form"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;PresumptiveInferenceScheme"
+	 rdfs:label="PresumptiveInferenceScheme">
+	<rdfs:subClassOf rdf:resource="&kb;RuleScheme"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;PresumptivePreferenceScheme"
+	 rdfs:label="PresumptivePreferenceScheme">
+	<rdfs:subClassOf rdf:resource="&kb;PreferenceScheme"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;RA-Node"
+	 rdfs:label="RA-Node">
+	<rdfs:subClassOf rdf:resource="&kb;S-Node"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;RuleScheme"
+	 rdfs:label="RuleScheme">
+	<rdfs:subClassOf rdf:resource="&kb;Scheme"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;S-Node"
+	 rdfs:label="S-Node">
+	<rdfs:subClassOf rdf:resource="&kb;Node"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Scheme"
+	 rdfs:label="Scheme">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;attacks"
+	 rdfs:label="attacks">
+	<rdfs:range rdf:resource="&kb;CA-Node"/>
+	<rdfs:subPropertyOf rdf:resource="&kb;edgeFromINode"/>
+	<a:inverseProperty rdf:resource="&kb;isAttacked"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;caNode_Attacks"
+	 rdfs:label="caNode_Attacks">
+	<rdfs:domain rdf:resource="&kb;CA-Node"/>
+	<rdfs:range rdf:resource="&kb;I-Node"/>
+	<a:inverseProperty rdf:resource="&kb;caNode_isAttacked"/>
+	<rdfs:subPropertyOf rdf:resource="&kb;edgeFromSNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;caNode_isAttacked"
+	 rdfs:label="caNode_isAttacked">
+	<rdfs:range rdf:resource="&kb;CA-Node"/>
+	<rdfs:domain rdf:resource="&kb;I-Node"/>
+	<a:inverseProperty rdf:resource="&kb;caNode_Attacks"/>
+	<rdfs:subPropertyOf rdf:resource="&kb;edgeFromSNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;edge"
+	 rdfs:label="edge">
+	<rdfs:range rdf:resource="&kb;Node"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;edgeFromINode"
+	 rdfs:label="edgeFromINode">
+	<rdfs:domain rdf:resource="&kb;I-Node"/>
+	<rdfs:range rdf:resource="&kb;S-Node"/>
+	<rdfs:subPropertyOf rdf:resource="&kb;edge"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;edgeFromSNode"
+	 a:minCardinality="1"
+	 rdfs:label="edgeFromSNode">
+	<rdfs:range rdf:resource="&kb;Node"/>
+	<rdfs:domain rdf:resource="&kb;S-Node"/>
+	<rdfs:subPropertyOf rdf:resource="&kb;edge"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;entails"
+	 a:maxCardinality="1"
+	 rdfs:label="entails">
+	<rdfs:domain rdf:resource="&kb;PremiseDesc"/>
+	<rdfs:range rdf:resource="&kb;Presumption"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;fulfilsConclusionDesc"
+	 a:maxCardinality="1"
+	 rdfs:label="fulfilsConclusionDesc">
+	<rdfs:domain rdf:resource="&kb;Conclusion"/>
+	<rdfs:range rdf:resource="&kb;ConclusionDesc"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;fulfilsPremiseDesc"
+	 a:maxCardinality="1"
+	 rdfs:label="fulfilsPremiseDesc">
+	<rdfs:domain rdf:resource="&kb;Premise"/>
+	<rdfs:range rdf:resource="&kb;PremiseDesc"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;fulfilsScheme"
+	 a:maxCardinality="1"
+	 rdfs:label="fulfilsScheme">
+	<rdfs:domain rdf:resource="&kb;S-Node"/>
+	<rdfs:range rdf:resource="&kb;Scheme"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;hasConclusion"
+	 a:maxCardinality="1"
+	 a:minCardinality="1"
+	 rdfs:label="hasConclusion">
+	<rdfs:range rdf:resource="&kb;Conclusion"/>
+	<rdfs:domain rdf:resource="&kb;RA-Node"/>
+	<rdfs:subPropertyOf rdf:resource="&kb;edgeFromSNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;hasConclusionDescription"
+	 a:maxCardinality="1"
+	 rdfs:label="hasConclusionDescription">
+	<rdfs:range rdf:resource="&kb;ConclusionDesc"/>
+	<rdfs:domain rdf:resource="&kb;Scheme"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;hasDescription"
+	 a:maxCardinality="1"
+	 a:minCardinality="1"
+	 rdfs:label="hasDescription">
+	<rdfs:domain rdf:resource="&kb;Form"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;hasException"
+	 rdfs:label="hasException">
+	<rdfs:range rdf:resource="&kb;ConflictScheme"/>
+	<rdfs:domain rdf:resource="&kb;PresumptiveInferenceScheme"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;hasPremise"
+	 a:minCardinality="1"
+	 rdfs:label="hasPremise">
+	<rdfs:range rdf:resource="&kb;Premise"/>
+	<rdfs:domain rdf:resource="&kb;RA-Node"/>
+	<rdfs:subPropertyOf rdf:resource="&kb;edgeFromSNode"/>
+	<a:inverseProperty rdf:resource="&kb;supports"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;hasPremiseDescription"
+	 a:minCardinality="1"
+	 rdfs:label="hasPremiseDescription">
+	<rdfs:range rdf:resource="&kb;PremiseDesc"/>
+	<rdfs:domain rdf:resource="&kb;Scheme"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;hasPresumption"
+	 rdfs:label="hasPresumption">
+	<rdfs:range rdf:resource="&kb;Presumption"/>
+	<rdfs:domain rdf:resource="&kb;PresumptiveInferenceScheme"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;hasSchemeName"
+	 a:maxCardinality="1"
+	 rdfs:label="hasSchemeName">
+	<rdfs:domain rdf:resource="&kb;Scheme"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;isAttacked"
+	 rdfs:label="isAttacked">
+	<rdfs:domain rdf:resource="&kb;CA-Node"/>
+	<rdfs:range rdf:resource="&kb;Conclusion"/>
+	<a:inverseProperty rdf:resource="&kb;attacks"/>
+	<rdfs:subPropertyOf rdf:resource="&kb;edgeFromINode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;supports"
+	 rdfs:label="supports">
+	<rdfs:domain rdf:resource="&kb;Premise"/>
+	<rdfs:range rdf:resource="&kb;RA-Node"/>
+	<rdfs:subPropertyOf rdf:resource="&kb;edgeFromINode"/>
+	<a:inverseProperty rdf:resource="&kb;hasPremise"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;text"
+	 a:maxCardinality="1"
+	 rdfs:label="text">
+	<rdfs:domain rdf:resource="&kb;I-Node"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;underminesPresumption"
+	 a:maxCardinality="1"
+	 rdfs:label="underminesPresumption">
+	<rdfs:domain rdf:resource="&kb;Premise"/>
+	<rdfs:range rdf:resource="&kb;Presumption"/>
+</rdf:Property>
+</rdf:RDF>

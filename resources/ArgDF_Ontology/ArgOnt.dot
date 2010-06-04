@@ -1,0 +1,70 @@
+digraph ArgOnt {
+	node [label="\N"];
+	graph [bb="0,0,2331,968"];
+	PresumptiveInferenceScheme [label="{PresumptiveInferenceScheme|{hasException|Instance*|{ConflictScheme}}|{hasPresumption|Instance*|{Presumption}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1357,552", rects="1224,564,1490,588 1224,540,1316,564 1316,540,1385,564 1385,540,1490,564 1224,516,1330,540 1330,516,1401,540 1401,516,1490,540", width="3.69", height="1.00"];
+	RuleScheme [label=RuleScheme, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1357,678", width="1.19", height="0.50"];
+	ConflictScheme [label=ConflictScheme, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="661,344", width="1.44", height="0.50"];
+	Presumption [label=Presumption, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1661,136", width="1.19", height="0.50"];
+	ArgOnt_Instance_6 [label="{ArgOnt_Instance_6|{text =|{E asserts that A is known to be true}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="899,136", rects="768,136,1031,160 768,112,818,136 818,112,1031,136", width="3.64", height="0.67"];
+	PremiseDesc [label="{PremiseDesc|{entails|Instance|{Presumption}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="918,344", rects="817,344,1019,368 817,320,869,344 869,320,932,344 932,320,1019,344", width="2.81", height="0.67"];
+	Scheme [label="{Scheme|{hasConclusionDescription|Instance|{ConclusionDesc}}|{hasPremiseDescription|Instance*|{PremiseDesc}}|{hasSchemeName|Stri\
+ng}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1357,796", rects="1191,820,1524,844 1191,796,1354,820 1354,796,1417,820 1417,796,1524,820 1191,772,1345,796 1345,772,1424,796 1424,772,1524,796 11\
+91,748,1388,772 1388,748,1524,772", width="4.61", height="1.33"];
+	ConclusionDesc [label=ConclusionDesc, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1905,624", width="1.47", height="0.50"];
+	ArgOnt_Instance_12 [label="{ArgOnt_Instance_12|{text =|{Other experts disagree}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="302,24", rects="207,24,398,48 207,0,257,24 257,0,398,24", width="2.64", height="0.67"];
+	ArgOnt_Instance_9 [label="{ArgOnt_Instance_9|{text =|{E is credible as an expert source}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="1761,24", rects="1638,24,1885,48 1638,0,1688,24 1688,0,1885,24", width="3.42", height="0.67"];
+	PreferenceScheme [label=PreferenceScheme, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2044,678", width="1.67", height="0.50"];
+	InductiveInference [label=InductiveInference, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1568,552", width="1.67", height="0.50"];
+	ArgOnt_Instance_2 [label="{ArgOnt_Instance_2|{text =|{Speaker is reliable}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="651,24", rects="567,24,736,48 567,0,617,24 617,0,736,24", width="2.33", height="0.67"];
+	ArgOnt_Instance_10 [label="{ArgOnt_Instance_10|{text =|{E's testimony does imply A}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="1511,24", rects="1402,24,1620,48 1402,0,1452,24 1452,0,1620,24", width="3.03", height="0.67"];
+	ArgOnt_Instance_4 [label="{ArgOnt_Instance_4|{hasException =|{ArgOnt_Instance_1|ArgOnt_Instance_11}}|{hasPresumption =|{ArgOnt_Instance_9|ArgOnt_Instance_\
+10|ArgOnt_Instance_8}}|{hasConclusionDescription =|{ArgOnt_Instance_5}}|{hasPremiseDescription =|{ArgOnt_Instance_6|ArgOnt_Insta\
+nce_7}}|{hasSchemeName =|{Argument from expert opinion}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="1357,344", rects="1203,440,1512,464 1203,392,1342,440 1342,416,1512,440 1342,392,1512,416 1203,320,1349,392 1349,368,1512,392 1349,344,1512,368 13\
+49,320,1512,344 1203,296,1381,320 1381,296,1512,320 1203,248,1372,296 1372,272,1512,296 1372,248,1512,272 1203,224,1327,248 1327\
+,224,1512,248", width="4.28", height="3.33"];
+	ArgOnt_Instance_1 [label="{ArgOnt_Instance_1|{hasPremiseDescription =|{ArgOnt_Instance_2}}|{hasSchemeName =|{Conflict from bias}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="562,136", rects="421,148,703,172 421,124,577,148 577,124,703,148 421,100,565,124 565,100,703,124", width="3.92", height="1.00"];
+	ArgOnt_Instance_11 [label="{ArgOnt_Instance_11|{hasPremiseDescription =|{ArgOnt_Instance_12}}|{hasSchemeName =|{Conflict from testimonial inconsistency}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="178,136", rects="0,148,357,172 0,124,190,148 190,124,357,148 0,100,124,124 124,100,357,124", width="4.94", height="1.00"];
+	ArgOnt_Instance_8 [label="{ArgOnt_Instance_8|{text =|{E is an expert in the field that A is in}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="1250,24", rects="1116,24,1385,48 1116,0,1166,24 1166,0,1385,24", width="3.72", height="0.67"];
+	ArgOnt_Instance_5 [label="{ArgOnt_Instance_5|{text =|{A may plausibly be taken to be true}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="1979,136", rects="1847,136,2111,160 1847,112,1897,136 1897,112,2111,136", width="3.67", height="0.67"];
+	ArgOnt_Instance_7 [label="{ArgOnt_Instance_7|{entails =|{ArgOnt_Instance_8}}|{text =|{E is an expert in domain D containing pr...}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="1199,136", rects="1048,148,1350,172 1048,124,1168,148 1168,124,1350,148 1048,100,1098,124 1098,100,1350,124", width="4.19", height="1.00"];
+	LogicalPreferenceScheme [label=LogicalPreferenceScheme, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2044,552", width="2.25", height="0.50"];
+	"S-Node" [label="{S-Node|{edgeFromSNode|Instance*|{Node}}|{fulfilsScheme|Instance|{Scheme}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1357,932", rects="1244,944,1471,968 1244,920,1354,944 1354,920,1423,944 1423,920,1471,944 1244,896,1340,920 1340,896,1407,920 1407,896,1471,920", width="3.14", height="1.00"];
+	PresumptivePreferenceScheme [label=PresumptivePreferenceScheme, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2237,552", width="2.61", height="0.50"];
+	DeductiveInference [label=DeductiveInference, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1143,552", width="1.75", height="0.50"];
+	RuleScheme -> PresumptiveInferenceScheme [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1357,660 1357,650 1357,632 1357,608 1357,588", lp="1365,624"];
+	PresumptiveInferenceScheme -> ConflictScheme [label="hasException*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,677,362 1224,518 1221,517 1218,517 1215,516 1036,481 976,535 808,464 758,442 711,398 684,369", lp="978,490"];
+	PresumptiveInferenceScheme -> Presumption [label="hasPresumption*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1658,154 1448,516 1474,502 1500,485 1520,464 1603,372 1642,226 1656,164", lp="1686,344"];
+	PremiseDesc -> ArgOnt_Instance_6 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,916,320 915,310 911,268 905,197 901,160", lp="913,198"];
+	Scheme -> ConclusionDesc [label=hasConclusionDescription, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1852,638 1488,748 1521,736 1556,724 1589,714 1676,686 1778,658 1842,641", lp="1662,722"];
+	Scheme -> PremiseDesc [label="hasPremiseDescription*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,928,368 1251,748 1201,722 1143,685 1099,642 1018,561 958,437 932,377", lp="1170,624"];
+	Scheme -> ConflictScheme [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1234,748 1225,744 1213,739 1202,735 1191,730 1158,715 1149,714 1117,696 970,608 944,569 808,464 763,429 711,386 683,362", lp="1044,624"];
+	PremiseDesc -> ArgOnt_Instance_12 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,888,320 880,314 842,286 781,245 722,224 586,175 505,272 401,172 367,138 407,104 378,66 373,59 366,53 359,48", lp="407,136"];
+	Presumption -> ArgOnt_Instance_9 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,1673,118 1679,110 1689,96 1702,79 1715,66 1720,60 1726,54 1732,48", lp="1720,74"];
+	Scheme -> PreferenceScheme [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1524,767 1534,765 1682,739 1884,706 1984,688", lp="1828,722"];
+	RuleScheme -> InductiveInference [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1387,660 1396,655 1437,630 1501,592 1538,570", lp="1482,624"];
+	PremiseDesc -> ArgOnt_Instance_2 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,885,320 877,314 838,283 781,230 748,172 726,129 754,104 725,66 720,59 714,53 707,48", lp="754,136"];
+	Presumption -> ArgOnt_Instance_10 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,1637,118 1629,112 1603,93 1568,67 1543,48", lp="1590,74"];
+	PremiseDesc -> Presumption [label=entails, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1637,154 962,320 1015,292 1108,246 1194,224 1273,203 1296,215 1376,206 1477,193 1507,207 1604,172 1612,168 1621,164 1628,160", lp="1552,198"];
+	PresumptiveInferenceScheme -> ArgOnt_Instance_4 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,1357,516 1357,506 1357,493 1357,479 1357,464", lp="1363,490"];
+	ArgOnt_Instance_4 -> ArgOnt_Instance_1 [label=hasException, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,682,172 1203,278 1148,257 1086,237 1028,224 941,204 915,221 826,206 782,198 734,186 692,175", lp="881,198"];
+	ArgOnt_Instance_4 -> ArgOnt_Instance_11 [label=hasException, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,324,172 1203,276 1149,255 1087,235 1028,224 915,201 625,219 510,206 452,198 389,186 334,174", lp="572,198"];
+	ArgOnt_Instance_4 -> ArgOnt_Instance_9 [label=hasPresumption, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1756,48 1512,225 1513,225 1514,224 1515,224 1596,184 1646,234 1713,172 1729,156 1745,97 1754,58", lp="1785,136"];
+	ArgOnt_Instance_4 -> ArgOnt_Instance_10 [label=hasPresumption, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1508,48 1449,224 1460,207 1469,189 1477,172 1493,134 1502,89 1507,58", lp="1541,136"];
+	ArgOnt_Instance_4 -> ArgOnt_Instance_8 [label=hasPresumption, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1302,48 1383,224 1386,182 1381,136 1359,100 1347,81 1329,66 1311,54", lp="1429,136"];
+	ArgOnt_Instance_4 -> ArgOnt_Instance_5 [label=hasConclusionDescription, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1881,160 1512,259 1543,246 1575,233 1606,224 1668,205 1690,229 1751,206 1762,201 1762,195 1774,190 1783,185 1827,174 1871,163", lp="1847,198"];
+	ArgOnt_Instance_4 -> ArgOnt_Instance_6 [label=hasPremiseDescription, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,930,160 1203,294 1138,270 1064,240 999,206 978,195 956,180 938,166", lp="1064,198"];
+	ArgOnt_Instance_4 -> ArgOnt_Instance_7 [label=hasPremiseDescription, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1221,172 1256,224 1252,218 1247,212 1243,206 1237,198 1232,189 1226,181", lp="1308,198"];
+	PreferenceScheme -> LogicalPreferenceScheme [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2044,660 2044,650 2044,625 2044,591 2044,570", lp="2052,624"];
+	PremiseDesc -> ArgOnt_Instance_7 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,962,320 971,315 1016,289 1080,248 1132,206 1144,196 1157,184 1167,172", lp="1156,198"];
+	ArgOnt_Instance_7 -> ArgOnt_Instance_8 [label=entails, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1239,48 1215,100 1221,86 1229,71 1235,57", lp="1250,74"];
+	Presumption -> ArgOnt_Instance_8 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,1636,118 1627,112 1620,108 1612,104 1604,100 1564,84 1467,63 1385,48", lp="1550,74"];
+	"S-Node" -> Scheme [label=fulfilsScheme, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,1357,844 1357,896 1357,883 1357,868 1357,854", lp="1395,870"];
+	ConflictScheme -> ArgOnt_Instance_1 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,652,326 648,317 630,280 598,213 579,172", lp="601,198"];
+	ArgOnt_Instance_1 -> ArgOnt_Instance_2 [label=hasPremiseDescription, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,614,48 576,100 581,88 588,76 596,66 599,62 603,59 606,55", lp="661,74"];
+	ConclusionDesc -> ArgOnt_Instance_5 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,1908,606 1909,596 1922,508 1963,242 1975,160", lp="1931,490"];
+	PreferenceScheme -> PresumptivePreferenceScheme [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2072,660 2080,654 2117,630 2175,592 2209,570", lp="2159,624"];
+	ConflictScheme -> ArgOnt_Instance_11 [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,609,335 599,333 514,316 359,277 246,206 232,197 219,184 208,172", lp="252,198"];
+	ArgOnt_Instance_11 -> ArgOnt_Instance_12 [label=hasPremiseDescription, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,271,48 213,100 224,89 237,77 249,66 254,62 258,58 263,54", lp="314,74"];
+	Scheme -> RuleScheme [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1357,748 1357,738 1357,723 1357,707 1357,696", lp="1365,722"];
+	RuleScheme -> DeductiveInference [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1326,660 1317,655 1276,630 1212,592 1174,570", lp="1303,624"];
+}
