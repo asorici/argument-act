@@ -1,0 +1,318 @@
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=pdflatex 2009.4.26)  27 JUN 2010 19:39
+entering extended mode
+**Journal_Argumentation_Springer.tex
+(Journal_Argumentation_Springer.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, french, loaded.
+(svmultln.cls
+Document Class: svmultln 2007/08/08 v3.27 
+Springer Verlag global LaTeX document class for lecture notes and contributed b
+ooks
+(svlnbip.clo
+File: svlnbip.clo 2007/07/07 v1.0 SVMult class option for the Springer LNBIP se
+ries
+) ("F:\Program Files\MiKTeX 2.7\tex\latex\base\article.cls"
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+("F:\Program Files\MiKTeX 2.7\tex\latex\base\size10.clo"
+File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("F:\Program Files\MiKTeX 2.7\tex\latex\tools\multicol.sty"
+Package: multicol 2006/05/18 v1.6g multicolumn formatting (FMi)
+\c@tracingmulticols=\count87
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count88
+\c@collectmore=\count89
+\doublecol@number=\count90
+\multicoltolerance=\count91
+\multicolpretolerance=\count92
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count93
+\c@finalcolumnbadness=\count94
+\last@try=\dimen108
+\multicolovershoot=\dimen109
+\multicolundershoot=\dimen110
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+\betweenumberspace=\dimen111
+\headlineindent=\dimen112
+\minitoc=\write3
+\c@minitocdepth=\count95
+\c@chapter=\count96
+\svitemindent=\dimen113
+\verbatimindent=\dimen114
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 722.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 723.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 724.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 725.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 726.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 727.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 728.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 729.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 730.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 731.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 732.
+\tocchpnum=\dimen115
+\tocsecnum=\dimen116
+\tocsectotal=\dimen117
+\tocsubsecnum=\dimen118
+\tocsubsectotal=\dimen119
+\tocsubsubsecnum=\dimen120
+\tocsubsubsectotal=\dimen121
+\tocparanum=\dimen122
+\tocparatotal=\dimen123
+\tocsubparanum=\dimen124
+\foot@parindent=\dimen125
+\spthmsep=\dimen126
+\c@theorem=\count97
+\c@case=\count98
+\c@conjecture=\count99
+\c@corollary=\count100
+\c@definition=\count101
+\c@example=\count102
+\c@exercise=\count103
+\c@lemma=\count104
+\c@note=\count105
+\c@problem=\count106
+\c@property=\count107
+\c@proposition=\count108
+\c@question=\count109
+\c@solution=\count110
+\c@remark=\count111
+\instindent=\dimen127
+\figgap=\dimen128
+\figcapgap=\dimen129
+\tabcapgap=\dimen130
+\c@merk=\count112
+\c@@inst=\count113
+\c@@auth=\count114
+\c@auco=\count115
+\instindent=\dimen131
+\authrun=\box52
+\authorrunning=\toks14
+\tocauthor=\toks15
+\titrun=\box53
+\titlerunning=\toks16
+\toctitle=\toks17
+\c@contribution=\count116
+)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++ svlnbip.clo 2007/07/07 v1.0 SVMono/SVMult class option + 
++ to establish the layout for Springer LNBIP volumes     + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\svitemindent=\dimen132
+("F:\Program Files\MiKTeX 2.7\tex\latex\base\makeidx.sty"
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+("F:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("F:\Program Files\MiKTeX 2.7\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("F:\Program Files\MiKTeX 2.7\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+("F:\Program Files\MiKTeX 2.7\tex\latex\graphics\pdftex.def"
+File: pdftex.def 2007/06/12 v0.04h Graphics/color for pdfTeX
+\Gread@gobject=\count117
+))
+(Journal_Argumentation_Springer.aux (chap1.tex.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+("F:\Program Files\MiKTeX 2.7\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("F:\Program Files\MiKTeX 2.7\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count118
+\scratchdimen=\dimen133
+\scratchbox=\box54
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen134
+\MPnumerator=\count122
+\everyMPtoPDFconversion=\toks18
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 34.
+ [1
+
+
+
+
+
+{C:/ProgramData/MiKTeX/2.7/pdftex/config/pdftex.map}] (chap1.tex
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+) [2
+
+]
+[3
+
+] [4] <attack.png, id=20, 250.9375pt x 285.065pt>
+File: attack.png Graphic file (type png)
+ <use attack.png> [5 <attack.png>]
+Overfull \hbox (23.21162pt too wide) in paragraph at lines 127--128
+\OT1/cmr/m/n/10 vided by \OT1/cmr/m/it/10 Arauacaria \OT1/cmr/m/n/10 (\OT1/cmr/
+m/it/10 http://www.arg.dundee.ac.uk/projects/araucariadb/search.php\OT1/cmr/m/n
+/10 ),
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 131.
+
+("F:\Program Files\MiKTeX 2.7\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
+ [6]
+<NLP_Architecture.png, id=28, 325.81725pt x 380.01974pt>
+File: NLP_Architecture.png Graphic file (type png)
+
+<use NLP_Architecture.png> [7]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [8 <NLP_Architecture.png (PNG copy)>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [9]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+[10]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [11]
+Overfull \hbox (135.58205pt too wide) in paragraph at lines 251--251
+ \OT1/cmr/m/it/10 Af-ter-wards the sim-i-lar-ity be-tween sen-tences A and B is
+ given by [] 
+ []
+
+Missing character: There is no ‚ in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no ¢ in font cmti10!
+
+Overfull \hbox (22.18277pt too wide) in paragraph at lines 258--259
+[]\OT1/cmr/m/n/10 [u`It', u`well', u'established', u'statement', u'made', u'flo
+or', u'House', u'Member',
+ []
+
+
+Overfull \hbox (31.82164pt too wide) in paragraph at lines 258--259
+\OT1/cmr/m/n/10 u'Minister',u'another', u'Member', u'believes', u'untrue', u'in
+complete', u'incorrect',
+ []
+
+[12]
+Overfull \hbox (2.90498pt too wide) in paragraph at lines 263--264
+[]\OT1/cmr/m/n/10 [u'Copies', u'comments', u'Ministers', u'already', u'made', u
+'available', u'Dr',
+ []
+
+[13] (Journal_Argumentation_Springer.aux (chap1.aux)) ) 
+Here is how much of TeX's memory you used:
+ 1467 strings out of 95340
+ 16922 string characters out of 1184193
+ 77365 words of memory out of 1500000
+ 4688 multiletter control sequences out of 110000
+ 6111 words of font info for 22 fonts, out of 1200000 for 2000
+ 14 hyphenation exceptions out of 8191
+ 29i,6n,21p,983b,214s stack positions out of 5000i,500n,10000p,200000b,5000s
+<F:/Program Files/MiKTeX
+ 2.7/fonts/type1/bluesky/cm/cmbx10.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1
+/bluesky/cm/cmbx12.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx
+9.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmex10.pfb><F:/Progra
+m Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmmi10.pfb><F:/Program Files/MiKTeX 2
+.7/fonts/type1/bluesky/cm/cmmi7.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bl
+uesky/cm/cmr10.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmr9.pfb
+><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy10.pfb><F:/Program Fil
+es/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy7.pfb><F:/Program Files/MiKTeX 2.7/fon
+ts/type1/bluesky/cm/cmti10.pfb>
+Output written on Journal_Argumentation_Springer.pdf (13 pages, 152078 bytes).
+PDF statistics:
+ 92 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+
