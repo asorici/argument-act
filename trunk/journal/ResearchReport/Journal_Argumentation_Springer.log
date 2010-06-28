@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=pdflatex 2009.4.26)  27 JUN 2010 19:39
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7) (preloaded format=pdflatex 2009.4.26)  28 JUN 2010 19:02
 entering extended mode
 **Journal_Argumentation_Springer.tex
 (Journal_Argumentation_Springer.tex
@@ -163,19 +163,29 @@ Package graphics Info: Driver file: pdftex.def on input line 90.
 File: pdftex.def 2007/06/12 v0.04h Graphics/color for pdfTeX
 \Gread@gobject=\count117
 ))
-(Journal_Argumentation_Springer.aux (chap1.tex.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+("F:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("F:\Program Files\MiKTeX 2.7\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+\Gin@req@height=\dimen133
+\Gin@req@width=\dimen134
+)
+(Journal_Argumentation_Springer.aux (chap1.aux) (chap3.aux) (chap2.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 ("F:\Program Files\MiKTeX 2.7\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip10
@@ -184,135 +194,106 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 ("F:\Program Files\MiKTeX 2.7\tex\context\base\supp-pdf.tex"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count118
-\scratchdimen=\dimen133
+\scratchdimen=\dimen135
 \scratchbox=\box54
 \nofMPsegments=\count119
 \nofMParguments=\count120
 \MPscratchCnt=\count121
-\MPscratchDim=\dimen134
+\MPscratchDim=\dimen136
 \MPnumerator=\count122
-\everyMPtoPDFconversion=\toks18
+\everyMPtoPDFconversion=\toks19
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 34.
+(Font)              <7> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 34.
+(Font)              <5> on input line 35.
  [1
 
 
 
 
 
-{C:/ProgramData/MiKTeX/2.7/pdftex/config/pdftex.map}] (chap1.tex
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-) [2
+{C:/ProgramData/MiKTeX/2.7/pdftex/config/pdftex.map}] (chap1.tex [2
 
 ]
-[3
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 26.
 
-] [4] <attack.png, id=20, 250.9375pt x 285.065pt>
+[3] <attack.png, id=17, 250.9375pt x 285.065pt>
 File: attack.png Graphic file (type png)
- <use attack.png> [5 <attack.png>]
-Overfull \hbox (23.21162pt too wide) in paragraph at lines 127--128
+ <use attack.png> [4] [5 <attack.png>]) [6] (chap3.tex
+<TopLevelAgentStructure.png, id=28, 687.56876pt x 723.70375pt>
+File: TopLevelAgentStructure.png Graphic file (type png)
+
+<use TopLevelAgentStructure.png> [7
+
+
+]) [8 <TopLevelAgentStructure.png>] [9]
+(chap2.tex
+Overfull \hbox (23.21162pt too wide) in paragraph at lines 19--20
 \OT1/cmr/m/n/10 vided by \OT1/cmr/m/it/10 Arauacaria \OT1/cmr/m/n/10 (\OT1/cmr/
 m/it/10 http://www.arg.dundee.ac.uk/projects/araucariadb/search.php\OT1/cmr/m/n
 /10 ),
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 131.
-
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 21.
 ("F:\Program Files\MiKTeX 2.7\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
- [6]
-<NLP_Architecture.png, id=28, 325.81725pt x 380.01974pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
+ [10
+
+
+]
+<NLP_Architecture.png, id=44, 325.81725pt x 380.01974pt>
 File: NLP_Architecture.png Graphic file (type png)
 
-<use NLP_Architecture.png> [7]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [8 <NLP_Architecture.png (PNG copy)>]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
- [9]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-
-[10]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [11]
-Overfull \hbox (135.58205pt too wide) in paragraph at lines 251--251
- \OT1/cmr/m/it/10 Af-ter-wards the sim-i-lar-ity be-tween sen-tences A and B is
- given by [] 
+<use NLP_Architecture.png> [11] [12 <NLP_Architecture.png (PNG copy)>] [13]
+[14] [15] <accuracy.jpg, id=65, 583.42969pt x 360.59718pt>
+File: accuracy.jpg Graphic file (type jpg)
+ <use accuracy.jpg>
+Overfull \hbox (2.93697pt too wide) in paragraph at lines 150--151
+ [][] 
  []
 
-Missing character: There is no ‚ in font cmti10!
-Missing character: There is no Ä in font cmti10!
-Missing character: There is no ¢ in font cmti10!
+<f1score.jpg, id=66, 567.62062pt x 328.22626pt>
+File: f1score.jpg Graphic file (type jpg)
+ <use f1score.jpg>
+<recall.jpg, id=67, 362.10281pt x 217.5628pt>
+File: recall.jpg Graphic file (type jpg)
+ <use recall.jpg> [16] [17 <accuracy.jpg> <f1score.jpg>] [18 <recall.jpg>] [19]
 
-Overfull \hbox (22.18277pt too wide) in paragraph at lines 258--259
-[]\OT1/cmr/m/n/10 [u`It', u`well', u'established', u'statement', u'made', u'flo
-or', u'House', u'Member',
+Overfull \hbox (317.46092pt too wide) in paragraph at lines 226--227
+[]
  []
 
+) [20] [21
 
-Overfull \hbox (31.82164pt too wide) in paragraph at lines 258--259
-\OT1/cmr/m/n/10 u'Minister',u'another', u'Member', u'believes', u'untrue', u'in
-complete', u'incorrect',
- []
-
-[12]
-Overfull \hbox (2.90498pt too wide) in paragraph at lines 263--264
-[]\OT1/cmr/m/n/10 [u'Copies', u'comments', u'Ministers', u'already', u'made', u
-'available', u'Dr',
- []
-
-[13] (Journal_Argumentation_Springer.aux (chap1.aux)) ) 
+] (Journal_Argumentation_Springer.aux (chap1.aux) (chap3.aux)
+(chap2.aux)) ) 
 Here is how much of TeX's memory you used:
- 1467 strings out of 95340
- 16922 string characters out of 1184193
- 77365 words of memory out of 1500000
- 4688 multiletter control sequences out of 110000
- 6111 words of font info for 22 fonts, out of 1200000 for 2000
+ 1628 strings out of 95340
+ 18917 string characters out of 1184193
+ 81111 words of memory out of 1500000
+ 4820 multiletter control sequences out of 110000
+ 7635 words of font info for 27 fonts, out of 1200000 for 2000
  14 hyphenation exceptions out of 8191
- 29i,6n,21p,983b,214s stack positions out of 5000i,500n,10000p,200000b,5000s
-<F:/Program Files/MiKTeX
- 2.7/fonts/type1/bluesky/cm/cmbx10.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1
-/bluesky/cm/cmbx12.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx
-9.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmex10.pfb><F:/Progra
-m Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmmi10.pfb><F:/Program Files/MiKTeX 2
-.7/fonts/type1/bluesky/cm/cmmi7.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bl
-uesky/cm/cmr10.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmr9.pfb
-><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy10.pfb><F:/Program Fil
-es/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy7.pfb><F:/Program Files/MiKTeX 2.7/fon
-ts/type1/bluesky/cm/cmti10.pfb>
-Output written on Journal_Argumentation_Springer.pdf (13 pages, 152078 bytes).
+ 29i,8n,21p,1260b,223s stack positions out of 5000i,500n,10000p,200000b,5000s
+<F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx10.pfb><F
+:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx12.pfb><F:/Program Files/
+MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx9.pfb><F:/Program Files/MiKTeX 2.7/fonts/
+type1/bluesky/cm/cmex10.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm
+/cmmi10.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmmi7.pfb><F:/P
+rogram Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmr10.pfb><F:/Program Files/MiKT
+eX 2.7/fonts/type1/bluesky/cm/cmr9.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1
+/bluesky/cm/cmsy10.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy
+7.pfb><F:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmti10.pfb>
+Output written on Journal_Argumentation_Springer.pdf (21 pages, 363509 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,24 @@
+\section{Agent Society Overview}
+\label{sec:society}
+
+In this section we present the structure of the agent society and the argumentation framework used in interaction between agents. First our argumentation framework consists of a number of intelligent agents capable of exchanging arguments using the AIF\cite{aif}. These agents can understand human language and are able to extract arguments from text in English. In addition to the AIF at least one topic ontology is needed in the framework to provide the ground knowledge accepted by all agents in the system. Note that the society is not constrained to use a specific ontology as a whole, but rather each agent needs at least one ontology. This allows agents to play different roles in the society analogous to the roles humans play in our society. For example an agent may have several ontologies describing legal concepts, while other agent may only know about animals. In this approach ontologies shared by all agents represent a limited form common sense knowledge. As we will see in section[\ref{sec:application}] the framework can be augmented with additional capabilities to retrieve data from external sources and insert it into AIF. 
+
+Humans can also take part in a debate using English language. A human can debate on a given topic with one or more agents. As shown in section[\ref{sec:application}] each agent has it's own behavior and different agents may accept different arguments as valid based on their knowledge and various behavior parameters. In a debate each agent maintains an own view of the argumentation and will try at best to attack and defend arguments based on it's own position in the debate. If an agent can't determine the acceptability of an argument he may ask other agents. This is a two step process involving a query to the Facilitator  which returns a list of agents discussing on a given topic. In the next step a query is sent to all agents that might know about this argument. If an agent knows the accessibility value of the property of the argument than an additional query can be made for an argumentation schema. This process may continue in a manner similar to a backward-chaining proof. Note that this process involves agents that share at least one ontology, other than AIF. Because of this agents may form interest groups in the society and interactions only occur within these groups.
+\section{Agent Architecture}
+\label{sec:application}
+
+In this section we present the architecture of the agent. Each agent can understand natural language and interact with humans and other agents. The NLP module is used to create a schema of argumentation from the text. This schema is used by the reasoning module to determine the argumentation plan and the admissibility of arguments using Dung acceptability\cite{dung}. Each agent has also an associated behavior that is essentially a set of parameters that control the algorithms used in the reasoning module. Finally each agent has a communication module used to interact with other agents as described in section[\ref{sec:society}].
+Although the use of an ontology has many advantages over other sources of information, such a database or a knowledge base the AIF does not enforce the structure of the domain knowledge used by agents. Because of this any agent can be augmented with capabilities for extracting knowledge. This can be used to support the admissibility of arguments.
+In this section we present the architecture of the agent. At the top level we have build an autonomous intelligent agent that has it's own behavior module and reasoning capabilities. Moreover each agent can understand natural language and interact with humans and other agents.
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.47]{TopLevelAgentStructure}
+\caption{Top Level Agent Architecture}
+\label{fig:arch}
+\end{figure}
+
+\subsection{NLP Module Description}
+
+The NLP (Natural Language Processing) module is an important component of the overall agent architecture. Its role gains significant attention in the scenario where a human counterpart is engaged in a debate with one or several agents.
+In such a setting, the human counterpart will communicate with the agent system using the English language. An individual engaged in a debate will enter text that defines his current standpoint in the entire argumentation process.
+The purpose of the NLP module then becomes that of parsing this text and of producing an internal representation of the current argument intended by the user. The output of the module will consist in an inference scheme which will be used by the main reasoning module of each agent to update its current beliefs and behavior (the way in which it will possibly try to being a counter-argument). The next section will provide a detailed description of this module as well as the results obtained.
