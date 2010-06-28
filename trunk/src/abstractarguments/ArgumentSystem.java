@@ -1,7 +1,7 @@
 /**
  * WORK IN PROGRESS!!
- * 3 TODOS left
- * 6/28/2010 15:00 PM 
+ * 6 TODOs left
+ * 6/28/2010 17:15 PM 
  */
 
 package abstractarguments;
@@ -98,10 +98,18 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T>{
 
 	@Override
 	public Collection<T> getArgumentsToAttack(T goalArgument){
-		if (getStateOfArgument(goalArgument) == ArgumentState.JUSTIFIED) {
+		if (getStateOfArgument(goalArgument) == ArgumentState.JUSTIFIED || getStateOfArgument(goalArgument) == ArgumentState.MISSING) {
 			return null;
 		}
-		// TODO Get lists of arguments that should be attacked to have the goal argument justified.
+		ArrayList<T> attackableArguments = new ArrayList<T>();
+		Iterator<Extension<T>> extensionIterator = extensions.iterator();
+		while (extensionIterator.hasNext()) {
+			Extension<T> extension = extensionIterator.next();
+			if (!extension.contains(goalArgument)) {
+				// TODO Get lists of arguments that should be attacked to have the goal argument included in current extension.
+			}
+		}
+		
 		return null;
 	}
 
@@ -215,7 +223,6 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T>{
 	}
 	
 	private void updateExtensions(T newArgument) {
-		// TODO Check if for all semantics this is true.
 		Iterator<Extension<T>> extensionIterator = extensions.iterator();
 		while (extensionIterator.hasNext()) {
 			extensionIterator.next().addArgument(newArgument);
@@ -224,5 +231,17 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T>{
 	
 	private void updateExtensions(T argument, T attacker) {
 		// TODO Updates extensions set after a new argument is asserted.
+	}
+	
+	public void drawGraph(String fileName) {
+		// TODO Draw a graph of the current
+	}
+	
+	public void drawGraphWithHints(String fileName, T goalArgument) {
+		// TODO Draw a graph of the current set of arguments that should be attacked to get the goal argument justified.
+	}
+	
+	public void drawExtensions(String rootFileName) {
+		// TODO Draw the graph, emphasizing each possible extension.
 	}
 }
