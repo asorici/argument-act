@@ -51,11 +51,6 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T>{
 	}
 
 	@Override
-	/**
-	 * Adds an attack relation b
-	 * @param argument The attacked argument.
-	 * @param attack The attacker argument.
-	 */
 	public void challengeArgument(T argument, T attack) {
 		// If argument is not known ...
 		// ... add argument to the set of known arguments.
