@@ -36,7 +36,7 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 	/**
 	 * The set of current consistent extensions.
 	 */
-	private TreeSet<Extension<T>> extensions;
+	private ArrayList<Extension<T>> extensions;
 
 	/**
 	 * Class constructor
@@ -54,7 +54,7 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 		this.supports = new HashMap<T, ArrayList<ArrayList<T>>>();
 		this.attacks = new HashMap<T, ArrayList<T>>();
 		this.attackedBy = new HashMap<T, ArrayList<T>>();
-		this.extensions = new TreeSet<Extension<T>>();
+		this.extensions = new ArrayList<Extension<T>>();
 		this.extensions.add(new Extension<T>());
 		// DEBUG
 		System.out.println("System up");
@@ -63,7 +63,15 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 	@Override
 	public void challengeArgument(T argument, T attack) {
 		// DEBUG
-		System.out.println("::challengeArgument");
+		System.out.println("::challengeArgument(" + argument.toString() + "," + attack.toString() + ")");
+		for (T supportedArgument : supports.keySet()) {
+			for (Collection<T> supportSet : supports.get(supportedArgument)) {
+				if (supportSet.contains(argument)) {
+					challengeArgument(supportedArgument, attack);
+				}
+			}
+		}
+
 		// If argument is not known ...
 		// ... add argument to the set of known arguments.
 		if (!arguments.contains(argument)) {
@@ -264,13 +272,13 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 	@Override
 	public void assertArgument(T argument, Collection<T> premises) {
 		// DEBUG
-		/*
+		
 		if (premises == null) {
 			System.out.println("::assertArgument (" + argument.toString() + ", null)");
 		} else {
 			System.out.println("::assertArgument (" + argument.toString() + ", " + premises.toString() +")");
 		}
-		*/
+		
 		if (!arguments.contains(argument)) {
 			// If argument is not known
 			// ... add argument to the set of known arguments.
@@ -394,7 +402,7 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 		*/
 	}
 
-	private TreeSet<Extension<T>> recomputeCompleteExtensions() {
+	private ArrayList<Extension<T>> recomputeCompleteExtensions() {
 		// DEBUG
 		// System.out.println("::recomputeCompleteExtensions");
 		ArrayList<T> unattackedNodes = getUnattackedNodes();
@@ -427,13 +435,15 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 				finalSetOfExtensions.add(e);
 			}
 		}
-		return new TreeSet<Extension<T>>(finalSetOfExtensions);
+		return finalSetOfExtensions;
 	}
 
 	private ArrayList<Extension<T>> getPossibleExtensions(ArrayList<T> inNodes,
 			ArrayList<T> outNodes, ArrayList<T> undecidedNodes) {
 		// DEBUG
-		// System.out.println("::getPossibleExtensions");
+		 System.out.print("::getPossibleExtensions(");
+		 System.out.print(inNodes.toString() + "," + outNodes.toString() + "," + undecidedNodes.toString());
+		 System.out.println(")");
 		ArrayList<Extension<T>> a = new ArrayList<Extension<T>>();
 		if (undecidedNodes.isEmpty()) {
 			if (validCompleteExtension(inNodes, outNodes)) {
@@ -451,12 +461,20 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 
 			inNodes1.add(candidate);
 			if (attacks.containsKey(candidate)) {
-				outNodes1.addAll(attacks.get(candidate));
-				undecidedNodes.removeAll(attacks.get(candidate));
+				for (T attacked : attacks.get(candidate)) {
+					if (!outNodes1.contains(attacked)) {
+						outNodes1.add(attacked);
+						undecidedNodes1.remove(attacked);
+					}
+				}
 			}
 			if (attackedBy.containsKey(candidate)) {
-				outNodes1.addAll(attackedBy.get(candidate));
-				undecidedNodes.removeAll(attackedBy.get(candidate));
+				for (T attacker : attackedBy.get(candidate)) {
+					if (!outNodes1.contains(attacker)) {
+						outNodes1.add(attacker);
+						undecidedNodes1.remove(attacker);
+					}
+				}
 			}
 			outNodes2.add(candidate);
 			a

@@ -18,6 +18,7 @@ public class TestArgumentSystem {
 	public TestArgumentSystem() {
 		argSys = new ArgumentSystem<String>(ExtensionBasedSemantics.COMPLETE);
 		
+		/*
 		System.out.println("Adding A...");
 		argSys.assertArgument("A", new ArrayList<String>());
 		
@@ -42,6 +43,24 @@ public class TestArgumentSystem {
 		System.out.println("Adding H -> G");
 		argSys.challengeArgument("G", "H");
 		System.out.println(argSys.getArgumentsToAttack("G").toString());
+		*/
+		argSys.assertArgument("A", new ArrayList<String>());
+		argSys.assertArgument("B", new ArrayList<String>());
+		argSys.assertArgument("C", new ArrayList<String>());
+		argSys.assertArgument("D", new ArrayList<String>());
+		ArrayList<String> support = new ArrayList<String>();
+		support.add("F");
+		support.add("G");
+		argSys.assertArgument("E", support);
+		System.out.println("Adding C -> D");
+		argSys.challengeArgument("D", "C");
+		System.out.println("Adding D -> C");
+		argSys.challengeArgument("C", "D");
+		System.out.println("Adding D -> G");
+		argSys.challengeArgument("G", "D");
+		System.out.println(argSys.getExtensions().toString());
+		System.out.println(argSys.getArgumentsToAttack("C").toString());
+		
 	}
 	
 	/**
