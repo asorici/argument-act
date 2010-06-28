@@ -1,7 +1,6 @@
 package abstractarguments;
 
 import java.util.Collection;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class Extension<T> {
@@ -11,7 +10,7 @@ public class Extension<T> {
 		arguments = new TreeSet<T>();
 	}
 	
-	public Extension(Set<T> initialArguments) {
+	public Extension(Collection<T> initialArguments) {
 		arguments = new TreeSet<T>();
 		arguments.addAll(initialArguments);
 	}
@@ -27,5 +26,13 @@ public class Extension<T> {
 	
 	public Collection<T> getArguments() {
 		return arguments;
+	}
+	
+	public boolean subExtensionOf(Extension<T> e) {
+		return e.getArguments().containsAll(this.getArguments());
+	}
+	
+	public String toString() {
+		return arguments.toString();
 	}
 }
