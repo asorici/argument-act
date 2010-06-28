@@ -35,6 +35,11 @@ public class SSArgumentResponder extends FSMBehaviour {
 	protected static final String SEND_REPLY = "Send-Reply";
 	protected static final String DUMMY_FINAL = "Dummy-Final";
 	
+	/**
+	 * Constructs an <code>SSArgumentResponder</code> behaviour
+	 * @param a The agent performing the protocol
+	 * @param store The <code>DataStore</code> that will be used by this <code>SSArgumentResponder</code>
+	 */
 	public SSArgumentResponder(Agent a, DataStore store) {
 		super(a);
 		setDataStore(store);
@@ -85,7 +90,11 @@ public class SSArgumentResponder extends FSMBehaviour {
 	}
 	
 	/**
-	 * 
+	 * form the reply message to be sent to the initiator
+	 * if left default, this method returns null leading to a
+	 * ACLMessage.NOTUNDERSTOOD response to the initiator
+	 * Note that the message you return must specify the argument performative
+	 * (ACCEPT, ASSERT or CHALLENGE) using the setUserDefinedParameter function
 	 * @param recvMsg - the argument received from the initiator
 	 * @return
 	 */
