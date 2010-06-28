@@ -79,7 +79,7 @@ Using these measures we can compute an overall semantic relatedness of the argum
 \par
 We assume the semantic relatedness of words to be given by their semantic distances in a lexico-semantic resource such as WordNet. We use the lin similarity measure to compute the relatedness of two synsets. As each word in a sentence can have several senses, one would first have to go through a word sense disambiguation process to determine the most probable meaning. As this process is time-consuming, the current approach employs the use of the most common sense, as defined by WordNet, for each word we encounter.
 \par
-Using the lin similarity we compute a word similarity matrix between every pair of words, one from each sentence.To compute the estimated similarity between two sentences we then use the following method. Given two sentences A and B, for each word from sentence A we compute the most similar word from sentence B, as given by the previously computed matrix.
+Using the lin\cite{lin} similarity we compute a word similarity matrix between every pair of words, one from each sentence.To compute the estimated similarity between two sentences we then use the following method. Given two sentences A and B, for each word from sentence A we compute the most similar word from sentence B, as given by the previously computed matrix.
 
 \[ b^* = arg \max_b Sim(a,b) \]
 
