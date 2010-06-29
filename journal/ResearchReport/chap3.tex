@@ -55,8 +55,15 @@ The main entities used from AIF are summarized below. For a detailed discussion 
 &to I-node & to RA-node & to PA-node & to CA-node\\
 \hline
 from I-node & & I-node data used in applying an inference & I-node data used in applying a preference & I-node data in conflict with information in node supported by CA-node\\
+\hline
 from RA-node & inferring a conclusion in the form of a claim & inferring a conclusion in the form of an inference application & inferring a conclusion in the form of a preference application & inferring a conclusion in the form of a conflict definition application\\
+\hline
+from PA-node & applying a preference over data in I-node & applying a preference over inference application in RA-node & meta- preferences : applying a preference over preference application in supported PA-node & preference application in
+supporting PA-node in conflict with preference application in PA-node supported by CA-node \\
+\hline
+from CA-node & applying conflict definition to data in I-node & applying conflict definition to inference application in RA-node & applying conflict definition to preference application in PA-node & showing a conflict holds between a conflict definition and some other piece of information \\
 \hline
 \end{tabular}
 \label{tab:aif}
+\caption{Semantics of support for node-to-node relationships in an argument network\cite{aif}}
 \end{table}
