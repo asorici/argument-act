@@ -219,22 +219,14 @@ public class ArgumentInitiator extends FSMBehaviour {
 	
 	protected int getReplyType(ACLMessage argReply) {
 		
-		String type = argReply.getUserDefinedParameter("ARG_PERFORMATIVE");
-		if (type != null) {
-			if (type.equalsIgnoreCase("assert")) {
-				return ASSERT;
-			}
-			
-			if (type.equalsIgnoreCase("accept")) {
-				return ACCEPT;
-			}
-			
-			if (type.equalsIgnoreCase("challenge")) {
-				return CHALLENGE;
-			}
-		}
+		int type = argReply.getPerformative();
 		
-		return -1;
+		switch(type) {
+			case ArgumentationMessage.ARG_ASSERT: return ASSERT;
+			case ArgumentationMessage.ARG_ACCEPT: return ACCEPT;
+			case ArgumentationMessage.ARG_CHALLENGE: return CHALLENGE;
+			default: return -1;
+		}
 	}
 	
 	/**

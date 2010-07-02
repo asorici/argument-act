@@ -12,7 +12,7 @@ import jade.lang.acl.MessageTemplate;
 import jade.proto.states.MsgReceiver;
 import jade.proto.states.ReplySender;
 
-public class SSArgumentResponder extends FSMBehaviour {
+public class ArgumentResponder extends FSMBehaviour {
 	
 	/**
 	 Key to retrieve from the DataStore of the behaviour the last received
@@ -35,18 +35,24 @@ public class SSArgumentResponder extends FSMBehaviour {
 	protected static final String SEND_REPLY = "Send-Reply";
 	protected static final String DUMMY_FINAL = "Dummy-Final";
 	
+	public ArgumentResponder(Agent a) {
+		this(a, new DataStore());
+	}
+	
 	/**
-	 * Constructs an <code>SSArgumentResponder</code> behaviour
+	 * Constructs an <code>ArgumentResponder</code> behaviour
 	 * @param a The agent performing the protocol
-	 * @param store The <code>DataStore</code> that will be used by this <code>SSArgumentResponder</code>
+	 * @param store The <code>DataStore</code> that will be used by this <code>ArgumentResponder</code>
 	 */
-	public SSArgumentResponder(Agent a, DataStore store) {
+	public ArgumentResponder(Agent a, DataStore store) {
 		super(a);
 		setDataStore(store);
 		
+		//registerTransition(RECEIVE_NEXT, FORM_REPLY, ArgumentationMessage.ARG_ASSERT, new String[]{RECEIVE_NEXT});
 		registerDefaultTransition(RECEIVE_NEXT, FORM_REPLY, new String[]{RECEIVE_NEXT});
 		registerDefaultTransition(FORM_REPLY, SEND_REPLY);
-		registerDefaultTransition(SEND_REPLY, DUMMY_FINAL);
+		//registerDefaultTransition(SEND_REPLY, DUMMY_FINAL);
+		registerDefaultTransition(SEND_REPLY, RECEIVE_NEXT);
 		
 		Behaviour b;
 		
@@ -139,8 +145,10 @@ public class SSArgumentResponder extends FSMBehaviour {
 		
 		public int onEnd() {
 			// The next reply (if any) will be a reply to the received message 
-			SSArgumentResponder parent = (SSArgumentResponder) getParent();
+			ArgumentResponder parent = (ArgumentResponder) getParent();
 			parent.setMessageToReplyKey((String) receivedMsgKey);
+			
+			//System.out.println("received message: " + ((ACLMessage)this.getDataStore().get(receivedMsgKey)).getContent());
 			
 			return super.onEnd();
 		}
@@ -157,7 +165,7 @@ public class SSArgumentResponder extends FSMBehaviour {
 		}
 		
 		public void onStart() {
-			SSArgumentResponder parent = (SSArgumentResponder) getParent();
+			ArgumentResponder parent = (ArgumentResponder) getParent();
 			ACLMessage reply = (ACLMessage)getDataStore().get(parent.REPLY_KEY);
 			ACLMessage recvMsg = (ACLMessage)getDataStore().get(parent.RECEIVED_KEY);
 			if (reply == null) {
@@ -170,7 +178,7 @@ public class SSArgumentResponder extends FSMBehaviour {
 		
 		public int onEnd() {
 			int ret = super.onEnd();
-			SSArgumentResponder parent = (SSArgumentResponder) getParent();
+			ArgumentResponder parent = (ArgumentResponder) getParent();
 			ACLMessage reply = (ACLMessage)getDataStore().get(parent.REPLY_KEY);
 			parent.afterReply(reply);
 			return ret;
@@ -190,7 +198,7 @@ public class SSArgumentResponder extends FSMBehaviour {
 		}
 		
 		public void action() {
-			SSArgumentResponder parent = (SSArgumentResponder) getParent();
+			ArgumentResponder parent = (ArgumentResponder) getParent();
 			parent.sessionTerminated();
 		}
 	} // End of inner class DummyFinal 
