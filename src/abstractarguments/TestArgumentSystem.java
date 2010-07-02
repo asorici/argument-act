@@ -18,32 +18,32 @@ public class TestArgumentSystem {
 	public TestArgumentSystem() {
 		argSys = new ArgumentSystem<String>(ExtensionBasedSemantics.COMPLETE);
 		
-		/*
-		System.out.println("Adding A...");
-		argSys.assertArgument("A", new ArrayList<String>());
 		
-		System.out.println("Adding A -> B");
+		System.out.println("Adding A,B,C,F,E,D,G,H...");
+		argSys.assertArgument("A", new ArrayList<String>());
 		argSys.challengeArgument("B", "A");
-		System.out.println("Adding B -> C");
 		argSys.challengeArgument("C", "B");
-		System.out.println("Adding C -> B");
 		argSys.challengeArgument("B", "C");
-		System.out.println("Adding F -> B");
 		argSys.challengeArgument("B", "F");
-		System.out.println("Adding B -> E");
-		argSys.challengeArgument("E", "B");
-		System.out.println("Adding E -> F");
 		argSys.challengeArgument("F", "E");
-		System.out.println("Adding E -> D");
+		argSys.challengeArgument("E", "B");
 		argSys.challengeArgument("D", "E");
-		System.out.println("Adding C -> D");
 		argSys.challengeArgument("D", "C");
-		System.out.println("Adding D -> G");
 		argSys.challengeArgument("G", "D");
-		System.out.println("Adding H -> G");
 		argSys.challengeArgument("G", "H");
+		//Pana aici avem graful din figura before_attack_on_h.jpeg
+		System.out.println("Current extensions are: (see before_attack_on_H.jpeg)");
+		System.out.println(argSys.getExtensions().toString());
+		//Sistemul ne recomanda sa atacm H ca sa il justificam pe G
+		System.out.println("What should we attack in order to have G justified?");
 		System.out.println(argSys.getArgumentsToAttack("G").toString());
-		*/
+		//Atacam H cu un nou argument I
+		System.out.println("Adding I -> H...");
+		argSys.challengeArgument("H", "I");
+		//Noua extensie este cea din figura after_attack_on_h.jpeg
+		System.out.println("The current complete extensions are: (see after_attack_on_h.jpeg)");
+		System.out.println(argSys.getExtensions().toString());
+		/*
 		argSys.assertArgument("A", new ArrayList<String>());
 		argSys.assertArgument("B", new ArrayList<String>());
 		argSys.assertArgument("C", new ArrayList<String>());
@@ -60,13 +60,14 @@ public class TestArgumentSystem {
 		argSys.challengeArgument("G", "D");
 		System.out.println(argSys.getExtensions().toString());
 		System.out.println(argSys.getArgumentsToAttack("C").toString());
-		
+		*/
 	}
 	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		@SuppressWarnings("unused")
 		TestArgumentSystem t = new TestArgumentSystem();
 
 	}

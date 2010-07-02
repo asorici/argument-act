@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.TreeSet;
 
 public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 	/**
@@ -63,7 +62,7 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 	@Override
 	public void challengeArgument(T argument, T attack) {
 		// DEBUG
-		System.out.println("::challengeArgument(" + argument.toString() + "," + attack.toString() + ")");
+		//System.out.println("::challengeArgument(" + argument.toString() + "," + attack.toString() + ")");
 		for (T supportedArgument : supports.keySet()) {
 			for (Collection<T> supportSet : supports.get(supportedArgument)) {
 				if (supportSet.contains(argument)) {
@@ -210,7 +209,25 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 				}
 			}
 		}
-		return badArgs;
+		ArrayList<T> badArgs2 = new ArrayList<T>();
+		for (T badArg : badArgs) {
+			if (attackedBy.containsKey(badArg)) {
+				boolean noReasonToAttack = false;
+				for(T attacker : attackedBy.get(badArg)) {
+					if (getStateOfArgument(attacker) == ArgumentState.JUSTIFIED) {
+						noReasonToAttack = true;
+						break;
+					}
+				}
+				if (noReasonToAttack == false) {
+					badArgs2.add(badArg);
+				}
+			} else {
+				badArgs2.add(badArg);
+			}
+		}
+		return badArgs2;
+		
 	}
 
 	@Override
@@ -272,13 +289,13 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 	@Override
 	public void assertArgument(T argument, Collection<T> premises) {
 		// DEBUG
-		
+		/*
 		if (premises == null) {
 			System.out.println("::assertArgument (" + argument.toString() + ", null)");
 		} else {
 			System.out.println("::assertArgument (" + argument.toString() + ", " + premises.toString() +")");
 		}
-		
+		*/
 		if (!arguments.contains(argument)) {
 			// If argument is not known
 			// ... add argument to the set of known arguments.
@@ -441,9 +458,11 @@ public class ArgumentSystem<T> implements AbstractArgumentSystem<T> {
 	private ArrayList<Extension<T>> getPossibleExtensions(ArrayList<T> inNodes,
 			ArrayList<T> outNodes, ArrayList<T> undecidedNodes) {
 		// DEBUG
-		 System.out.print("::getPossibleExtensions(");
-		 System.out.print(inNodes.toString() + "," + outNodes.toString() + "," + undecidedNodes.toString());
-		 System.out.println(")");
+		/*
+		System.out.print("::getPossibleExtensions(");
+		System.out.print(inNodes.toString() + "," + outNodes.toString() + "," + undecidedNodes.toString());
+		System.out.println(")");
+		*/
 		ArrayList<Extension<T>> a = new ArrayList<Extension<T>>();
 		if (undecidedNodes.isEmpty()) {
 			if (validCompleteExtension(inNodes, outNodes)) {
