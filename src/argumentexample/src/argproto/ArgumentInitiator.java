@@ -35,8 +35,16 @@ public class ArgumentInitiator extends FSMBehaviour {
 	private static final String HANDLE_ASSERT = "Handle-assert";
 	private static final String HANDLE_CHALLENGE = "Handle-challenge";
 	private static final String DUMMY_FINAL = "Dummy-final";
+	private static final String DUMMY_EXPIRED = "Dummy-expired";
+	private static final String DUMMY_INTERRUPTED = "Dummy-interrupted";
+	private static final String DUMMY_NOT_UNDERSTOOD = "Dummy-not-understood";
 	
-	// The MsgReceiver behaviour used to receive replies 
+	protected boolean received = false;
+	protected boolean expired = false;
+	protected boolean interrupted = false;
+	protected boolean notunderstood = false; 
+	
+	// The MsgReceiver behavior used to receive replies 
 	protected MsgReceiver replyReceiver = null;
 	
 	// The MessageTemplate used by the replyReceiver
@@ -67,14 +75,15 @@ public class ArgumentInitiator extends FSMBehaviour {
 		registerTransition(SEND_ARGUMENT, DUMMY_FINAL, 0);	// exit protocol if no argument is sent
 		registerDefaultTransition(SEND_ARGUMENT, RECEIVE_REPLY);
 		
-		registerTransition(RECEIVE_REPLY, DUMMY_FINAL, MsgReceiver.TIMEOUT_EXPIRED); 
-		registerTransition(RECEIVE_REPLY, DUMMY_FINAL, MsgReceiver.INTERRUPTED);
-		registerTransition(RECEIVE_REPLY, DUMMY_FINAL, ACLMessage.NOT_UNDERSTOOD);
+		registerTransition(RECEIVE_REPLY, DUMMY_EXPIRED, MsgReceiver.TIMEOUT_EXPIRED); 
+		registerTransition(RECEIVE_REPLY, DUMMY_INTERRUPTED, MsgReceiver.INTERRUPTED);
+		registerTransition(RECEIVE_REPLY, DUMMY_NOT_UNDERSTOOD, ACLMessage.NOT_UNDERSTOOD);
 		registerDefaultTransition(RECEIVE_REPLY, CHECK_IN_SEQ);
 		
 		registerTransition(CHECK_IN_SEQ, HANDLE_ASSERT, ASSERT);
 		registerTransition(CHECK_IN_SEQ, HANDLE_ACCEPT, ACCEPT);
 		registerTransition(CHECK_IN_SEQ, HANDLE_CHALLENGE, CHALLENGE);
+		registerDefaultTransition(CHECK_IN_SEQ, DUMMY_FINAL);
 		
 		// Create and register the states that make up the FSM
 		Behaviour b = null;
@@ -144,9 +153,11 @@ public class ArgumentInitiator extends FSMBehaviour {
 			private static final long     serialVersionUID = 3487495895818002L;
 			
 			public void action() {
+				// reply can not be null here (it must have a value)
 				ACLMessage reply = (ACLMessage) getDataStore().get(REPLY_K);
 				ret = checkInSequence(reply);
 			}
+			
 			public int onEnd() {
 				return ret;
 			}
@@ -193,9 +204,41 @@ public class ArgumentInitiator extends FSMBehaviour {
 			private static final long     serialVersionUID = 3487495895818006L;
 			
 			public void action() {
+				
 			}
 		};
 		registerLastState(b, DUMMY_FINAL);
+		
+		// DUMMY NOT UNDERSTOOD
+		b = new OneShotBehaviour(myAgent) {
+			private static final long     serialVersionUID = 3487495895818007L;
+			
+			public void action() {
+				notunderstood = true;
+			}
+		};
+		registerLastState(b, DUMMY_NOT_UNDERSTOOD);
+		
+		// DUMMY INTERRUPTED
+		b = new OneShotBehaviour(myAgent) {
+			private static final long     serialVersionUID = 3487495895818008L;
+			
+			public void action() {
+				interrupted = true;
+			}
+		};
+		registerLastState(b, DUMMY_INTERRUPTED);
+		
+		// DUMMY TIMEOUT EXPIRED
+		b = new OneShotBehaviour(myAgent) {
+			private static final long     serialVersionUID = 3487495895818009L;
+			
+			public void action() {
+				expired = true;
+			}
+		};
+		registerLastState(b, DUMMY_EXPIRED);
+		
 	}
 	
 	protected String createConvId(ACLMessage arg) {
@@ -203,7 +246,7 @@ public class ArgumentInitiator extends FSMBehaviour {
 		// use it. Otherwise create a default one
 		String convId = null;
 		if ((arg == null) || (arg.getConversationId() == null)) {
-			convId = "C" + hashCode() + "_" + System.currentTimeMillis();
+			convId = "ArgC" + hashCode() + "_" + System.currentTimeMillis();
 		} 
 		else {
 			convId = arg.getConversationId();
@@ -214,10 +257,15 @@ public class ArgumentInitiator extends FSMBehaviour {
 	
 	protected int checkInSequence(ACLMessage reply) {
 		int type = getReplyType(reply);
+		received = true;
 		return type;
 	}
 	
 	protected int getReplyType(ACLMessage argReply) {
+		
+		if (argReply == null) {
+			return -1;
+		}
 		
 		int type = argReply.getPerformative();
 		
@@ -261,4 +309,5 @@ public class ArgumentInitiator extends FSMBehaviour {
 	 **/
 	protected void handleChallenge(ACLMessage challengeMsg) {
 	}
+	
 }

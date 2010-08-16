@@ -7,6 +7,7 @@ import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.DataStore;
 import jade.core.behaviours.FSMBehaviour;
 import jade.core.behaviours.OneShotBehaviour;
+import jade.domain.FIPAAgentManagement.NotUnderstoodException;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
 import jade.proto.states.MsgReceiver;
@@ -65,8 +66,13 @@ public class ArgumentResponder extends FSMBehaviour {
 			private static final long     serialVersionUID = 3487495895818004L;
 			
 			public void action() {
-				ACLMessage reply = handleFormReply((ACLMessage) getDataStore().get(RECEIVED_KEY));
-				getDataStore().put(REPLY_KEY, reply);
+				try {
+					ACLMessage reply = handleFormReply((ACLMessage) getDataStore().get(RECEIVED_KEY));
+					getDataStore().put(REPLY_KEY, reply);
+				}
+				catch (NotUnderstoodException ex) {
+					getDataStore().put(REPLY_KEY, null);
+				}
 			}
 		};
 		registerDSState(b, FORM_REPLY);
@@ -100,11 +106,11 @@ public class ArgumentResponder extends FSMBehaviour {
 	 * if left default, this method returns null leading to a
 	 * ACLMessage.NOTUNDERSTOOD response to the initiator
 	 * Note that the message you return must specify the argument performative
-	 * (ACCEPT, ASSERT or CHALLENGE) using the setUserDefinedParameter function
+	 * (ACCEPT, ASSERT or CHALLENGE)
 	 * @param recvMsg - the argument received from the initiator
 	 * @return
 	 */
-	protected ACLMessage handleFormReply(ACLMessage recvMsg) {
+	protected ACLMessage handleFormReply(ACLMessage recvMsg) throws NotUnderstoodException {
 		return null;
 	}
 	
@@ -137,7 +143,7 @@ public class ArgumentResponder extends FSMBehaviour {
 	 */
 	private static class NextMsgReceiver extends MsgReceiver {
 		private static final long     serialVersionUID = 4487495895818001L;
-		private static MessageTemplate mt = MessageTemplate.MatchPerformative(ArgumentationMessage.ARG_ASSERT);
+		private static MessageTemplate mt = MessageTemplate.or(MessageTemplate.MatchPerformative(ArgumentationMessage.ARG_ASSERT), MessageTemplate.MatchPerformative(ArgumentationMessage.ARG_CHALLENGE));
 		
 		public NextMsgReceiver(Agent a, DataStore ds, String key) {
 			super(a, mt, INFINITE, ds, key);
