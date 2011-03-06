@@ -1,0 +1,11 @@
+; Thu Jan 06 19:18:19 EET 2011
+; 
+;+ (version "3.4.1")
+;+ (build "Build 537")
+
+([project+annotation] of  %3APROJECT-ANNOTATION
+
+	(%3ALOCATION "C:\\Documents and Settings\\ttania\\src\\beanGenerator\\test")
+	(%3AONTOLOGYNAME "Musicshop")
+	(%3APACKAGE "nl.acklin.musicshop")
+	(%3ASUPPORT "j2se"))

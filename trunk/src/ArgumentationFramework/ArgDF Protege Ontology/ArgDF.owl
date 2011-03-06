@@ -1,0 +1,523 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.owl-ontologies.com/Ontology1295096279.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Ontology1295096279.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://jade.cselt.it/beangenerator"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="PresumptivePreferenceScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PresumptivePreferenceScheme</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="PreferenceScheme"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PA-Node">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PA-Node</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="S-Node"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ConclusionDesc">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Form"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ConclusionDesc</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Conclusion">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Conclusion</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="I-Node"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#PreferenceScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PreferenceScheme</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Scheme"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LogicalPreferenceScheme">
+    <rdfs:subClassOf rdf:resource="#PreferenceScheme"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >LogicalPreferenceScheme</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="RuleScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RuleScheme</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Scheme"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Form">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Node"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Form</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Presumption">
+    <rdfs:subClassOf rdf:resource="#Form"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Presumption</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Premise">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#I-Node"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Premise</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="PremiseDesc">
+    <rdfs:subClassOf rdf:resource="#Form"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PremiseDesc</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#S-Node">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Node"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >S-Node</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="InductiveInference">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >InductiveInference</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#RuleScheme"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ConflictScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ConflictScheme</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Scheme"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Scheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Scheme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://jade.cselt.it/beangenerator#Concept"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CA-Node">
+    <rdfs:subClassOf rdf:resource="#S-Node"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CA-Node</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="DeductiveInference">
+    <rdfs:subClassOf rdf:resource="#RuleScheme"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DeductiveInference</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="PresumptiveInferenceScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PresumptiveInferenceScheme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#RuleScheme"/>
+  </owl:Class>
+  <owl:Class rdf:ID="RA-Node">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RA-Node</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#S-Node"/>
+  </owl:Class>
+  <owl:Class rdf:about="#I-Node">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >I-Node</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Node"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Node">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Node</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://jade.cselt.it/beangenerator#Concept"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="fulfilsPremiseDesc">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >fulfilsPremiseDesc</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Premise"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="#PremiseDesc"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasConclusionDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Scheme"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasConclusionDescription</rdfs:label>
+    <rdfs:range rdf:resource="#ConclusionDesc"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasPremise">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="edgeFromSNode"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="#Premise"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#RA-Node"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="supports"/>
+    </owl:inverseOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasPremise</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasException">
+    <rdfs:range rdf:resource="#ConflictScheme"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasException</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#PresumptiveInferenceScheme"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="caNode_isAttacked">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#I-Node"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >caNode_isAttacked</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="caNode_Attacks"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#CA-Node"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#edgeFromSNode"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="attacks">
+    <rdfs:range rdf:resource="#CA-Node"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="edgeFromINode"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >attacks</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isAttacked"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="underminesPresumption">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="#Presumption"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Premise"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >underminesPresumption</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasPresumption">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#PresumptiveInferenceScheme"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="#Presumption"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasPresumption</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="fulfilsConclusionDesc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Conclusion"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >fulfilsConclusionDesc</rdfs:label>
+    <rdfs:range rdf:resource="#ConclusionDesc"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasConclusion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#edgeFromSNode"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#RA-Node"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasConclusion</rdfs:label>
+    <rdfs:range rdf:resource="#Conclusion"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#edgeFromSNode">
+    <rdfs:range rdf:resource="#Node"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#S-Node"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="edge"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >edgeFromSNode</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#edgeFromINode">
+    <rdfs:range rdf:resource="#S-Node"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#edge"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#I-Node"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >edgeFromINode</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasPremiseDescription">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasPremiseDescription</rdfs:label>
+    <rdfs:range rdf:resource="#PremiseDesc"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Scheme"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#supports">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >supports</rdfs:label>
+    <rdfs:range rdf:resource="#RA-Node"/>
+    <rdfs:subPropertyOf rdf:resource="#edgeFromINode"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Premise"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf rdf:resource="#hasPremise"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="fulfilsScheme">
+    <rdfs:range rdf:resource="#Scheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#S-Node"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >fulfilsScheme</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#caNode_Attacks">
+    <rdfs:range rdf:resource="#I-Node"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#CA-Node"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf rdf:resource="#caNode_isAttacked"/>
+    <rdfs:subPropertyOf rdf:resource="#edgeFromSNode"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >caNode_Attacks</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="entails">
+    <rdfs:range rdf:resource="#Presumption"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >entails</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#PremiseDesc"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#edge">
+    <rdfs:range rdf:resource="#Node"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >edge</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isAttacked">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >isAttacked</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#edgeFromINode"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#CA-Node"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf rdf:resource="#attacks"/>
+    <rdfs:range rdf:resource="#Conclusion"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="hasSchemeName">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasSchemeName</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Scheme"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="text">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >text</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#I-Node"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasDescription">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasDescription</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Form"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <PresumptiveInferenceScheme rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_4">
+    <hasPresumption>
+      <Presumption rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_10">
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >E's testimony does imply A</hasDescription>
+      </Presumption>
+    </hasPresumption>
+    <hasConclusionDescription>
+      <ConclusionDesc rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_5">
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A may plausibly be taken to be true</hasDescription>
+      </ConclusionDesc>
+    </hasConclusionDescription>
+    <hasException>
+      <ConflictScheme rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_11">
+        <hasPremiseDescription>
+          <PremiseDesc rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_12">
+            <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Other experts disagree</hasDescription>
+          </PremiseDesc>
+        </hasPremiseDescription>
+        <hasSchemeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Conflict from testimonial inconsistency</hasSchemeName>
+      </ConflictScheme>
+    </hasException>
+    <hasPresumption>
+      <Presumption rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_9">
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >E is credible as an expert source</hasDescription>
+      </Presumption>
+    </hasPresumption>
+    <hasPremiseDescription>
+      <PremiseDesc rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_7">
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >E is an expert in domain D containing proposition A</hasDescription>
+        <entails>
+          <Presumption rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_8">
+            <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >E is an expert in the field that A is in</hasDescription>
+          </Presumption>
+        </entails>
+      </PremiseDesc>
+    </hasPremiseDescription>
+    <hasPremiseDescription>
+      <PremiseDesc rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_6">
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >E asserts that A is known to be true</hasDescription>
+      </PremiseDesc>
+    </hasPremiseDescription>
+    <hasPresumption rdf:resource="http://www.owl-ontologies.com/ArgOnt_Instance_8"/>
+    <hasSchemeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Argument from expert opinion</hasSchemeName>
+    <hasException>
+      <ConflictScheme rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_1">
+        <hasPremiseDescription>
+          <PremiseDesc rdf:about="http://www.owl-ontologies.com/ArgOnt_Instance_2">
+            <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Speaker is biased</hasDescription>
+          </PremiseDesc>
+        </hasPremiseDescription>
+        <hasSchemeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Conflict from bias</hasSchemeName>
+      </ConflictScheme>
+    </hasException>
+  </PresumptiveInferenceScheme>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.1, Build 536)  http://protege.stanford.edu -->
